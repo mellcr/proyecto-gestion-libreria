@@ -11,7 +11,7 @@ public class DBManager {
     //                    "db-prog3-clases.c8izfhuif1lk.us-east-1.rds.amazonaws.com" + 
             ":3306/" + "cleancode";
     private String usuario = "root";
-    private String password = "shabita17";
+    private String password = "babalbalbab";
     private Connection con;
     
     public static DBManager getInstance(){
