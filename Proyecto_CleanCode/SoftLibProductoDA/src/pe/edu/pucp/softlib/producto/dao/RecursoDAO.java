@@ -8,4 +8,8 @@ public interface RecursoDAO{
 //        int modificar(Recurso recurso);
 //        ArrayList<Recurso> listarTodos();
 //        Recurso obtenerPorId(int idRecurso);
+    
+    
+    
 }
+

@@ -1,28 +1,29 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package pe.edu.pucp.softlib.producto.daoImp;
 
 import pe.edu.pucp.softlib.producto.model.Libro;
 import pe.edu.pucp.softlib.producto.model.Recurso;
+import java.sql.SQLException;
 
-/**
+/*
  *
- * @author lhia_
  */
+
 public class LibroMySQL extends RecursoMySQL{
     
     @Override
-    public int insertar(Libro libro){
-        return 1;
+    protected void insertarAtributosEspecificos(Recurso recurso) throws SQLException {
+        if (recurso instanceof Libro) {
+            Libro libro = (Libro) recurso;
+            // SQL para insertar atributos específicos de Libro
+            sql = "INSERT INTO Libro (autor, editorial, categoria, sinopsis) VALUES (?, ?, ?, ?)";
+            pst = con.prepareStatement(sql);
+            pst.setString(1, libro.getAutor());
+            pst.setString(2, libro.getEditorial());
+            pst.setString(3, libro.());
+            pst.setString(4, libro.getSinopsis());
+            pst.executeUpdate();
+        }
     }
-    
-//    @Override
-//    public int insertar(Recurso recurso){
-//        
-//    }
-    
-    
+
     
 }

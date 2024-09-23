@@ -11,11 +11,8 @@ public class Recurso {
     protected Double alto;
     protected Double ancho;
     protected Double precio;
-    protected Integer idLineaDeOrden;
-    protected ArrayList<Campaña> campañas;
+    private Boolean disponible;
 
-    
-// Metodos
     // Constructor
     public Recurso(String nombre, Double peso, Double alto, Double ancho, Double precio) {
         this.nombre = nombre;
@@ -60,12 +57,17 @@ public class Recurso {
     public Double getPrecio() {
         return precio;
     }
+    public Boolean getDisponible() {
+        return disponible;
+    }
+
+    public void setDisponible(Boolean disponible) {
+        this.disponible = disponible;
+    }
+    
     // Declaracion de metodos
     public Integer calcularStockTotal(){
         return 0;
-    }
-    public String lineaDeRecurso(){
-        return "";
     }
     public String lineaDeFavorito(){
         return "";
