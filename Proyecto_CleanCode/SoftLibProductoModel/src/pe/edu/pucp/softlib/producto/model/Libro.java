@@ -9,11 +9,13 @@ public class Libro extends Recurso{
     private String editorial;
     private String ISBN;
     private String sinopsis;
+    private Formato formato;
+            
 // Metodos
     // Constructor 1 categoria
     public Libro(String nombre, Double peso, Double alto, 
             Double ancho, Double precio, Categoria categoria, String autor, 
-            String editorial, String ISBN, String sinopsis) {
+            String editorial, String ISBN, String sinopsis, Formato formato) {
         super(nombre, peso, alto, ancho, precio);
         this.categorias = new ArrayList<>();
         this.categorias.add(categoria);
@@ -21,18 +23,35 @@ public class Libro extends Recurso{
         this.editorial = editorial;
         this.ISBN = ISBN;
         this.sinopsis = sinopsis;
+        this.formato = formato; 
     }
+    
     // Constructor categorias
     public Libro(String nombre, Double peso, Double alto, 
             Double ancho, Double precio, ArrayList<Categoria> categorias, 
-            String autor, String editorial, String ISBN, String sinopsis) {
+            String autor, String editorial, String ISBN, String sinopsis,
+            Formato formato) {
         super(nombre, peso, alto, ancho, precio);
         this.categorias = categorias;
         this.autor = autor;
         this.editorial = editorial;
         this.ISBN = ISBN;
         this.sinopsis = sinopsis;
+        this.formato = formato; 
     }
+    
+    //constructor sin parametros
+    public Libro() {
+        super();
+        this.categorias = null;
+        this.autor = null;
+        this.editorial = null;
+        this.ISBN = null;
+        this.sinopsis = null;
+        this.formato = null; 
+    }
+    
+    
     // Setters
     public void setCategoria(Categoria categoria) {
         this.categorias = new ArrayList<>();
@@ -73,12 +92,20 @@ public class Libro extends Recurso{
         return sinopsis;
     }
     // Declaracion de metodos
-    @Override
-    public String lineaDeRecurso(){
-        return "";
-    }
+//    @Override
+//    public String lineaDeRecurso(){
+//        return "";
+//    }
     @Override
     public String lineaDeFavorito(){
         return "";
+    }
+
+    public Formato getFormato() {
+        return formato;
+    }
+
+    public void setFormato(Formato formato) {
+        this.formato = formato;
     }
 }

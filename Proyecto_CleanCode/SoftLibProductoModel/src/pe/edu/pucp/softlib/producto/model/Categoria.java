@@ -14,6 +14,14 @@ public class Categoria {
         this.idCategoria = idCategoria;
         this.nombre = nombre;
     }
+    
+    public Categoria(){
+        nombre = null;
+        idCategoria = null;
+        libros = new ArrayList<Libro>();
+    }
+    
+    
     // Setters
     public void setIdCategoria(Integer idCategoria) {
         this.idCategoria = idCategoria;

@@ -10,13 +10,15 @@ import java.sql.SQLException;
 public class OtroRecursoMySQL extends RecursoMySQL {
     
     @Override
-    protected void insertarAtributosEspecificos(Recurso recurso) throws SQLException {
+    protected void insertarAtributosEspecificos(Recurso recurso, int idRecurso) throws SQLException {
         if (recurso instanceof OtroRecurso) {
             OtroRecurso otroRecurso = (OtroRecurso) recurso;
-            // SQL para insertar atributos específicos de OtrosRecursos
-            sql = "INSERT INTO OtrosRecursos (caracteristica) VALUES (?)";
+
+            // Insertar los atributos específicos del otro recurso
+            sql = "INSERT INTO OtroRecurso (idRecurso, caracteristica) VALUES (?, ?)";
             pst = con.prepareStatement(sql);
-            pst.setString(1, otroRecurso.getDescripcion());
+            pst.setInt(1, idRecurso);
+            pst.setString(2, otroRecurso.getDescripcion());
             pst.executeUpdate();
         }
     }

@@ -22,6 +22,14 @@ public class Recurso {
         this.precio = precio;
 
     }
+    public Recurso() {
+        this.nombre = null;
+        this.peso = null;
+        this.alto = null;
+        this.ancho = null;
+        this.precio = null;
+    }
+    
     // Setters
     public void setNombre(String nombre) {
         this.nombre = nombre;

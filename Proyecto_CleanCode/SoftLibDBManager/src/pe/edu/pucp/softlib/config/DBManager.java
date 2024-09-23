@@ -9,7 +9,7 @@ public class DBManager {
     private String url = "jdbc:mysql://" +
                         "localhost" + 
     //                    "db-prog3-clases.c8izfhuif1lk.us-east-1.rds.amazonaws.com" + 
-            ":3306/" + "prog3";
+            ":3306/" + "cleancode";
     private String usuario = "root";
     private String password = "shabita17";
     private Connection con;
