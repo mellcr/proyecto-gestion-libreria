@@ -2,14 +2,15 @@ package pe.edu.pucp.softlib.producto.daoImp;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import pe.edu.pucp.softlib.producto.dao.RecursoDAO;
 import pe.edu.pucp.softlib.producto.model.Recurso;
 
 public abstract class RecursoMySQL implements RecursoDAO{
 
-    private PreparedStatement pst;
-    private Connection con;
-    private String sql;
+    protected PreparedStatement pst;
+    protected Connection con;
+    protected String sql;
         
     @Override
     public int insertar(Recurso recurso) {
@@ -31,12 +32,14 @@ public abstract class RecursoMySQL implements RecursoDAO{
             insertarAtributosEspecificos(recurso);
             
             return filasAfectadas;
+            //return (filasAfectadas > 0) ? 1 : 0; -> opcion booleana de confirmacion de inserción
 
         } catch (SQLException ex) {
             ex.printStackTrace();
         }
         return 0;
     }
+    
 
         // Método abstracto para que las subclases implementen sus atributos específicos
         protected abstract void insertarAtributosEspecificos(Recurso recurso) throws SQLException;

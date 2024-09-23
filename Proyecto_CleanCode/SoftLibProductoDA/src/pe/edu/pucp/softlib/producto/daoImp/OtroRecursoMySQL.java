@@ -1,13 +1,27 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package pe.edu.pucp.softlib.producto.daoImp;
 
-/**
- *
- * @author lhia_
+import pe.edu.pucp.softlib.producto.model.OtroRecurso;
+import pe.edu.pucp.softlib.producto.model.Recurso;
+import java.sql.SQLException;
+
+/*
+ * 
  */
-public class OtroRecursoMySQL {
+public class OtroRecursoMySQL extends RecursoMySQL {
+    
+    @Override
+    protected void insertarAtributosEspecificos(Recurso recurso) throws SQLException {
+        if (recurso instanceof OtroRecurso) {
+            OtroRecurso otroRecurso = (OtroRecurso) recurso;
+            // SQL para insertar atributos específicos de OtrosRecursos
+            sql = "INSERT INTO OtrosRecursos (caracteristica) VALUES (?)";
+            pst = con.prepareStatement(sql);
+            pst.setString(1, otroRecurso.getDescripcion());
+            pst.executeUpdate();
+        }
+    }
+    
     
 }
+
+
