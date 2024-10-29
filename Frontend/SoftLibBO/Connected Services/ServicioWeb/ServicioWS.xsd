@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://services.softlib.pucp.edu.pe/" targetNamespace="http://services.softlib.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="autor_listarTodos" type="tns:autor_listarTodos" />
+  <xs:element name="autor_listarTodosResponse" type="tns:autor_listarTodosResponse" />
+  <xs:element name="buscarClientes" type="tns:buscarClientes" />
+  <xs:element name="buscarClientesResponse" type="tns:buscarClientesResponse" />
+  <xs:element name="buscarLibros" type="tns:buscarLibros" />
+  <xs:element name="buscarLibrosResponse" type="tns:buscarLibrosResponse" />
+  <xs:element name="buscarOtrosRecursos" type="tns:buscarOtrosRecursos" />
+  <xs:element name="buscarOtrosRecursosResponse" type="tns:buscarOtrosRecursosResponse" />
+  <xs:element name="cliente_listarTodos" type="tns:cliente_listarTodos" />
+  <xs:element name="cliente_listarTodosResponse" type="tns:cliente_listarTodosResponse" />
+  <xs:element name="cliente_obtenerPorId" type="tns:cliente_obtenerPorId" />
+  <xs:element name="cliente_obtenerPorIdResponse" type="tns:cliente_obtenerPorIdResponse" />
+  <xs:element name="libro_listarTodos" type="tns:libro_listarTodos" />
+  <xs:element name="libro_listarTodosResponse" type="tns:libro_listarTodosResponse" />
+  <xs:element name="recurso_listarTodos" type="tns:recurso_listarTodos" />
+  <xs:element name="recurso_listarTodosResponse" type="tns:recurso_listarTodosResponse" />
+  <xs:complexType name="cliente_obtenerPorId">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idCliente" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cliente_obtenerPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:cliente" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cliente">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:persona">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="direccion" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="persona">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="apellidoMaterno" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidoPaterno" type="xs:string" />
+      <xs:element minOccurs="0" name="idPersona" type="xs:int" />
+      <xs:element minOccurs="0" name="nacionalidad" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="numeroDocumento" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="perfiles" nillable="true" type="tns:perfil" />
+      <xs:element minOccurs="0" name="tipoDocumento" type="tns:tipoDocumento" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="perfil">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idPerfil" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="roles" nillable="true" type="tns:rol" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="rol">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idRol" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="libro_listarTodos">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="libro_listarTodosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:libro" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="libro">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:recurso">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="autor" type="tns:autor" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="categorias" nillable="true" type="tns:categoria" />
+          <xs:element minOccurs="0" name="editorial" type="xs:string" />
+          <xs:element minOccurs="0" name="formato" type="tns:formato" />
+          <xs:element minOccurs="0" name="ISBN" type="xs:string" />
+          <xs:element minOccurs="0" name="sinopsis" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="recurso">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="alto" type="xs:double" />
+      <xs:element minOccurs="0" name="ancho" type="xs:double" />
+      <xs:element minOccurs="0" name="disponible" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="foto" nillable="true" type="xs:byte" />
+      <xs:element minOccurs="0" name="idRecurso" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="peso" type="xs:double" />
+      <xs:element minOccurs="0" name="precio" type="xs:double" />
+      <xs:element minOccurs="0" name="unidadMedida" type="tns:unidadMedida" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="autor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="idAutor" type="xs:int" />
+      <xs:element minOccurs="0" name="nacionalidad" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="categoria">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="idCategoria" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarClientes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarClientesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:cliente" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="recurso_listarTodos">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="recurso_listarTodosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:recurso" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarOtrosRecursos">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarOtrosRecursosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:otroRecurso" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="otroRecurso">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:recurso">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="buscarLibros">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarLibrosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:libro" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cliente_listarTodos">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="cliente_listarTodosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:cliente" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="autor_listarTodos">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="autor_listarTodosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:autor" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="tipoDocumento">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="DNI" />
+      <xs:enumeration value="RUC" />
+      <xs:enumeration value="CE" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="formato">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="BOLSILLO" />
+      <xs:enumeration value="RUSTICA" />
+      <xs:enumeration value="TAPA_DURA" />
+      <xs:enumeration value="ESTUCHE" />
+      <xs:enumeration value="EBOOK" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="unidadMedida">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="UNIDAD" />
+      <xs:enumeration value="PAQUETE" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

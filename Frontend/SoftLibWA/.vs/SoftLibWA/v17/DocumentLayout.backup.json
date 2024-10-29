@@ -1,0 +1,361 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|c:\\lhia - personal\\pucp\\octavo ciclo 2024.2\\p3\\ta\\laboratorio 10\\frontend\\softlibwa\\registro_ordenes_venta.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:registro_ordenes_venta.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\registro_ordenes_abastecimiento.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:registro_ordenes_abastecimiento.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\gestionar_ordenes_venta.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:gestionar_ordenes_venta.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|c:\\lhia - personal\\pucp\\octavo ciclo 2024.2\\p3\\ta\\laboratorio 10\\frontend\\softlibwa\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\softlibempleado.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:softlibempleado.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AB10074-5A06-4ED9-B48B-EBDEC0679B9D}|..\\SoftLibUsuarioBO\\SoftLibUsuarioBO.csproj|c:\\lhia - personal\\pucp\\octavo ciclo 2024.2\\p3\\ta\\laboratorio 10\\frontend\\softlibusuariobo\\clientebo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F909D16-97CD-42C2-8240-C6B5535F9DDC}|..\\SoftLibProducto\\SoftLibProducto.csproj|c:\\lhia - personal\\pucp\\octavo ciclo 2024.2\\p3\\ta\\laboratorio 10\\frontend\\softlibproducto\\recursobo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F909D16-97CD-42C2-8240-C6B5535F9DDC}|..\\SoftLibProducto\\SoftLibProducto.csproj|c:\\lhia - personal\\pucp\\octavo ciclo 2024.2\\p3\\ta\\laboratorio 10\\frontend\\softlibproducto\\otrorecursobo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F909D16-97CD-42C2-8240-C6B5535F9DDC}|..\\SoftLibProducto\\SoftLibProducto.csproj|c:\\lhia - personal\\pucp\\octavo ciclo 2024.2\\p3\\ta\\laboratorio 10\\frontend\\softlibproducto\\librobo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE659E7-B051-41A5-889F-A64940624C02}|..\\SoftLibBO\\SoftLibBO.csproj|c:\\lhia - personal\\pucp\\octavo ciclo 2024.2\\p3\\ta\\laboratorio 10\\frontend\\softlibbo\\basebo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\registro_ordenes_venta.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:registro_ordenes_venta.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\gestionar_ordenes_venta.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:gestionar_ordenes_venta.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\gestionar_ordenes_abastecimiento.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:gestionar_ordenes_abastecimiento.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\gestionar_ordenes_abastecimiento.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:gestionar_ordenes_abastecimiento.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\registro_ordenes_abastecimiento.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:registro_ordenes_abastecimiento.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\scripts\\softlib\\gestionarordenesventa.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:scripts\\softlib\\gestionarordenesventa.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\scripts\\softlib\\gestionarordenesabastecimiento.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:scripts\\softlib\\gestionarordenesabastecimiento.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\mantenimiento_recurso.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:mantenimiento_recurso.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\content\\estilo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:content\\estilo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\registro_ordenes_venta.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:registro_ordenes_venta.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\softlibempleado.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:softlibempleado.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "registro_ordenes_abastecimiento.aspx.cs",
+              "DocumentMoniker": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\registro_ordenes_abastecimiento.aspx.cs",
+              "RelativeDocumentMoniker": "registro_ordenes_abastecimiento.aspx.cs",
+              "ToolTip": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\registro_ordenes_abastecimiento.aspx.cs",
+              "RelativeToolTip": "registro_ordenes_abastecimiento.aspx.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAiwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T01:55:07.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "registro_ordenes_venta.aspx.cs",
+              "DocumentMoniker": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\registro_ordenes_venta.aspx.cs",
+              "RelativeDocumentMoniker": "registro_ordenes_venta.aspx.cs",
+              "ToolTip": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\registro_ordenes_venta.aspx.cs",
+              "RelativeToolTip": "registro_ordenes_venta.aspx.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwDoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T15:26:17.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "gestionar_ordenes_venta.aspx.cs",
+              "DocumentMoniker": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\gestionar_ordenes_venta.aspx.cs",
+              "RelativeDocumentMoniker": "gestionar_ordenes_venta.aspx.cs",
+              "ToolTip": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\gestionar_ordenes_venta.aspx.cs",
+              "RelativeToolTip": "gestionar_ordenes_venta.aspx.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T02:25:59.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\Web.config",
+              "RelativeDocumentMoniker": "Web.config",
+              "ToolTip": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\Web.config",
+              "RelativeToolTip": "Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-10-29T15:35:49.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ClienteBO.cs",
+              "DocumentMoniker": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibUsuarioBO\\ClienteBO.cs",
+              "RelativeDocumentMoniker": "..\\SoftLibUsuarioBO\\ClienteBO.cs",
+              "ToolTip": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibUsuarioBO\\ClienteBO.cs",
+              "RelativeToolTip": "..\\SoftLibUsuarioBO\\ClienteBO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T14:28:02.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RecursoBO.cs",
+              "DocumentMoniker": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibProducto\\RecursoBO.cs",
+              "RelativeDocumentMoniker": "..\\SoftLibProducto\\RecursoBO.cs",
+              "ToolTip": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibProducto\\RecursoBO.cs",
+              "RelativeToolTip": "..\\SoftLibProducto\\RecursoBO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T14:49:25.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SoftLibEmpleado.Master",
+              "DocumentMoniker": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\SoftLibEmpleado.Master",
+              "RelativeDocumentMoniker": "SoftLibEmpleado.Master",
+              "ToolTip": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\SoftLibEmpleado.Master",
+              "RelativeToolTip": "SoftLibEmpleado.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-10-26T05:21:22.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OtroRecursoBO.cs",
+              "DocumentMoniker": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibProducto\\OtroRecursoBO.cs",
+              "RelativeDocumentMoniker": "..\\SoftLibProducto\\OtroRecursoBO.cs",
+              "ToolTip": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibProducto\\OtroRecursoBO.cs",
+              "RelativeToolTip": "..\\SoftLibProducto\\OtroRecursoBO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T14:57:18.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LibroBO.cs",
+              "DocumentMoniker": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibProducto\\LibroBO.cs",
+              "RelativeDocumentMoniker": "..\\SoftLibProducto\\LibroBO.cs",
+              "ToolTip": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibProducto\\LibroBO.cs",
+              "RelativeToolTip": "..\\SoftLibProducto\\LibroBO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T14:57:02.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BaseBO.cs",
+              "DocumentMoniker": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibBO\\BaseBO.cs",
+              "RelativeDocumentMoniker": "..\\SoftLibBO\\BaseBO.cs",
+              "ToolTip": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibBO\\BaseBO.cs",
+              "RelativeToolTip": "..\\SoftLibBO\\BaseBO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T17:32:57.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "registro_ordenes_venta.aspx",
+              "DocumentMoniker": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\registro_ordenes_venta.aspx",
+              "RelativeDocumentMoniker": "registro_ordenes_venta.aspx",
+              "ToolTip": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\registro_ordenes_venta.aspx",
+              "RelativeToolTip": "registro_ordenes_venta.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-10-29T06:33:23.675Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "gestionar_ordenes_venta.aspx",
+              "DocumentMoniker": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\gestionar_ordenes_venta.aspx",
+              "RelativeDocumentMoniker": "gestionar_ordenes_venta.aspx",
+              "ToolTip": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\gestionar_ordenes_venta.aspx",
+              "RelativeToolTip": "gestionar_ordenes_venta.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-10-26T01:58:38.243Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "registro_ordenes_abastecimiento.aspx",
+              "DocumentMoniker": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\registro_ordenes_abastecimiento.aspx",
+              "RelativeDocumentMoniker": "registro_ordenes_abastecimiento.aspx",
+              "ToolTip": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\registro_ordenes_abastecimiento.aspx",
+              "RelativeToolTip": "registro_ordenes_abastecimiento.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-10-28T01:51:04.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "gestionarOrdenesVenta.js",
+              "DocumentMoniker": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\Scripts\\SoftLib\\gestionarOrdenesVenta.js",
+              "RelativeDocumentMoniker": "Scripts\\SoftLib\\gestionarOrdenesVenta.js",
+              "ToolTip": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\Scripts\\SoftLib\\gestionarOrdenesVenta.js",
+              "RelativeToolTip": "Scripts\\SoftLib\\gestionarOrdenesVenta.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-10-25T14:04:04.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "gestionar_ordenes_abastecimiento.aspx",
+              "DocumentMoniker": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\gestionar_ordenes_abastecimiento.aspx",
+              "RelativeDocumentMoniker": "gestionar_ordenes_abastecimiento.aspx",
+              "ToolTip": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\gestionar_ordenes_abastecimiento.aspx",
+              "RelativeToolTip": "gestionar_ordenes_abastecimiento.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-10-28T03:20:26.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "gestionar_ordenes_abastecimiento.aspx.cs",
+              "DocumentMoniker": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\gestionar_ordenes_abastecimiento.aspx.cs",
+              "RelativeDocumentMoniker": "gestionar_ordenes_abastecimiento.aspx.cs",
+              "ToolTip": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\gestionar_ordenes_abastecimiento.aspx.cs",
+              "RelativeToolTip": "gestionar_ordenes_abastecimiento.aspx.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T05:04:55.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "gestionarOrdenesAbastecimiento.js",
+              "DocumentMoniker": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\Scripts\\SoftLib\\gestionarOrdenesAbastecimiento.js",
+              "RelativeDocumentMoniker": "Scripts\\SoftLib\\gestionarOrdenesAbastecimiento.js",
+              "ToolTip": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\Scripts\\SoftLib\\gestionarOrdenesAbastecimiento.js",
+              "RelativeToolTip": "Scripts\\SoftLib\\gestionarOrdenesAbastecimiento.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-10-28T01:57:05.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "mantenimiento_recurso.aspx.cs",
+              "DocumentMoniker": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\mantenimiento_recurso.aspx.cs",
+              "RelativeDocumentMoniker": "mantenimiento_recurso.aspx.cs",
+              "ToolTip": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\mantenimiento_recurso.aspx.cs",
+              "RelativeToolTip": "mantenimiento_recurso.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T17:02:44.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "estilo.css",
+              "DocumentMoniker": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\Content\\estilo.css",
+              "RelativeDocumentMoniker": "Content\\estilo.css",
+              "ToolTip": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\Content\\estilo.css",
+              "RelativeToolTip": "Content\\estilo.css",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-23T20:57:18.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "registro_ordenes_venta.aspx.designer.cs",
+              "DocumentMoniker": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\registro_ordenes_venta.aspx.designer.cs",
+              "RelativeDocumentMoniker": "registro_ordenes_venta.aspx.designer.cs",
+              "ToolTip": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\registro_ordenes_venta.aspx.designer.cs",
+              "RelativeToolTip": "registro_ordenes_venta.aspx.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T01:21:57.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "SoftLibEmpleado.Master.cs",
+              "DocumentMoniker": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\SoftLibEmpleado.Master.cs",
+              "RelativeDocumentMoniker": "SoftLibEmpleado.Master.cs",
+              "ToolTip": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibWA\\SoftLibEmpleado.Master.cs",
+              "RelativeToolTip": "SoftLibEmpleado.Master.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T03:25:01.198Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

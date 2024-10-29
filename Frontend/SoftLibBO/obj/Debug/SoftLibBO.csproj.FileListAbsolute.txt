@@ -1,0 +1,7 @@
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibBO\bin\Debug\SoftLibBO.dll.config
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibBO\bin\Debug\SoftLibBO.dll
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibBO\bin\Debug\SoftLibBO.pdb
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibBO\obj\Debug\SoftLibBO.csproj.AssemblyReference.cache
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibBO\obj\Debug\SoftLibBO.csproj.CoreCompileInputs.cache
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibBO\obj\Debug\SoftLibBO.dll
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibBO\obj\Debug\SoftLibBO.pdb

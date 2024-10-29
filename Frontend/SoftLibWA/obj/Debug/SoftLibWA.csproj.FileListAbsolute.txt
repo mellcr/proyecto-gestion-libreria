@@ -1,0 +1,44 @@
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\SoftLibWA\bin\SoftLibWA.dll.config
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\SoftLibWA\bin\SoftLibWA.dll
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\SoftLibWA\bin\SoftLibWA.pdb
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\SoftLibWA\obj\Debug\SoftLibWA.csproj.AssemblyReference.cache
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\SoftLibWA\obj\Debug\SoftLibWA.csproj.CoreCompileInputs.cache
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\SoftLibWA\obj\Debug\SoftLibWA.dll
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\SoftLibWA\obj\Debug\SoftLibWA.pdb
+C:\Users\mell1\Downloads\SoftLibWA\SoftLibWA\bin\SoftLibWA.dll.config
+C:\Users\mell1\Downloads\SoftLibWA\SoftLibWA\bin\SoftLibWA.dll
+C:\Users\mell1\Downloads\SoftLibWA\SoftLibWA\bin\SoftLibWA.pdb
+C:\Users\mell1\Downloads\SoftLibWA\SoftLibWA\obj\Debug\SoftLibWA.csproj.AssemblyReference.cache
+C:\Users\mell1\Downloads\SoftLibWA\SoftLibWA\obj\Debug\SoftLibWA.csproj.CoreCompileInputs.cache
+C:\Users\mell1\Downloads\SoftLibWA\SoftLibWA\obj\Debug\SoftLibWA.dll
+C:\Users\mell1\Downloads\SoftLibWA\SoftLibWA\obj\Debug\SoftLibWA.pdb
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\SoftLibWA\SoftLibWA\SoftLibWA\bin\SoftLibWA.dll.config
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\SoftLibWA\SoftLibWA\SoftLibWA\bin\SoftLibWA.dll
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\SoftLibWA\SoftLibWA\SoftLibWA\bin\SoftLibWA.pdb
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\SoftLibWA\SoftLibWA\SoftLibWA\obj\Debug\SoftLibWA.csproj.AssemblyReference.cache
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\SoftLibWA\SoftLibWA\SoftLibWA\obj\Debug\SoftLibWA.csproj.CoreCompileInputs.cache
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\SoftLibWA\SoftLibWA\SoftLibWA\obj\Debug\SoftLibWA.dll
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\SoftLibWA\SoftLibWA\SoftLibWA\obj\Debug\SoftLibWA.pdb
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibWA\SoftLibWA\SoftLibWA\bin\SoftLibWA.dll.config
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibWA\SoftLibWA\SoftLibWA\bin\SoftLibWA.dll
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibWA\SoftLibWA\SoftLibWA\bin\SoftLibWA.pdb
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibWA\SoftLibWA\SoftLibWA\obj\Debug\SoftLibWA.csproj.AssemblyReference.cache
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibWA\SoftLibWA\SoftLibWA\obj\Debug\SoftLibWA.csproj.CoreCompileInputs.cache
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibWA\SoftLibWA\SoftLibWA\obj\Debug\SoftLibWA.dll
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibWA\SoftLibWA\SoftLibWA\obj\Debug\SoftLibWA.pdb
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibWA\bin\SoftLibWA.dll.config
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibWA\bin\SoftLibWA.dll
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibWA\bin\SoftLibWA.pdb
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibWA\obj\Debug\SoftLibWA.csproj.AssemblyReference.cache
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibWA\obj\Debug\SoftLibWA.csproj.CoreCompileInputs.cache
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibWA\obj\Debug\SoftLibWA.dll
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibWA\obj\Debug\SoftLibWA.pdb
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibWA\bin\SoftLibBO.dll
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibWA\bin\SoftLibProducto.dll
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibWA\bin\SoftLibUsuarioBO.dll
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibWA\bin\SoftLibBO.pdb
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibWA\bin\SoftLibBO.dll.config
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibWA\bin\SoftLibProducto.pdb
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibWA\bin\SoftLibProducto.dll.config
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibWA\bin\SoftLibUsuarioBO.pdb
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibWA\obj\Debug\SoftLibWA.csproj.Up2Date

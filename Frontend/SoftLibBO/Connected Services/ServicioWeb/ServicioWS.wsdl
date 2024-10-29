@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.softlib.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="ServicioWS" targetNamespace="http://services.softlib.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SoftLibWSBL/ServicioWS?xsd=1" namespace="http://services.softlib.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="buscarLibros">
+    <part name="parameters" element="tns:buscarLibros" />
+  </message>
+  <message name="buscarLibrosResponse">
+    <part name="parameters" element="tns:buscarLibrosResponse" />
+  </message>
+  <message name="buscarClientes">
+    <part name="parameters" element="tns:buscarClientes" />
+  </message>
+  <message name="buscarClientesResponse">
+    <part name="parameters" element="tns:buscarClientesResponse" />
+  </message>
+  <message name="buscarOtrosRecursos">
+    <part name="parameters" element="tns:buscarOtrosRecursos" />
+  </message>
+  <message name="buscarOtrosRecursosResponse">
+    <part name="parameters" element="tns:buscarOtrosRecursosResponse" />
+  </message>
+  <message name="libro_listarTodos">
+    <part name="parameters" element="tns:libro_listarTodos" />
+  </message>
+  <message name="libro_listarTodosResponse">
+    <part name="parameters" element="tns:libro_listarTodosResponse" />
+  </message>
+  <message name="autor_listarTodos">
+    <part name="parameters" element="tns:autor_listarTodos" />
+  </message>
+  <message name="autor_listarTodosResponse">
+    <part name="parameters" element="tns:autor_listarTodosResponse" />
+  </message>
+  <message name="recurso_listarTodos">
+    <part name="parameters" element="tns:recurso_listarTodos" />
+  </message>
+  <message name="recurso_listarTodosResponse">
+    <part name="parameters" element="tns:recurso_listarTodosResponse" />
+  </message>
+  <message name="cliente_listarTodos">
+    <part name="parameters" element="tns:cliente_listarTodos" />
+  </message>
+  <message name="cliente_listarTodosResponse">
+    <part name="parameters" element="tns:cliente_listarTodosResponse" />
+  </message>
+  <message name="cliente_obtenerPorId">
+    <part name="parameters" element="tns:cliente_obtenerPorId" />
+  </message>
+  <message name="cliente_obtenerPorIdResponse">
+    <part name="parameters" element="tns:cliente_obtenerPorIdResponse" />
+  </message>
+  <portType name="ServicioWS">
+    <operation name="buscarLibros">
+      <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/buscarLibrosRequest" message="tns:buscarLibros" />
+      <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/buscarLibrosResponse" message="tns:buscarLibrosResponse" />
+    </operation>
+    <operation name="buscarClientes">
+      <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/buscarClientesRequest" message="tns:buscarClientes" />
+      <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/buscarClientesResponse" message="tns:buscarClientesResponse" />
+    </operation>
+    <operation name="buscarOtrosRecursos">
+      <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/buscarOtrosRecursosRequest" message="tns:buscarOtrosRecursos" />
+      <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/buscarOtrosRecursosResponse" message="tns:buscarOtrosRecursosResponse" />
+    </operation>
+    <operation name="libro_listarTodos">
+      <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_listarTodosRequest" message="tns:libro_listarTodos" />
+      <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_listarTodosResponse" message="tns:libro_listarTodosResponse" />
+    </operation>
+    <operation name="autor_listarTodos">
+      <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/autor_listarTodosRequest" message="tns:autor_listarTodos" />
+      <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/autor_listarTodosResponse" message="tns:autor_listarTodosResponse" />
+    </operation>
+    <operation name="recurso_listarTodos">
+      <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_listarTodosRequest" message="tns:recurso_listarTodos" />
+      <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_listarTodosResponse" message="tns:recurso_listarTodosResponse" />
+    </operation>
+    <operation name="cliente_listarTodos">
+      <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_listarTodosRequest" message="tns:cliente_listarTodos" />
+      <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_listarTodosResponse" message="tns:cliente_listarTodosResponse" />
+    </operation>
+    <operation name="cliente_obtenerPorId">
+      <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_obtenerPorIdRequest" message="tns:cliente_obtenerPorId" />
+      <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_obtenerPorIdResponse" message="tns:cliente_obtenerPorIdResponse" />
+    </operation>
+  </portType>
+  <binding name="ServicioWSPortBinding" type="tns:ServicioWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="buscarLibros">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarClientes">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarOtrosRecursos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="libro_listarTodos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="autor_listarTodos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="recurso_listarTodos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="cliente_listarTodos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="cliente_obtenerPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="ServicioWS">
+    <port name="ServicioWSPort" binding="tns:ServicioWSPortBinding">
+      <soap:address location="http://localhost:8080/SoftLibWSBL/ServicioWS" />
+    </port>
+  </service>
+</definitions>

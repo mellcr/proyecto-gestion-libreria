@@ -1,0 +1,10 @@
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibUsuarioBO\bin\Debug\SoftLibUsuarioBO.dll
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibUsuarioBO\bin\Debug\SoftLibUsuarioBO.pdb
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibUsuarioBO\bin\Debug\SoftLibBO.dll
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibUsuarioBO\bin\Debug\SoftLibBO.pdb
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibUsuarioBO\bin\Debug\SoftLibBO.dll.config
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibUsuarioBO\obj\Debug\SoftLibUsuarioBO.csproj.AssemblyReference.cache
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibUsuarioBO\obj\Debug\SoftLibUsuarioBO.csproj.CoreCompileInputs.cache
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibUsuarioBO\obj\Debug\SoftLibU.FC53082B.Up2Date
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibUsuarioBO\obj\Debug\SoftLibUsuarioBO.dll
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibUsuarioBO\obj\Debug\SoftLibUsuarioBO.pdb
