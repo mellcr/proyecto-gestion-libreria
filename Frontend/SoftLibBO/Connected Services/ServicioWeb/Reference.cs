@@ -16,6 +16,15 @@ namespace SoftLibBO.ServicioWeb {
     public interface ServicioWS {
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/otrosRecursos_eliminarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/otrosRecursos_eliminarResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftLibBO.ServicioWeb.otrosRecursos_eliminarResponse otrosRecursos_eliminar(SoftLibBO.ServicioWeb.otrosRecursos_eliminarRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/otrosRecursos_eliminarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/otrosRecursos_eliminarResponse")]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.otrosRecursos_eliminarResponse> otrosRecursos_eliminarAsync(SoftLibBO.ServicioWeb.otrosRecursos_eliminarRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/buscarOtrosRecursosRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/buscarOtrosRecursosResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
@@ -26,24 +35,14 @@ namespace SoftLibBO.ServicioWeb {
         System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.buscarOtrosRecursosResponse> buscarOtrosRecursosAsync(SoftLibBO.ServicioWeb.buscarOtrosRecursosRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_obtenerPorIdRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_obtenerPorIdResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/otrosRecursos_insertarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/otrosRecursos_insertarResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftLibBO.ServicioWeb.cliente_obtenerPorIdResponse cliente_obtenerPorId(SoftLibBO.ServicioWeb.cliente_obtenerPorIdRequest request);
+        SoftLibBO.ServicioWeb.otrosRecursos_insertarResponse otrosRecursos_insertar(SoftLibBO.ServicioWeb.otrosRecursos_insertarRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_obtenerPorIdRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_obtenerPorIdResponse")]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.cliente_obtenerPorIdResponse> cliente_obtenerPorIdAsync(SoftLibBO.ServicioWeb.cliente_obtenerPorIdRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_listarTodosRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_listarTodosResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftLibBO.ServicioWeb.recurso_listarTodosResponse recurso_listarTodos(SoftLibBO.ServicioWeb.recurso_listarTodosRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_listarTodosRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_listarTodosResponse")]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.recurso_listarTodosResponse> recurso_listarTodosAsync(SoftLibBO.ServicioWeb.recurso_listarTodosRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/otrosRecursos_insertarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/otrosRecursos_insertarResponse")]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.otrosRecursos_insertarResponse> otrosRecursos_insertarAsync(SoftLibBO.ServicioWeb.otrosRecursos_insertarRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_listarTodosRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_listarTodosResponse")]
@@ -56,68 +55,24 @@ namespace SoftLibBO.ServicioWeb {
         System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.cliente_listarTodosResponse> cliente_listarTodosAsync(SoftLibBO.ServicioWeb.cliente_listarTodosRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/otrosRecursos_mostrarDestacadoRequ" +
-            "est", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/otrosRecursos_mostrarDestacadoResp" +
-            "onse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_mostrarDestacadoRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/libro_mostrarDestacadoResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftLibBO.ServicioWeb.otrosRecursos_mostrarDestacadoResponse otrosRecursos_mostrarDestacado(SoftLibBO.ServicioWeb.otrosRecursos_mostrarDestacadoRequest request);
+        SoftLibBO.ServicioWeb.libro_mostrarDestacadoResponse libro_mostrarDestacado(SoftLibBO.ServicioWeb.libro_mostrarDestacadoRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/otrosRecursos_mostrarDestacadoRequ" +
-            "est", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/otrosRecursos_mostrarDestacadoResp" +
-            "onse")]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.otrosRecursos_mostrarDestacadoResponse> otrosRecursos_mostrarDestacadoAsync(SoftLibBO.ServicioWeb.otrosRecursos_mostrarDestacadoRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_mostrarDestacadoRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/libro_mostrarDestacadoResponse")]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.libro_mostrarDestacadoResponse> libro_mostrarDestacadoAsync(SoftLibBO.ServicioWeb.libro_mostrarDestacadoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_listarTodosRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/libro_listarTodosResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_obtenerPorIdRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_obtenerPorIdResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftLibBO.ServicioWeb.libro_listarTodosResponse libro_listarTodos(SoftLibBO.ServicioWeb.libro_listarTodosRequest request);
+        SoftLibBO.ServicioWeb.recurso_obtenerPorIdResponse recurso_obtenerPorId(SoftLibBO.ServicioWeb.recurso_obtenerPorIdRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_listarTodosRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/libro_listarTodosResponse")]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.libro_listarTodosResponse> libro_listarTodosAsync(SoftLibBO.ServicioWeb.libro_listarTodosRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/buscarClientesRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/buscarClientesResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftLibBO.ServicioWeb.buscarClientesResponse buscarClientes(SoftLibBO.ServicioWeb.buscarClientesRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/buscarClientesRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/buscarClientesResponse")]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.buscarClientesResponse> buscarClientesAsync(SoftLibBO.ServicioWeb.buscarClientesRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/autor_listarTodosRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/autor_listarTodosResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftLibBO.ServicioWeb.autor_listarTodosResponse autor_listarTodos(SoftLibBO.ServicioWeb.autor_listarTodosRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/autor_listarTodosRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/autor_listarTodosResponse")]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.autor_listarTodosResponse> autor_listarTodosAsync(SoftLibBO.ServicioWeb.autor_listarTodosRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/buscarLibrosRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/buscarLibrosResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftLibBO.ServicioWeb.buscarLibrosResponse buscarLibros(SoftLibBO.ServicioWeb.buscarLibrosRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/buscarLibrosRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/buscarLibrosResponse")]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.buscarLibrosResponse> buscarLibrosAsync(SoftLibBO.ServicioWeb.buscarLibrosRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_eliminarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_eliminarResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftLibBO.ServicioWeb.cliente_eliminarResponse cliente_eliminar(SoftLibBO.ServicioWeb.cliente_eliminarRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_eliminarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_eliminarResponse")]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.cliente_eliminarResponse> cliente_eliminarAsync(SoftLibBO.ServicioWeb.cliente_eliminarRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_obtenerPorIdRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_obtenerPorIdResponse")]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.recurso_obtenerPorIdResponse> recurso_obtenerPorIdAsync(SoftLibBO.ServicioWeb.recurso_obtenerPorIdRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/otrosRecursos_listarTodosRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/otrosRecursos_listarTodosResponse")]
@@ -142,16 +97,6 @@ namespace SoftLibBO.ServicioWeb {
         System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.otrosRecursos_obtenerPorIdResponse> otrosRecursos_obtenerPorIdAsync(SoftLibBO.ServicioWeb.otrosRecursos_obtenerPorIdRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_obtenerPorIdRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_obtenerPorIdResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftLibBO.ServicioWeb.recurso_obtenerPorIdResponse recurso_obtenerPorId(SoftLibBO.ServicioWeb.recurso_obtenerPorIdRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_obtenerPorIdRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_obtenerPorIdResponse")]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.recurso_obtenerPorIdResponse> recurso_obtenerPorIdAsync(SoftLibBO.ServicioWeb.recurso_obtenerPorIdRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/otrosRecursos_modificarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/otrosRecursos_modificarResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
@@ -162,74 +107,24 @@ namespace SoftLibBO.ServicioWeb {
         System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.otrosRecursos_modificarResponse> otrosRecursos_modificarAsync(SoftLibBO.ServicioWeb.otrosRecursos_modificarRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_mostrarDestacadoRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/libro_mostrarDestacadoResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_listarTodosRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_listarTodosResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftLibBO.ServicioWeb.libro_mostrarDestacadoResponse libro_mostrarDestacado(SoftLibBO.ServicioWeb.libro_mostrarDestacadoRequest request);
+        SoftLibBO.ServicioWeb.recurso_listarTodosResponse recurso_listarTodos(SoftLibBO.ServicioWeb.recurso_listarTodosRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_mostrarDestacadoRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/libro_mostrarDestacadoResponse")]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.libro_mostrarDestacadoResponse> libro_mostrarDestacadoAsync(SoftLibBO.ServicioWeb.libro_mostrarDestacadoRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_listarTodosRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_listarTodosResponse")]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.recurso_listarTodosResponse> recurso_listarTodosAsync(SoftLibBO.ServicioWeb.recurso_listarTodosRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/otrosRecursos_insertarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/otrosRecursos_insertarResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_obtenerPorIdRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_obtenerPorIdResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftLibBO.ServicioWeb.otrosRecursos_insertarResponse otrosRecursos_insertar(SoftLibBO.ServicioWeb.otrosRecursos_insertarRequest request);
+        SoftLibBO.ServicioWeb.cliente_obtenerPorIdResponse cliente_obtenerPorId(SoftLibBO.ServicioWeb.cliente_obtenerPorIdRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/otrosRecursos_insertarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/otrosRecursos_insertarResponse")]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.otrosRecursos_insertarResponse> otrosRecursos_insertarAsync(SoftLibBO.ServicioWeb.otrosRecursos_insertarRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/otrosRecursos_eliminarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/otrosRecursos_eliminarResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftLibBO.ServicioWeb.otrosRecursos_eliminarResponse otrosRecursos_eliminar(SoftLibBO.ServicioWeb.otrosRecursos_eliminarRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/otrosRecursos_eliminarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/otrosRecursos_eliminarResponse")]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.otrosRecursos_eliminarResponse> otrosRecursos_eliminarAsync(SoftLibBO.ServicioWeb.otrosRecursos_eliminarRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_eliminarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/libro_eliminarResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftLibBO.ServicioWeb.libro_eliminarResponse libro_eliminar(SoftLibBO.ServicioWeb.libro_eliminarRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_eliminarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/libro_eliminarResponse")]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.libro_eliminarResponse> libro_eliminarAsync(SoftLibBO.ServicioWeb.libro_eliminarRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/existeClienteRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/existeClienteResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftLibBO.ServicioWeb.existeClienteResponse existeCliente(SoftLibBO.ServicioWeb.existeClienteRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/existeClienteRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/existeClienteResponse")]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.existeClienteResponse> existeClienteAsync(SoftLibBO.ServicioWeb.existeClienteRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_modificarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_modificarResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftLibBO.ServicioWeb.recurso_modificarResponse recurso_modificar(SoftLibBO.ServicioWeb.recurso_modificarRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_modificarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_modificarResponse")]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.recurso_modificarResponse> recurso_modificarAsync(SoftLibBO.ServicioWeb.recurso_modificarRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/existeRecursoRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/existeRecursoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftLibBO.ServicioWeb.existeRecursoResponse existeRecurso(SoftLibBO.ServicioWeb.existeRecursoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/existeRecursoRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/existeRecursoResponse")]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.existeRecursoResponse> existeRecursoAsync(SoftLibBO.ServicioWeb.existeRecursoRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_obtenerPorIdRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_obtenerPorIdResponse")]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.cliente_obtenerPorIdResponse> cliente_obtenerPorIdAsync(SoftLibBO.ServicioWeb.cliente_obtenerPorIdRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/existeOtroRecursoRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/existeOtroRecursoResponse")]
@@ -242,6 +137,56 @@ namespace SoftLibBO.ServicioWeb {
         System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.existeOtroRecursoResponse> existeOtroRecursoAsync(SoftLibBO.ServicioWeb.existeOtroRecursoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/buscarAutoresRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/buscarAutoresResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftLibBO.ServicioWeb.buscarAutoresResponse buscarAutores(SoftLibBO.ServicioWeb.buscarAutoresRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/buscarAutoresRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/buscarAutoresResponse")]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.buscarAutoresResponse> buscarAutoresAsync(SoftLibBO.ServicioWeb.buscarAutoresRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/existeLibroRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/existeLibroResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftLibBO.ServicioWeb.existeLibroResponse existeLibro(SoftLibBO.ServicioWeb.existeLibroRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/existeLibroRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/existeLibroResponse")]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.existeLibroResponse> existeLibroAsync(SoftLibBO.ServicioWeb.existeLibroRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/buscarClientesRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/buscarClientesResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftLibBO.ServicioWeb.buscarClientesResponse buscarClientes(SoftLibBO.ServicioWeb.buscarClientesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/buscarClientesRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/buscarClientesResponse")]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.buscarClientesResponse> buscarClientesAsync(SoftLibBO.ServicioWeb.buscarClientesRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/existeClienteRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/existeClienteResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftLibBO.ServicioWeb.existeClienteResponse existeCliente(SoftLibBO.ServicioWeb.existeClienteRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/existeClienteRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/existeClienteResponse")]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.existeClienteResponse> existeClienteAsync(SoftLibBO.ServicioWeb.existeClienteRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/buscarLibrosRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/buscarLibrosResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftLibBO.ServicioWeb.buscarLibrosResponse buscarLibros(SoftLibBO.ServicioWeb.buscarLibrosRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/buscarLibrosRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/buscarLibrosResponse")]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.buscarLibrosResponse> buscarLibrosAsync(SoftLibBO.ServicioWeb.buscarLibrosRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_insertarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_insertarResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
@@ -250,6 +195,16 @@ namespace SoftLibBO.ServicioWeb {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_insertarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_insertarResponse")]
         System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.recurso_insertarResponse> recurso_insertarAsync(SoftLibBO.ServicioWeb.recurso_insertarRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_modificarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_modificarResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftLibBO.ServicioWeb.recurso_modificarResponse recurso_modificar(SoftLibBO.ServicioWeb.recurso_modificarRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_modificarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_modificarResponse")]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.recurso_modificarResponse> recurso_modificarAsync(SoftLibBO.ServicioWeb.recurso_modificarRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_eliminarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_eliminarResponse")]
@@ -272,14 +227,24 @@ namespace SoftLibBO.ServicioWeb {
         System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.libro_insertarResponse> libro_insertarAsync(SoftLibBO.ServicioWeb.libro_insertarRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_modificarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/libro_modificarResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_eliminarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/libro_eliminarResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftLibBO.ServicioWeb.libro_modificarResponse libro_modificar(SoftLibBO.ServicioWeb.libro_modificarRequest request);
+        SoftLibBO.ServicioWeb.libro_eliminarResponse libro_eliminar(SoftLibBO.ServicioWeb.libro_eliminarRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_modificarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/libro_modificarResponse")]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.libro_modificarResponse> libro_modificarAsync(SoftLibBO.ServicioWeb.libro_modificarRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_eliminarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/libro_eliminarResponse")]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.libro_eliminarResponse> libro_eliminarAsync(SoftLibBO.ServicioWeb.libro_eliminarRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/existeRecursoRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/existeRecursoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftLibBO.ServicioWeb.existeRecursoResponse existeRecurso(SoftLibBO.ServicioWeb.existeRecursoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/existeRecursoRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/existeRecursoResponse")]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.existeRecursoResponse> existeRecursoAsync(SoftLibBO.ServicioWeb.existeRecursoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_obtenerPorIdRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/libro_obtenerPorIdResponse")]
@@ -292,14 +257,88 @@ namespace SoftLibBO.ServicioWeb {
         System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.libro_obtenerPorIdResponse> libro_obtenerPorIdAsync(SoftLibBO.ServicioWeb.libro_obtenerPorIdRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/existeLibroRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/existeLibroResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_listarTodosRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/libro_listarTodosResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftLibBO.ServicioWeb.existeLibroResponse existeLibro(SoftLibBO.ServicioWeb.existeLibroRequest request);
+        SoftLibBO.ServicioWeb.libro_listarTodosResponse libro_listarTodos(SoftLibBO.ServicioWeb.libro_listarTodosRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/existeLibroRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/existeLibroResponse")]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.existeLibroResponse> existeLibroAsync(SoftLibBO.ServicioWeb.existeLibroRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_listarTodosRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/libro_listarTodosResponse")]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.libro_listarTodosResponse> libro_listarTodosAsync(SoftLibBO.ServicioWeb.libro_listarTodosRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_modificarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/libro_modificarResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftLibBO.ServicioWeb.libro_modificarResponse libro_modificar(SoftLibBO.ServicioWeb.libro_modificarRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_modificarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/libro_modificarResponse")]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.libro_modificarResponse> libro_modificarAsync(SoftLibBO.ServicioWeb.libro_modificarRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_insertarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_insertarResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftLibBO.ServicioWeb.cliente_insertarResponse cliente_insertar(SoftLibBO.ServicioWeb.cliente_insertarRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_insertarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_insertarResponse")]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.cliente_insertarResponse> cliente_insertarAsync(SoftLibBO.ServicioWeb.cliente_insertarRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/otrosRecursos_mostrarDestacadoRequ" +
+            "est", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/otrosRecursos_mostrarDestacadoResp" +
+            "onse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftLibBO.ServicioWeb.otrosRecursos_mostrarDestacadoResponse otrosRecursos_mostrarDestacado(SoftLibBO.ServicioWeb.otrosRecursos_mostrarDestacadoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/otrosRecursos_mostrarDestacadoRequ" +
+            "est", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/otrosRecursos_mostrarDestacadoResp" +
+            "onse")]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.otrosRecursos_mostrarDestacadoResponse> otrosRecursos_mostrarDestacadoAsync(SoftLibBO.ServicioWeb.otrosRecursos_mostrarDestacadoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/autor_modificarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/autor_modificarResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftLibBO.ServicioWeb.autor_modificarResponse autor_modificar(SoftLibBO.ServicioWeb.autor_modificarRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/autor_modificarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/autor_modificarResponse")]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.autor_modificarResponse> autor_modificarAsync(SoftLibBO.ServicioWeb.autor_modificarRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/autor_insertarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/autor_insertarResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftLibBO.ServicioWeb.autor_insertarResponse autor_insertar(SoftLibBO.ServicioWeb.autor_insertarRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/autor_insertarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/autor_insertarResponse")]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.autor_insertarResponse> autor_insertarAsync(SoftLibBO.ServicioWeb.autor_insertarRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/autor_obtenerPorIdRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/autor_obtenerPorIdResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftLibBO.ServicioWeb.autor_obtenerPorIdResponse autor_obtenerPorId(SoftLibBO.ServicioWeb.autor_obtenerPorIdRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/autor_obtenerPorIdRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/autor_obtenerPorIdResponse")]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.autor_obtenerPorIdResponse> autor_obtenerPorIdAsync(SoftLibBO.ServicioWeb.autor_obtenerPorIdRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/autor_eliminarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/autor_eliminarResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftLibBO.ServicioWeb.autor_eliminarResponse autor_eliminar(SoftLibBO.ServicioWeb.autor_eliminarRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/autor_eliminarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/autor_eliminarResponse")]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.autor_eliminarResponse> autor_eliminarAsync(SoftLibBO.ServicioWeb.autor_eliminarRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_modificarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_modificarResponse")]
@@ -312,14 +351,60 @@ namespace SoftLibBO.ServicioWeb {
         System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.cliente_modificarResponse> cliente_modificarAsync(SoftLibBO.ServicioWeb.cliente_modificarRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_insertarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_insertarResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_eliminarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_eliminarResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftLibBO.ServicioWeb.cliente_insertarResponse cliente_insertar(SoftLibBO.ServicioWeb.cliente_insertarRequest request);
+        SoftLibBO.ServicioWeb.cliente_eliminarResponse cliente_eliminar(SoftLibBO.ServicioWeb.cliente_eliminarRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_insertarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_insertarResponse")]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.cliente_insertarResponse> cliente_insertarAsync(SoftLibBO.ServicioWeb.cliente_insertarRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_eliminarRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_eliminarResponse")]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.cliente_eliminarResponse> cliente_eliminarAsync(SoftLibBO.ServicioWeb.cliente_eliminarRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/autor_listarTodosRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/autor_listarTodosResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(persona))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftLibBO.ServicioWeb.autor_listarTodosResponse autor_listarTodos(SoftLibBO.ServicioWeb.autor_listarTodosRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softlib.pucp.edu.pe/ServicioWS/autor_listarTodosRequest", ReplyAction="http://services.softlib.pucp.edu.pe/ServicioWS/autor_listarTodosResponse")]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.autor_listarTodosResponse> autor_listarTodosAsync(SoftLibBO.ServicioWeb.autor_listarTodosRequest request);
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="otrosRecursos_eliminar", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class otrosRecursos_eliminarRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idOtroRecurso;
+        
+        public otrosRecursos_eliminarRequest() {
+        }
+        
+        public otrosRecursos_eliminarRequest(int idOtroRecurso) {
+            this.idOtroRecurso = idOtroRecurso;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="otrosRecursos_eliminarResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class otrosRecursos_eliminarResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public otrosRecursos_eliminarResponse() {
+        }
+        
+        public otrosRecursos_eliminarResponse(int @return) {
+            this.@return = @return;
+        }
     }
     
     /// <remarks/>
@@ -1320,63 +1405,70 @@ namespace SoftLibBO.ServicioWeb {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="cliente_obtenerPorId", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class cliente_obtenerPorIdRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="otrosRecursos_insertar", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class otrosRecursos_insertarRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idCliente;
+        public string nombre;
         
-        public cliente_obtenerPorIdRequest() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public double peso;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public double alto;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public double ancho;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public double precio;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftLibBO.ServicioWeb.unidadMedida unidadMedida;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute("foto", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true)]
+        public System.Nullable<sbyte>[] foto;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=7)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string caracteristica;
+        
+        public otrosRecursos_insertarRequest() {
         }
         
-        public cliente_obtenerPorIdRequest(int idCliente) {
-            this.idCliente = idCliente;
+        public otrosRecursos_insertarRequest(string nombre, double peso, double alto, double ancho, double precio, SoftLibBO.ServicioWeb.unidadMedida unidadMedida, System.Nullable<sbyte>[] foto, string caracteristica) {
+            this.nombre = nombre;
+            this.peso = peso;
+            this.alto = alto;
+            this.ancho = ancho;
+            this.precio = precio;
+            this.unidadMedida = unidadMedida;
+            this.foto = foto;
+            this.caracteristica = caracteristica;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="cliente_obtenerPorIdResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class cliente_obtenerPorIdResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="otrosRecursos_insertarResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class otrosRecursos_insertarResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftLibBO.ServicioWeb.cliente @return;
+        public int @return;
         
-        public cliente_obtenerPorIdResponse() {
+        public otrosRecursos_insertarResponse() {
         }
         
-        public cliente_obtenerPorIdResponse(SoftLibBO.ServicioWeb.cliente @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="recurso_listarTodos", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class recurso_listarTodosRequest {
-        
-        public recurso_listarTodosRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="recurso_listarTodosResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class recurso_listarTodosResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftLibBO.ServicioWeb.recurso[] @return;
-        
-        public recurso_listarTodosResponse() {
-        }
-        
-        public recurso_listarTodosResponse(SoftLibBO.ServicioWeb.recurso[] @return) {
+        public otrosRecursos_insertarResponse(int @return) {
             this.@return = @return;
         }
     }
@@ -1412,55 +1504,27 @@ namespace SoftLibBO.ServicioWeb {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="otrosRecursos_mostrarDestacado", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class otrosRecursos_mostrarDestacadoRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="libro_mostrarDestacado", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class libro_mostrarDestacadoRequest {
         
-        public otrosRecursos_mostrarDestacadoRequest() {
+        public libro_mostrarDestacadoRequest() {
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="otrosRecursos_mostrarDestacadoResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class otrosRecursos_mostrarDestacadoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftLibBO.ServicioWeb.otroRecurso[] @return;
-        
-        public otrosRecursos_mostrarDestacadoResponse() {
-        }
-        
-        public otrosRecursos_mostrarDestacadoResponse(SoftLibBO.ServicioWeb.otroRecurso[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="libro_listarTodos", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class libro_listarTodosRequest {
-        
-        public libro_listarTodosRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="libro_listarTodosResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class libro_listarTodosResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="libro_mostrarDestacadoResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class libro_mostrarDestacadoResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SoftLibBO.ServicioWeb.libro[] @return;
         
-        public libro_listarTodosResponse() {
+        public libro_mostrarDestacadoResponse() {
         }
         
-        public libro_listarTodosResponse(SoftLibBO.ServicioWeb.libro[] @return) {
+        public libro_mostrarDestacadoResponse(SoftLibBO.ServicioWeb.libro[] @return) {
             this.@return = @return;
         }
     }
@@ -1468,135 +1532,35 @@ namespace SoftLibBO.ServicioWeb {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="buscarClientes", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class buscarClientesRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="recurso_obtenerPorId", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class recurso_obtenerPorIdRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string nombre;
+        public int idRecurso;
         
-        public buscarClientesRequest() {
+        public recurso_obtenerPorIdRequest() {
         }
         
-        public buscarClientesRequest(string nombre) {
-            this.nombre = nombre;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="buscarClientesResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class buscarClientesResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftLibBO.ServicioWeb.cliente[] @return;
-        
-        public buscarClientesResponse() {
-        }
-        
-        public buscarClientesResponse(SoftLibBO.ServicioWeb.cliente[] @return) {
-            this.@return = @return;
+        public recurso_obtenerPorIdRequest(int idRecurso) {
+            this.idRecurso = idRecurso;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="autor_listarTodos", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class autor_listarTodosRequest {
-        
-        public autor_listarTodosRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="autor_listarTodosResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class autor_listarTodosResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftLibBO.ServicioWeb.autor[] @return;
-        
-        public autor_listarTodosResponse() {
-        }
-        
-        public autor_listarTodosResponse(SoftLibBO.ServicioWeb.autor[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="buscarLibros", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class buscarLibrosRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="recurso_obtenerPorIdResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class recurso_obtenerPorIdResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string nombre;
+        public SoftLibBO.ServicioWeb.recurso @return;
         
-        public buscarLibrosRequest() {
+        public recurso_obtenerPorIdResponse() {
         }
         
-        public buscarLibrosRequest(string nombre) {
-            this.nombre = nombre;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="buscarLibrosResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class buscarLibrosResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftLibBO.ServicioWeb.libro[] @return;
-        
-        public buscarLibrosResponse() {
-        }
-        
-        public buscarLibrosResponse(SoftLibBO.ServicioWeb.libro[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="cliente_eliminar", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class cliente_eliminarRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idCliente;
-        
-        public cliente_eliminarRequest() {
-        }
-        
-        public cliente_eliminarRequest(int idCliente) {
-            this.idCliente = idCliente;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="cliente_eliminarResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class cliente_eliminarResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public cliente_eliminarResponse() {
-        }
-        
-        public cliente_eliminarResponse(int @return) {
+        public recurso_obtenerPorIdResponse(SoftLibBO.ServicioWeb.recurso @return) {
             this.@return = @return;
         }
     }
@@ -1661,42 +1625,6 @@ namespace SoftLibBO.ServicioWeb {
         }
         
         public otrosRecursos_obtenerPorIdResponse(SoftLibBO.ServicioWeb.otroRecurso @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="recurso_obtenerPorId", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class recurso_obtenerPorIdRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idRecurso;
-        
-        public recurso_obtenerPorIdRequest() {
-        }
-        
-        public recurso_obtenerPorIdRequest(int idRecurso) {
-            this.idRecurso = idRecurso;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="recurso_obtenerPorIdResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class recurso_obtenerPorIdResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftLibBO.ServicioWeb.recurso @return;
-        
-        public recurso_obtenerPorIdResponse() {
-        }
-        
-        public recurso_obtenerPorIdResponse(SoftLibBO.ServicioWeb.recurso @return) {
             this.@return = @return;
         }
     }
@@ -1790,27 +1718,27 @@ namespace SoftLibBO.ServicioWeb {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="libro_mostrarDestacado", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class libro_mostrarDestacadoRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="recurso_listarTodos", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class recurso_listarTodosRequest {
         
-        public libro_mostrarDestacadoRequest() {
+        public recurso_listarTodosRequest() {
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="libro_mostrarDestacadoResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class libro_mostrarDestacadoResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="recurso_listarTodosResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class recurso_listarTodosResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftLibBO.ServicioWeb.libro[] @return;
+        public SoftLibBO.ServicioWeb.recurso[] @return;
         
-        public libro_mostrarDestacadoResponse() {
+        public recurso_listarTodosResponse() {
         }
         
-        public libro_mostrarDestacadoResponse(SoftLibBO.ServicioWeb.libro[] @return) {
+        public recurso_listarTodosResponse(SoftLibBO.ServicioWeb.recurso[] @return) {
             this.@return = @return;
         }
     }
@@ -1818,70 +1746,35 @@ namespace SoftLibBO.ServicioWeb {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="otrosRecursos_insertar", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class otrosRecursos_insertarRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="cliente_obtenerPorId", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class cliente_obtenerPorIdRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string nombre;
+        public int idCliente;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public double peso;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public double alto;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=3)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public double ancho;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=4)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public double precio;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=5)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftLibBO.ServicioWeb.unidadMedida unidadMedida;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=6)]
-        [System.Xml.Serialization.XmlElementAttribute("foto", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true)]
-        public System.Nullable<sbyte>[] foto;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=7)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string caracteristica;
-        
-        public otrosRecursos_insertarRequest() {
+        public cliente_obtenerPorIdRequest() {
         }
         
-        public otrosRecursos_insertarRequest(string nombre, double peso, double alto, double ancho, double precio, SoftLibBO.ServicioWeb.unidadMedida unidadMedida, System.Nullable<sbyte>[] foto, string caracteristica) {
-            this.nombre = nombre;
-            this.peso = peso;
-            this.alto = alto;
-            this.ancho = ancho;
-            this.precio = precio;
-            this.unidadMedida = unidadMedida;
-            this.foto = foto;
-            this.caracteristica = caracteristica;
+        public cliente_obtenerPorIdRequest(int idCliente) {
+            this.idCliente = idCliente;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="otrosRecursos_insertarResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class otrosRecursos_insertarResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="cliente_obtenerPorIdResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class cliente_obtenerPorIdResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
+        public SoftLibBO.ServicioWeb.cliente @return;
         
-        public otrosRecursos_insertarResponse() {
+        public cliente_obtenerPorIdResponse() {
         }
         
-        public otrosRecursos_insertarResponse(int @return) {
+        public cliente_obtenerPorIdResponse(SoftLibBO.ServicioWeb.cliente @return) {
             this.@return = @return;
         }
     }
@@ -1889,17 +1782,17 @@ namespace SoftLibBO.ServicioWeb {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="otrosRecursos_eliminar", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class otrosRecursos_eliminarRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="existeOtroRecurso", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class existeOtroRecursoRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public int idOtroRecurso;
         
-        public otrosRecursos_eliminarRequest() {
+        public existeOtroRecursoRequest() {
         }
         
-        public otrosRecursos_eliminarRequest(int idOtroRecurso) {
+        public existeOtroRecursoRequest(int idOtroRecurso) {
             this.idOtroRecurso = idOtroRecurso;
         }
     }
@@ -1907,17 +1800,17 @@ namespace SoftLibBO.ServicioWeb {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="otrosRecursos_eliminarResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class otrosRecursos_eliminarResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="existeOtroRecursoResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class existeOtroRecursoResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
+        public bool @return;
         
-        public otrosRecursos_eliminarResponse() {
+        public existeOtroRecursoResponse() {
         }
         
-        public otrosRecursos_eliminarResponse(int @return) {
+        public existeOtroRecursoResponse(bool @return) {
             this.@return = @return;
         }
     }
@@ -1925,17 +1818,53 @@ namespace SoftLibBO.ServicioWeb {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="libro_eliminar", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class libro_eliminarRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="buscarAutores", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class buscarAutoresRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string arg0;
+        
+        public buscarAutoresRequest() {
+        }
+        
+        public buscarAutoresRequest(string arg0) {
+            this.arg0 = arg0;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="buscarAutoresResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class buscarAutoresResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftLibBO.ServicioWeb.autor[] @return;
+        
+        public buscarAutoresResponse() {
+        }
+        
+        public buscarAutoresResponse(SoftLibBO.ServicioWeb.autor[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="existeLibro", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class existeLibroRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public int idLibro;
         
-        public libro_eliminarRequest() {
+        public existeLibroRequest() {
         }
         
-        public libro_eliminarRequest(int idLibro) {
+        public existeLibroRequest(int idLibro) {
             this.idLibro = idLibro;
         }
     }
@@ -1943,17 +1872,53 @@ namespace SoftLibBO.ServicioWeb {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="libro_eliminarResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class libro_eliminarResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="existeLibroResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class existeLibroResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
+        public bool @return;
         
-        public libro_eliminarResponse() {
+        public existeLibroResponse() {
         }
         
-        public libro_eliminarResponse(int @return) {
+        public existeLibroResponse(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="buscarClientes", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class buscarClientesRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string nombre;
+        
+        public buscarClientesRequest() {
+        }
+        
+        public buscarClientesRequest(string nombre) {
+            this.nombre = nombre;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="buscarClientesResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class buscarClientesResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftLibBO.ServicioWeb.cliente[] @return;
+        
+        public buscarClientesResponse() {
+        }
+        
+        public buscarClientesResponse(SoftLibBO.ServicioWeb.cliente[] @return) {
             this.@return = @return;
         }
     }
@@ -1990,6 +1955,118 @@ namespace SoftLibBO.ServicioWeb {
         }
         
         public existeClienteResponse(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="buscarLibros", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class buscarLibrosRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string nombre;
+        
+        public buscarLibrosRequest() {
+        }
+        
+        public buscarLibrosRequest(string nombre) {
+            this.nombre = nombre;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="buscarLibrosResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class buscarLibrosResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftLibBO.ServicioWeb.libro[] @return;
+        
+        public buscarLibrosResponse() {
+        }
+        
+        public buscarLibrosResponse(SoftLibBO.ServicioWeb.libro[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="recurso_insertar", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class recurso_insertarRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string nombre;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public double peso;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public double alto;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public double ancho;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public double precio;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool activo;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool disponible;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=7)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftLibBO.ServicioWeb.unidadMedida unidadMedida;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=8)]
+        [System.Xml.Serialization.XmlElementAttribute("foto", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true)]
+        public System.Nullable<sbyte>[] foto;
+        
+        public recurso_insertarRequest() {
+        }
+        
+        public recurso_insertarRequest(string nombre, double peso, double alto, double ancho, double precio, bool activo, bool disponible, SoftLibBO.ServicioWeb.unidadMedida unidadMedida, System.Nullable<sbyte>[] foto) {
+            this.nombre = nombre;
+            this.peso = peso;
+            this.alto = alto;
+            this.ancho = ancho;
+            this.precio = precio;
+            this.activo = activo;
+            this.disponible = disponible;
+            this.unidadMedida = unidadMedida;
+            this.foto = foto;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="recurso_insertarResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class recurso_insertarResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public recurso_insertarResponse() {
+        }
+        
+        public recurso_insertarResponse(int @return) {
             this.@return = @return;
         }
     }
@@ -2071,159 +2148,6 @@ namespace SoftLibBO.ServicioWeb {
         }
         
         public recurso_modificarResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="existeRecurso", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class existeRecursoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string nombre;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public double precio;
-        
-        public existeRecursoRequest() {
-        }
-        
-        public existeRecursoRequest(string nombre, double precio) {
-            this.nombre = nombre;
-            this.precio = precio;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="existeRecursoResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class existeRecursoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public existeRecursoResponse() {
-        }
-        
-        public existeRecursoResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="existeOtroRecurso", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class existeOtroRecursoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idOtroRecurso;
-        
-        public existeOtroRecursoRequest() {
-        }
-        
-        public existeOtroRecursoRequest(int idOtroRecurso) {
-            this.idOtroRecurso = idOtroRecurso;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="existeOtroRecursoResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class existeOtroRecursoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool @return;
-        
-        public existeOtroRecursoResponse() {
-        }
-        
-        public existeOtroRecursoResponse(bool @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="recurso_insertar", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class recurso_insertarRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string nombre;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public double peso;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public double alto;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=3)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public double ancho;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=4)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public double precio;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=5)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool activo;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=6)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool disponible;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=7)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftLibBO.ServicioWeb.unidadMedida unidadMedida;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=8)]
-        [System.Xml.Serialization.XmlElementAttribute("foto", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true)]
-        public System.Nullable<sbyte>[] foto;
-        
-        public recurso_insertarRequest() {
-        }
-        
-        public recurso_insertarRequest(string nombre, double peso, double alto, double ancho, double precio, bool activo, bool disponible, SoftLibBO.ServicioWeb.unidadMedida unidadMedida, System.Nullable<sbyte>[] foto) {
-            this.nombre = nombre;
-            this.peso = peso;
-            this.alto = alto;
-            this.ancho = ancho;
-            this.precio = precio;
-            this.activo = activo;
-            this.disponible = disponible;
-            this.unidadMedida = unidadMedida;
-            this.foto = foto;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="recurso_insertarResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class recurso_insertarResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public recurso_insertarResponse() {
-        }
-        
-        public recurso_insertarResponse(int @return) {
             this.@return = @return;
         }
     }
@@ -2363,6 +2287,147 @@ namespace SoftLibBO.ServicioWeb {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="libro_eliminar", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class libro_eliminarRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idLibro;
+        
+        public libro_eliminarRequest() {
+        }
+        
+        public libro_eliminarRequest(int idLibro) {
+            this.idLibro = idLibro;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="libro_eliminarResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class libro_eliminarResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public libro_eliminarResponse() {
+        }
+        
+        public libro_eliminarResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="existeRecurso", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class existeRecursoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string nombre;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public double precio;
+        
+        public existeRecursoRequest() {
+        }
+        
+        public existeRecursoRequest(string nombre, double precio) {
+            this.nombre = nombre;
+            this.precio = precio;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="existeRecursoResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class existeRecursoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public existeRecursoResponse() {
+        }
+        
+        public existeRecursoResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="libro_obtenerPorId", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class libro_obtenerPorIdRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idLibro;
+        
+        public libro_obtenerPorIdRequest() {
+        }
+        
+        public libro_obtenerPorIdRequest(int idLibro) {
+            this.idLibro = idLibro;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="libro_obtenerPorIdResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class libro_obtenerPorIdResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftLibBO.ServicioWeb.libro @return;
+        
+        public libro_obtenerPorIdResponse() {
+        }
+        
+        public libro_obtenerPorIdResponse(SoftLibBO.ServicioWeb.libro @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="libro_listarTodos", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class libro_listarTodosRequest {
+        
+        public libro_listarTodosRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="libro_listarTodosResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class libro_listarTodosResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftLibBO.ServicioWeb.libro[] @return;
+        
+        public libro_listarTodosResponse() {
+        }
+        
+        public libro_listarTodosResponse(SoftLibBO.ServicioWeb.libro[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="libro_modificar", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
     public partial class libro_modificarRequest {
         
@@ -2490,35 +2555,70 @@ namespace SoftLibBO.ServicioWeb {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="libro_obtenerPorId", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class libro_obtenerPorIdRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="cliente_insertar", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class cliente_insertarRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idLibro;
+        public string nombre;
         
-        public libro_obtenerPorIdRequest() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string apellidoPaterno;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string apellidoMaterno;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string nacionalidad;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string numeroDocumento;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftLibBO.ServicioWeb.tipoDocumento tipoDocumento;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute("perfiles", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftLibBO.ServicioWeb.perfil[] perfiles;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=7)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string direccion;
+        
+        public cliente_insertarRequest() {
         }
         
-        public libro_obtenerPorIdRequest(int idLibro) {
-            this.idLibro = idLibro;
+        public cliente_insertarRequest(string nombre, string apellidoPaterno, string apellidoMaterno, string nacionalidad, string numeroDocumento, SoftLibBO.ServicioWeb.tipoDocumento tipoDocumento, SoftLibBO.ServicioWeb.perfil[] perfiles, string direccion) {
+            this.nombre = nombre;
+            this.apellidoPaterno = apellidoPaterno;
+            this.apellidoMaterno = apellidoMaterno;
+            this.nacionalidad = nacionalidad;
+            this.numeroDocumento = numeroDocumento;
+            this.tipoDocumento = tipoDocumento;
+            this.perfiles = perfiles;
+            this.direccion = direccion;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="libro_obtenerPorIdResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class libro_obtenerPorIdResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="cliente_insertarResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class cliente_insertarResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftLibBO.ServicioWeb.libro @return;
+        public int @return;
         
-        public libro_obtenerPorIdResponse() {
+        public cliente_insertarResponse() {
         }
         
-        public libro_obtenerPorIdResponse(SoftLibBO.ServicioWeb.libro @return) {
+        public cliente_insertarResponse(int @return) {
             this.@return = @return;
         }
     }
@@ -2526,35 +2626,191 @@ namespace SoftLibBO.ServicioWeb {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="existeLibro", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class existeLibroRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="otrosRecursos_mostrarDestacado", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class otrosRecursos_mostrarDestacadoRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idLibro;
-        
-        public existeLibroRequest() {
-        }
-        
-        public existeLibroRequest(int idLibro) {
-            this.idLibro = idLibro;
+        public otrosRecursos_mostrarDestacadoRequest() {
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="existeLibroResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class existeLibroResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="otrosRecursos_mostrarDestacadoResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class otrosRecursos_mostrarDestacadoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftLibBO.ServicioWeb.otroRecurso[] @return;
+        
+        public otrosRecursos_mostrarDestacadoResponse() {
+        }
+        
+        public otrosRecursos_mostrarDestacadoResponse(SoftLibBO.ServicioWeb.otroRecurso[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="autor_modificar", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class autor_modificarRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool @return;
+        public int idAutor;
         
-        public existeLibroResponse() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string nombre;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string nacionalidad;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool activo;
+        
+        public autor_modificarRequest() {
         }
         
-        public existeLibroResponse(bool @return) {
+        public autor_modificarRequest(int idAutor, string nombre, string nacionalidad, bool activo) {
+            this.idAutor = idAutor;
+            this.nombre = nombre;
+            this.nacionalidad = nacionalidad;
+            this.activo = activo;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="autor_modificarResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class autor_modificarResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public autor_modificarResponse() {
+        }
+        
+        public autor_modificarResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="autor_insertar", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class autor_insertarRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string nombre;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string nacionalidad;
+        
+        public autor_insertarRequest() {
+        }
+        
+        public autor_insertarRequest(string nombre, string nacionalidad) {
+            this.nombre = nombre;
+            this.nacionalidad = nacionalidad;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="autor_insertarResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class autor_insertarResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public autor_insertarResponse() {
+        }
+        
+        public autor_insertarResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="autor_obtenerPorId", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class autor_obtenerPorIdRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idAutor;
+        
+        public autor_obtenerPorIdRequest() {
+        }
+        
+        public autor_obtenerPorIdRequest(int idAutor) {
+            this.idAutor = idAutor;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="autor_obtenerPorIdResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class autor_obtenerPorIdResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftLibBO.ServicioWeb.autor @return;
+        
+        public autor_obtenerPorIdResponse() {
+        }
+        
+        public autor_obtenerPorIdResponse(SoftLibBO.ServicioWeb.autor @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="autor_eliminar", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class autor_eliminarRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int activo;
+        
+        public autor_eliminarRequest() {
+        }
+        
+        public autor_eliminarRequest(int activo) {
+            this.activo = activo;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="autor_eliminarResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class autor_eliminarResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public autor_eliminarResponse() {
+        }
+        
+        public autor_eliminarResponse(int @return) {
             this.@return = @return;
         }
     }
@@ -2638,70 +2894,63 @@ namespace SoftLibBO.ServicioWeb {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="cliente_insertar", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class cliente_insertarRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="cliente_eliminar", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class cliente_eliminarRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string nombre;
+        public int idCliente;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string apellidoPaterno;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string apellidoMaterno;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=3)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string nacionalidad;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=4)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string numeroDocumento;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=5)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftLibBO.ServicioWeb.tipoDocumento tipoDocumento;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=6)]
-        [System.Xml.Serialization.XmlElementAttribute("perfiles", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftLibBO.ServicioWeb.perfil[] perfiles;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=7)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string direccion;
-        
-        public cliente_insertarRequest() {
+        public cliente_eliminarRequest() {
         }
         
-        public cliente_insertarRequest(string nombre, string apellidoPaterno, string apellidoMaterno, string nacionalidad, string numeroDocumento, SoftLibBO.ServicioWeb.tipoDocumento tipoDocumento, SoftLibBO.ServicioWeb.perfil[] perfiles, string direccion) {
-            this.nombre = nombre;
-            this.apellidoPaterno = apellidoPaterno;
-            this.apellidoMaterno = apellidoMaterno;
-            this.nacionalidad = nacionalidad;
-            this.numeroDocumento = numeroDocumento;
-            this.tipoDocumento = tipoDocumento;
-            this.perfiles = perfiles;
-            this.direccion = direccion;
+        public cliente_eliminarRequest(int idCliente) {
+            this.idCliente = idCliente;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="cliente_insertarResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
-    public partial class cliente_insertarResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="cliente_eliminarResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class cliente_eliminarResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public int @return;
         
-        public cliente_insertarResponse() {
+        public cliente_eliminarResponse() {
         }
         
-        public cliente_insertarResponse(int @return) {
+        public cliente_eliminarResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="autor_listarTodos", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class autor_listarTodosRequest {
+        
+        public autor_listarTodosRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="autor_listarTodosResponse", WrapperNamespace="http://services.softlib.pucp.edu.pe/", IsWrapped=true)]
+    public partial class autor_listarTodosResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softlib.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftLibBO.ServicioWeb.autor[] @return;
+        
+        public autor_listarTodosResponse() {
+        }
+        
+        public autor_listarTodosResponse(SoftLibBO.ServicioWeb.autor[] @return) {
             this.@return = @return;
         }
     }
@@ -2734,6 +2983,29 @@ namespace SoftLibBO.ServicioWeb {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftLibBO.ServicioWeb.otrosRecursos_eliminarResponse SoftLibBO.ServicioWeb.ServicioWS.otrosRecursos_eliminar(SoftLibBO.ServicioWeb.otrosRecursos_eliminarRequest request) {
+            return base.Channel.otrosRecursos_eliminar(request);
+        }
+        
+        public int otrosRecursos_eliminar(int idOtroRecurso) {
+            SoftLibBO.ServicioWeb.otrosRecursos_eliminarRequest inValue = new SoftLibBO.ServicioWeb.otrosRecursos_eliminarRequest();
+            inValue.idOtroRecurso = idOtroRecurso;
+            SoftLibBO.ServicioWeb.otrosRecursos_eliminarResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).otrosRecursos_eliminar(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.otrosRecursos_eliminarResponse> SoftLibBO.ServicioWeb.ServicioWS.otrosRecursos_eliminarAsync(SoftLibBO.ServicioWeb.otrosRecursos_eliminarRequest request) {
+            return base.Channel.otrosRecursos_eliminarAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.otrosRecursos_eliminarResponse> otrosRecursos_eliminarAsync(int idOtroRecurso) {
+            SoftLibBO.ServicioWeb.otrosRecursos_eliminarRequest inValue = new SoftLibBO.ServicioWeb.otrosRecursos_eliminarRequest();
+            inValue.idOtroRecurso = idOtroRecurso;
+            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).otrosRecursos_eliminarAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         SoftLibBO.ServicioWeb.buscarOtrosRecursosResponse SoftLibBO.ServicioWeb.ServicioWS.buscarOtrosRecursos(SoftLibBO.ServicioWeb.buscarOtrosRecursosRequest request) {
             return base.Channel.buscarOtrosRecursos(request);
         }
@@ -2757,47 +3029,40 @@ namespace SoftLibBO.ServicioWeb {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftLibBO.ServicioWeb.cliente_obtenerPorIdResponse SoftLibBO.ServicioWeb.ServicioWS.cliente_obtenerPorId(SoftLibBO.ServicioWeb.cliente_obtenerPorIdRequest request) {
-            return base.Channel.cliente_obtenerPorId(request);
+        SoftLibBO.ServicioWeb.otrosRecursos_insertarResponse SoftLibBO.ServicioWeb.ServicioWS.otrosRecursos_insertar(SoftLibBO.ServicioWeb.otrosRecursos_insertarRequest request) {
+            return base.Channel.otrosRecursos_insertar(request);
         }
         
-        public SoftLibBO.ServicioWeb.cliente cliente_obtenerPorId(int idCliente) {
-            SoftLibBO.ServicioWeb.cliente_obtenerPorIdRequest inValue = new SoftLibBO.ServicioWeb.cliente_obtenerPorIdRequest();
-            inValue.idCliente = idCliente;
-            SoftLibBO.ServicioWeb.cliente_obtenerPorIdResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).cliente_obtenerPorId(inValue);
+        public int otrosRecursos_insertar(string nombre, double peso, double alto, double ancho, double precio, SoftLibBO.ServicioWeb.unidadMedida unidadMedida, System.Nullable<sbyte>[] foto, string caracteristica) {
+            SoftLibBO.ServicioWeb.otrosRecursos_insertarRequest inValue = new SoftLibBO.ServicioWeb.otrosRecursos_insertarRequest();
+            inValue.nombre = nombre;
+            inValue.peso = peso;
+            inValue.alto = alto;
+            inValue.ancho = ancho;
+            inValue.precio = precio;
+            inValue.unidadMedida = unidadMedida;
+            inValue.foto = foto;
+            inValue.caracteristica = caracteristica;
+            SoftLibBO.ServicioWeb.otrosRecursos_insertarResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).otrosRecursos_insertar(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.cliente_obtenerPorIdResponse> SoftLibBO.ServicioWeb.ServicioWS.cliente_obtenerPorIdAsync(SoftLibBO.ServicioWeb.cliente_obtenerPorIdRequest request) {
-            return base.Channel.cliente_obtenerPorIdAsync(request);
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.otrosRecursos_insertarResponse> SoftLibBO.ServicioWeb.ServicioWS.otrosRecursos_insertarAsync(SoftLibBO.ServicioWeb.otrosRecursos_insertarRequest request) {
+            return base.Channel.otrosRecursos_insertarAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.cliente_obtenerPorIdResponse> cliente_obtenerPorIdAsync(int idCliente) {
-            SoftLibBO.ServicioWeb.cliente_obtenerPorIdRequest inValue = new SoftLibBO.ServicioWeb.cliente_obtenerPorIdRequest();
-            inValue.idCliente = idCliente;
-            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).cliente_obtenerPorIdAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftLibBO.ServicioWeb.recurso_listarTodosResponse SoftLibBO.ServicioWeb.ServicioWS.recurso_listarTodos(SoftLibBO.ServicioWeb.recurso_listarTodosRequest request) {
-            return base.Channel.recurso_listarTodos(request);
-        }
-        
-        public SoftLibBO.ServicioWeb.recurso[] recurso_listarTodos() {
-            SoftLibBO.ServicioWeb.recurso_listarTodosRequest inValue = new SoftLibBO.ServicioWeb.recurso_listarTodosRequest();
-            SoftLibBO.ServicioWeb.recurso_listarTodosResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).recurso_listarTodos(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.recurso_listarTodosResponse> SoftLibBO.ServicioWeb.ServicioWS.recurso_listarTodosAsync(SoftLibBO.ServicioWeb.recurso_listarTodosRequest request) {
-            return base.Channel.recurso_listarTodosAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.recurso_listarTodosResponse> recurso_listarTodosAsync() {
-            SoftLibBO.ServicioWeb.recurso_listarTodosRequest inValue = new SoftLibBO.ServicioWeb.recurso_listarTodosRequest();
-            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).recurso_listarTodosAsync(inValue);
+        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.otrosRecursos_insertarResponse> otrosRecursos_insertarAsync(string nombre, double peso, double alto, double ancho, double precio, SoftLibBO.ServicioWeb.unidadMedida unidadMedida, System.Nullable<sbyte>[] foto, string caracteristica) {
+            SoftLibBO.ServicioWeb.otrosRecursos_insertarRequest inValue = new SoftLibBO.ServicioWeb.otrosRecursos_insertarRequest();
+            inValue.nombre = nombre;
+            inValue.peso = peso;
+            inValue.alto = alto;
+            inValue.ancho = ancho;
+            inValue.precio = precio;
+            inValue.unidadMedida = unidadMedida;
+            inValue.foto = foto;
+            inValue.caracteristica = caracteristica;
+            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).otrosRecursos_insertarAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -2822,135 +3087,47 @@ namespace SoftLibBO.ServicioWeb {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftLibBO.ServicioWeb.otrosRecursos_mostrarDestacadoResponse SoftLibBO.ServicioWeb.ServicioWS.otrosRecursos_mostrarDestacado(SoftLibBO.ServicioWeb.otrosRecursos_mostrarDestacadoRequest request) {
-            return base.Channel.otrosRecursos_mostrarDestacado(request);
+        SoftLibBO.ServicioWeb.libro_mostrarDestacadoResponse SoftLibBO.ServicioWeb.ServicioWS.libro_mostrarDestacado(SoftLibBO.ServicioWeb.libro_mostrarDestacadoRequest request) {
+            return base.Channel.libro_mostrarDestacado(request);
         }
         
-        public SoftLibBO.ServicioWeb.otroRecurso[] otrosRecursos_mostrarDestacado() {
-            SoftLibBO.ServicioWeb.otrosRecursos_mostrarDestacadoRequest inValue = new SoftLibBO.ServicioWeb.otrosRecursos_mostrarDestacadoRequest();
-            SoftLibBO.ServicioWeb.otrosRecursos_mostrarDestacadoResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).otrosRecursos_mostrarDestacado(inValue);
+        public SoftLibBO.ServicioWeb.libro[] libro_mostrarDestacado() {
+            SoftLibBO.ServicioWeb.libro_mostrarDestacadoRequest inValue = new SoftLibBO.ServicioWeb.libro_mostrarDestacadoRequest();
+            SoftLibBO.ServicioWeb.libro_mostrarDestacadoResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).libro_mostrarDestacado(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.otrosRecursos_mostrarDestacadoResponse> SoftLibBO.ServicioWeb.ServicioWS.otrosRecursos_mostrarDestacadoAsync(SoftLibBO.ServicioWeb.otrosRecursos_mostrarDestacadoRequest request) {
-            return base.Channel.otrosRecursos_mostrarDestacadoAsync(request);
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.libro_mostrarDestacadoResponse> SoftLibBO.ServicioWeb.ServicioWS.libro_mostrarDestacadoAsync(SoftLibBO.ServicioWeb.libro_mostrarDestacadoRequest request) {
+            return base.Channel.libro_mostrarDestacadoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.otrosRecursos_mostrarDestacadoResponse> otrosRecursos_mostrarDestacadoAsync() {
-            SoftLibBO.ServicioWeb.otrosRecursos_mostrarDestacadoRequest inValue = new SoftLibBO.ServicioWeb.otrosRecursos_mostrarDestacadoRequest();
-            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).otrosRecursos_mostrarDestacadoAsync(inValue);
+        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.libro_mostrarDestacadoResponse> libro_mostrarDestacadoAsync() {
+            SoftLibBO.ServicioWeb.libro_mostrarDestacadoRequest inValue = new SoftLibBO.ServicioWeb.libro_mostrarDestacadoRequest();
+            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).libro_mostrarDestacadoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftLibBO.ServicioWeb.libro_listarTodosResponse SoftLibBO.ServicioWeb.ServicioWS.libro_listarTodos(SoftLibBO.ServicioWeb.libro_listarTodosRequest request) {
-            return base.Channel.libro_listarTodos(request);
+        SoftLibBO.ServicioWeb.recurso_obtenerPorIdResponse SoftLibBO.ServicioWeb.ServicioWS.recurso_obtenerPorId(SoftLibBO.ServicioWeb.recurso_obtenerPorIdRequest request) {
+            return base.Channel.recurso_obtenerPorId(request);
         }
         
-        public SoftLibBO.ServicioWeb.libro[] libro_listarTodos() {
-            SoftLibBO.ServicioWeb.libro_listarTodosRequest inValue = new SoftLibBO.ServicioWeb.libro_listarTodosRequest();
-            SoftLibBO.ServicioWeb.libro_listarTodosResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).libro_listarTodos(inValue);
+        public SoftLibBO.ServicioWeb.recurso recurso_obtenerPorId(int idRecurso) {
+            SoftLibBO.ServicioWeb.recurso_obtenerPorIdRequest inValue = new SoftLibBO.ServicioWeb.recurso_obtenerPorIdRequest();
+            inValue.idRecurso = idRecurso;
+            SoftLibBO.ServicioWeb.recurso_obtenerPorIdResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).recurso_obtenerPorId(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.libro_listarTodosResponse> SoftLibBO.ServicioWeb.ServicioWS.libro_listarTodosAsync(SoftLibBO.ServicioWeb.libro_listarTodosRequest request) {
-            return base.Channel.libro_listarTodosAsync(request);
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.recurso_obtenerPorIdResponse> SoftLibBO.ServicioWeb.ServicioWS.recurso_obtenerPorIdAsync(SoftLibBO.ServicioWeb.recurso_obtenerPorIdRequest request) {
+            return base.Channel.recurso_obtenerPorIdAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.libro_listarTodosResponse> libro_listarTodosAsync() {
-            SoftLibBO.ServicioWeb.libro_listarTodosRequest inValue = new SoftLibBO.ServicioWeb.libro_listarTodosRequest();
-            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).libro_listarTodosAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftLibBO.ServicioWeb.buscarClientesResponse SoftLibBO.ServicioWeb.ServicioWS.buscarClientes(SoftLibBO.ServicioWeb.buscarClientesRequest request) {
-            return base.Channel.buscarClientes(request);
-        }
-        
-        public SoftLibBO.ServicioWeb.cliente[] buscarClientes(string nombre) {
-            SoftLibBO.ServicioWeb.buscarClientesRequest inValue = new SoftLibBO.ServicioWeb.buscarClientesRequest();
-            inValue.nombre = nombre;
-            SoftLibBO.ServicioWeb.buscarClientesResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).buscarClientes(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.buscarClientesResponse> SoftLibBO.ServicioWeb.ServicioWS.buscarClientesAsync(SoftLibBO.ServicioWeb.buscarClientesRequest request) {
-            return base.Channel.buscarClientesAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.buscarClientesResponse> buscarClientesAsync(string nombre) {
-            SoftLibBO.ServicioWeb.buscarClientesRequest inValue = new SoftLibBO.ServicioWeb.buscarClientesRequest();
-            inValue.nombre = nombre;
-            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).buscarClientesAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftLibBO.ServicioWeb.autor_listarTodosResponse SoftLibBO.ServicioWeb.ServicioWS.autor_listarTodos(SoftLibBO.ServicioWeb.autor_listarTodosRequest request) {
-            return base.Channel.autor_listarTodos(request);
-        }
-        
-        public SoftLibBO.ServicioWeb.autor[] autor_listarTodos() {
-            SoftLibBO.ServicioWeb.autor_listarTodosRequest inValue = new SoftLibBO.ServicioWeb.autor_listarTodosRequest();
-            SoftLibBO.ServicioWeb.autor_listarTodosResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).autor_listarTodos(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.autor_listarTodosResponse> SoftLibBO.ServicioWeb.ServicioWS.autor_listarTodosAsync(SoftLibBO.ServicioWeb.autor_listarTodosRequest request) {
-            return base.Channel.autor_listarTodosAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.autor_listarTodosResponse> autor_listarTodosAsync() {
-            SoftLibBO.ServicioWeb.autor_listarTodosRequest inValue = new SoftLibBO.ServicioWeb.autor_listarTodosRequest();
-            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).autor_listarTodosAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftLibBO.ServicioWeb.buscarLibrosResponse SoftLibBO.ServicioWeb.ServicioWS.buscarLibros(SoftLibBO.ServicioWeb.buscarLibrosRequest request) {
-            return base.Channel.buscarLibros(request);
-        }
-        
-        public SoftLibBO.ServicioWeb.libro[] buscarLibros(string nombre) {
-            SoftLibBO.ServicioWeb.buscarLibrosRequest inValue = new SoftLibBO.ServicioWeb.buscarLibrosRequest();
-            inValue.nombre = nombre;
-            SoftLibBO.ServicioWeb.buscarLibrosResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).buscarLibros(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.buscarLibrosResponse> SoftLibBO.ServicioWeb.ServicioWS.buscarLibrosAsync(SoftLibBO.ServicioWeb.buscarLibrosRequest request) {
-            return base.Channel.buscarLibrosAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.buscarLibrosResponse> buscarLibrosAsync(string nombre) {
-            SoftLibBO.ServicioWeb.buscarLibrosRequest inValue = new SoftLibBO.ServicioWeb.buscarLibrosRequest();
-            inValue.nombre = nombre;
-            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).buscarLibrosAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftLibBO.ServicioWeb.cliente_eliminarResponse SoftLibBO.ServicioWeb.ServicioWS.cliente_eliminar(SoftLibBO.ServicioWeb.cliente_eliminarRequest request) {
-            return base.Channel.cliente_eliminar(request);
-        }
-        
-        public int cliente_eliminar(int idCliente) {
-            SoftLibBO.ServicioWeb.cliente_eliminarRequest inValue = new SoftLibBO.ServicioWeb.cliente_eliminarRequest();
-            inValue.idCliente = idCliente;
-            SoftLibBO.ServicioWeb.cliente_eliminarResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).cliente_eliminar(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.cliente_eliminarResponse> SoftLibBO.ServicioWeb.ServicioWS.cliente_eliminarAsync(SoftLibBO.ServicioWeb.cliente_eliminarRequest request) {
-            return base.Channel.cliente_eliminarAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.cliente_eliminarResponse> cliente_eliminarAsync(int idCliente) {
-            SoftLibBO.ServicioWeb.cliente_eliminarRequest inValue = new SoftLibBO.ServicioWeb.cliente_eliminarRequest();
-            inValue.idCliente = idCliente;
-            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).cliente_eliminarAsync(inValue);
+        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.recurso_obtenerPorIdResponse> recurso_obtenerPorIdAsync(int idRecurso) {
+            SoftLibBO.ServicioWeb.recurso_obtenerPorIdRequest inValue = new SoftLibBO.ServicioWeb.recurso_obtenerPorIdRequest();
+            inValue.idRecurso = idRecurso;
+            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).recurso_obtenerPorIdAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -2998,29 +3175,6 @@ namespace SoftLibBO.ServicioWeb {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftLibBO.ServicioWeb.recurso_obtenerPorIdResponse SoftLibBO.ServicioWeb.ServicioWS.recurso_obtenerPorId(SoftLibBO.ServicioWeb.recurso_obtenerPorIdRequest request) {
-            return base.Channel.recurso_obtenerPorId(request);
-        }
-        
-        public SoftLibBO.ServicioWeb.recurso recurso_obtenerPorId(int idRecurso) {
-            SoftLibBO.ServicioWeb.recurso_obtenerPorIdRequest inValue = new SoftLibBO.ServicioWeb.recurso_obtenerPorIdRequest();
-            inValue.idRecurso = idRecurso;
-            SoftLibBO.ServicioWeb.recurso_obtenerPorIdResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).recurso_obtenerPorId(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.recurso_obtenerPorIdResponse> SoftLibBO.ServicioWeb.ServicioWS.recurso_obtenerPorIdAsync(SoftLibBO.ServicioWeb.recurso_obtenerPorIdRequest request) {
-            return base.Channel.recurso_obtenerPorIdAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.recurso_obtenerPorIdResponse> recurso_obtenerPorIdAsync(int idRecurso) {
-            SoftLibBO.ServicioWeb.recurso_obtenerPorIdRequest inValue = new SoftLibBO.ServicioWeb.recurso_obtenerPorIdRequest();
-            inValue.idRecurso = idRecurso;
-            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).recurso_obtenerPorIdAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         SoftLibBO.ServicioWeb.otrosRecursos_modificarResponse SoftLibBO.ServicioWeb.ServicioWS.otrosRecursos_modificar(SoftLibBO.ServicioWeb.otrosRecursos_modificarRequest request) {
             return base.Channel.otrosRecursos_modificar(request);
         }
@@ -3064,107 +3218,139 @@ namespace SoftLibBO.ServicioWeb {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftLibBO.ServicioWeb.libro_mostrarDestacadoResponse SoftLibBO.ServicioWeb.ServicioWS.libro_mostrarDestacado(SoftLibBO.ServicioWeb.libro_mostrarDestacadoRequest request) {
-            return base.Channel.libro_mostrarDestacado(request);
+        SoftLibBO.ServicioWeb.recurso_listarTodosResponse SoftLibBO.ServicioWeb.ServicioWS.recurso_listarTodos(SoftLibBO.ServicioWeb.recurso_listarTodosRequest request) {
+            return base.Channel.recurso_listarTodos(request);
         }
         
-        public SoftLibBO.ServicioWeb.libro[] libro_mostrarDestacado() {
-            SoftLibBO.ServicioWeb.libro_mostrarDestacadoRequest inValue = new SoftLibBO.ServicioWeb.libro_mostrarDestacadoRequest();
-            SoftLibBO.ServicioWeb.libro_mostrarDestacadoResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).libro_mostrarDestacado(inValue);
+        public SoftLibBO.ServicioWeb.recurso[] recurso_listarTodos() {
+            SoftLibBO.ServicioWeb.recurso_listarTodosRequest inValue = new SoftLibBO.ServicioWeb.recurso_listarTodosRequest();
+            SoftLibBO.ServicioWeb.recurso_listarTodosResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).recurso_listarTodos(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.libro_mostrarDestacadoResponse> SoftLibBO.ServicioWeb.ServicioWS.libro_mostrarDestacadoAsync(SoftLibBO.ServicioWeb.libro_mostrarDestacadoRequest request) {
-            return base.Channel.libro_mostrarDestacadoAsync(request);
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.recurso_listarTodosResponse> SoftLibBO.ServicioWeb.ServicioWS.recurso_listarTodosAsync(SoftLibBO.ServicioWeb.recurso_listarTodosRequest request) {
+            return base.Channel.recurso_listarTodosAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.libro_mostrarDestacadoResponse> libro_mostrarDestacadoAsync() {
-            SoftLibBO.ServicioWeb.libro_mostrarDestacadoRequest inValue = new SoftLibBO.ServicioWeb.libro_mostrarDestacadoRequest();
-            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).libro_mostrarDestacadoAsync(inValue);
+        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.recurso_listarTodosResponse> recurso_listarTodosAsync() {
+            SoftLibBO.ServicioWeb.recurso_listarTodosRequest inValue = new SoftLibBO.ServicioWeb.recurso_listarTodosRequest();
+            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).recurso_listarTodosAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftLibBO.ServicioWeb.otrosRecursos_insertarResponse SoftLibBO.ServicioWeb.ServicioWS.otrosRecursos_insertar(SoftLibBO.ServicioWeb.otrosRecursos_insertarRequest request) {
-            return base.Channel.otrosRecursos_insertar(request);
+        SoftLibBO.ServicioWeb.cliente_obtenerPorIdResponse SoftLibBO.ServicioWeb.ServicioWS.cliente_obtenerPorId(SoftLibBO.ServicioWeb.cliente_obtenerPorIdRequest request) {
+            return base.Channel.cliente_obtenerPorId(request);
         }
         
-        public int otrosRecursos_insertar(string nombre, double peso, double alto, double ancho, double precio, SoftLibBO.ServicioWeb.unidadMedida unidadMedida, System.Nullable<sbyte>[] foto, string caracteristica) {
-            SoftLibBO.ServicioWeb.otrosRecursos_insertarRequest inValue = new SoftLibBO.ServicioWeb.otrosRecursos_insertarRequest();
-            inValue.nombre = nombre;
-            inValue.peso = peso;
-            inValue.alto = alto;
-            inValue.ancho = ancho;
-            inValue.precio = precio;
-            inValue.unidadMedida = unidadMedida;
-            inValue.foto = foto;
-            inValue.caracteristica = caracteristica;
-            SoftLibBO.ServicioWeb.otrosRecursos_insertarResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).otrosRecursos_insertar(inValue);
+        public SoftLibBO.ServicioWeb.cliente cliente_obtenerPorId(int idCliente) {
+            SoftLibBO.ServicioWeb.cliente_obtenerPorIdRequest inValue = new SoftLibBO.ServicioWeb.cliente_obtenerPorIdRequest();
+            inValue.idCliente = idCliente;
+            SoftLibBO.ServicioWeb.cliente_obtenerPorIdResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).cliente_obtenerPorId(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.otrosRecursos_insertarResponse> SoftLibBO.ServicioWeb.ServicioWS.otrosRecursos_insertarAsync(SoftLibBO.ServicioWeb.otrosRecursos_insertarRequest request) {
-            return base.Channel.otrosRecursos_insertarAsync(request);
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.cliente_obtenerPorIdResponse> SoftLibBO.ServicioWeb.ServicioWS.cliente_obtenerPorIdAsync(SoftLibBO.ServicioWeb.cliente_obtenerPorIdRequest request) {
+            return base.Channel.cliente_obtenerPorIdAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.otrosRecursos_insertarResponse> otrosRecursos_insertarAsync(string nombre, double peso, double alto, double ancho, double precio, SoftLibBO.ServicioWeb.unidadMedida unidadMedida, System.Nullable<sbyte>[] foto, string caracteristica) {
-            SoftLibBO.ServicioWeb.otrosRecursos_insertarRequest inValue = new SoftLibBO.ServicioWeb.otrosRecursos_insertarRequest();
-            inValue.nombre = nombre;
-            inValue.peso = peso;
-            inValue.alto = alto;
-            inValue.ancho = ancho;
-            inValue.precio = precio;
-            inValue.unidadMedida = unidadMedida;
-            inValue.foto = foto;
-            inValue.caracteristica = caracteristica;
-            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).otrosRecursos_insertarAsync(inValue);
+        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.cliente_obtenerPorIdResponse> cliente_obtenerPorIdAsync(int idCliente) {
+            SoftLibBO.ServicioWeb.cliente_obtenerPorIdRequest inValue = new SoftLibBO.ServicioWeb.cliente_obtenerPorIdRequest();
+            inValue.idCliente = idCliente;
+            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).cliente_obtenerPorIdAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftLibBO.ServicioWeb.otrosRecursos_eliminarResponse SoftLibBO.ServicioWeb.ServicioWS.otrosRecursos_eliminar(SoftLibBO.ServicioWeb.otrosRecursos_eliminarRequest request) {
-            return base.Channel.otrosRecursos_eliminar(request);
+        SoftLibBO.ServicioWeb.existeOtroRecursoResponse SoftLibBO.ServicioWeb.ServicioWS.existeOtroRecurso(SoftLibBO.ServicioWeb.existeOtroRecursoRequest request) {
+            return base.Channel.existeOtroRecurso(request);
         }
         
-        public int otrosRecursos_eliminar(int idOtroRecurso) {
-            SoftLibBO.ServicioWeb.otrosRecursos_eliminarRequest inValue = new SoftLibBO.ServicioWeb.otrosRecursos_eliminarRequest();
+        public bool existeOtroRecurso(int idOtroRecurso) {
+            SoftLibBO.ServicioWeb.existeOtroRecursoRequest inValue = new SoftLibBO.ServicioWeb.existeOtroRecursoRequest();
             inValue.idOtroRecurso = idOtroRecurso;
-            SoftLibBO.ServicioWeb.otrosRecursos_eliminarResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).otrosRecursos_eliminar(inValue);
+            SoftLibBO.ServicioWeb.existeOtroRecursoResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).existeOtroRecurso(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.otrosRecursos_eliminarResponse> SoftLibBO.ServicioWeb.ServicioWS.otrosRecursos_eliminarAsync(SoftLibBO.ServicioWeb.otrosRecursos_eliminarRequest request) {
-            return base.Channel.otrosRecursos_eliminarAsync(request);
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.existeOtroRecursoResponse> SoftLibBO.ServicioWeb.ServicioWS.existeOtroRecursoAsync(SoftLibBO.ServicioWeb.existeOtroRecursoRequest request) {
+            return base.Channel.existeOtroRecursoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.otrosRecursos_eliminarResponse> otrosRecursos_eliminarAsync(int idOtroRecurso) {
-            SoftLibBO.ServicioWeb.otrosRecursos_eliminarRequest inValue = new SoftLibBO.ServicioWeb.otrosRecursos_eliminarRequest();
+        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.existeOtroRecursoResponse> existeOtroRecursoAsync(int idOtroRecurso) {
+            SoftLibBO.ServicioWeb.existeOtroRecursoRequest inValue = new SoftLibBO.ServicioWeb.existeOtroRecursoRequest();
             inValue.idOtroRecurso = idOtroRecurso;
-            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).otrosRecursos_eliminarAsync(inValue);
+            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).existeOtroRecursoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftLibBO.ServicioWeb.libro_eliminarResponse SoftLibBO.ServicioWeb.ServicioWS.libro_eliminar(SoftLibBO.ServicioWeb.libro_eliminarRequest request) {
-            return base.Channel.libro_eliminar(request);
+        SoftLibBO.ServicioWeb.buscarAutoresResponse SoftLibBO.ServicioWeb.ServicioWS.buscarAutores(SoftLibBO.ServicioWeb.buscarAutoresRequest request) {
+            return base.Channel.buscarAutores(request);
         }
         
-        public int libro_eliminar(int idLibro) {
-            SoftLibBO.ServicioWeb.libro_eliminarRequest inValue = new SoftLibBO.ServicioWeb.libro_eliminarRequest();
-            inValue.idLibro = idLibro;
-            SoftLibBO.ServicioWeb.libro_eliminarResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).libro_eliminar(inValue);
+        public SoftLibBO.ServicioWeb.autor[] buscarAutores(string arg0) {
+            SoftLibBO.ServicioWeb.buscarAutoresRequest inValue = new SoftLibBO.ServicioWeb.buscarAutoresRequest();
+            inValue.arg0 = arg0;
+            SoftLibBO.ServicioWeb.buscarAutoresResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).buscarAutores(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.libro_eliminarResponse> SoftLibBO.ServicioWeb.ServicioWS.libro_eliminarAsync(SoftLibBO.ServicioWeb.libro_eliminarRequest request) {
-            return base.Channel.libro_eliminarAsync(request);
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.buscarAutoresResponse> SoftLibBO.ServicioWeb.ServicioWS.buscarAutoresAsync(SoftLibBO.ServicioWeb.buscarAutoresRequest request) {
+            return base.Channel.buscarAutoresAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.libro_eliminarResponse> libro_eliminarAsync(int idLibro) {
-            SoftLibBO.ServicioWeb.libro_eliminarRequest inValue = new SoftLibBO.ServicioWeb.libro_eliminarRequest();
+        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.buscarAutoresResponse> buscarAutoresAsync(string arg0) {
+            SoftLibBO.ServicioWeb.buscarAutoresRequest inValue = new SoftLibBO.ServicioWeb.buscarAutoresRequest();
+            inValue.arg0 = arg0;
+            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).buscarAutoresAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftLibBO.ServicioWeb.existeLibroResponse SoftLibBO.ServicioWeb.ServicioWS.existeLibro(SoftLibBO.ServicioWeb.existeLibroRequest request) {
+            return base.Channel.existeLibro(request);
+        }
+        
+        public bool existeLibro(int idLibro) {
+            SoftLibBO.ServicioWeb.existeLibroRequest inValue = new SoftLibBO.ServicioWeb.existeLibroRequest();
             inValue.idLibro = idLibro;
-            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).libro_eliminarAsync(inValue);
+            SoftLibBO.ServicioWeb.existeLibroResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).existeLibro(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.existeLibroResponse> SoftLibBO.ServicioWeb.ServicioWS.existeLibroAsync(SoftLibBO.ServicioWeb.existeLibroRequest request) {
+            return base.Channel.existeLibroAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.existeLibroResponse> existeLibroAsync(int idLibro) {
+            SoftLibBO.ServicioWeb.existeLibroRequest inValue = new SoftLibBO.ServicioWeb.existeLibroRequest();
+            inValue.idLibro = idLibro;
+            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).existeLibroAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftLibBO.ServicioWeb.buscarClientesResponse SoftLibBO.ServicioWeb.ServicioWS.buscarClientes(SoftLibBO.ServicioWeb.buscarClientesRequest request) {
+            return base.Channel.buscarClientes(request);
+        }
+        
+        public SoftLibBO.ServicioWeb.cliente[] buscarClientes(string nombre) {
+            SoftLibBO.ServicioWeb.buscarClientesRequest inValue = new SoftLibBO.ServicioWeb.buscarClientesRequest();
+            inValue.nombre = nombre;
+            SoftLibBO.ServicioWeb.buscarClientesResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).buscarClientes(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.buscarClientesResponse> SoftLibBO.ServicioWeb.ServicioWS.buscarClientesAsync(SoftLibBO.ServicioWeb.buscarClientesRequest request) {
+            return base.Channel.buscarClientesAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.buscarClientesResponse> buscarClientesAsync(string nombre) {
+            SoftLibBO.ServicioWeb.buscarClientesRequest inValue = new SoftLibBO.ServicioWeb.buscarClientesRequest();
+            inValue.nombre = nombre;
+            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).buscarClientesAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -3188,6 +3374,68 @@ namespace SoftLibBO.ServicioWeb {
             SoftLibBO.ServicioWeb.existeClienteRequest inValue = new SoftLibBO.ServicioWeb.existeClienteRequest();
             inValue.idCliente = idCliente;
             return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).existeClienteAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftLibBO.ServicioWeb.buscarLibrosResponse SoftLibBO.ServicioWeb.ServicioWS.buscarLibros(SoftLibBO.ServicioWeb.buscarLibrosRequest request) {
+            return base.Channel.buscarLibros(request);
+        }
+        
+        public SoftLibBO.ServicioWeb.libro[] buscarLibros(string nombre) {
+            SoftLibBO.ServicioWeb.buscarLibrosRequest inValue = new SoftLibBO.ServicioWeb.buscarLibrosRequest();
+            inValue.nombre = nombre;
+            SoftLibBO.ServicioWeb.buscarLibrosResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).buscarLibros(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.buscarLibrosResponse> SoftLibBO.ServicioWeb.ServicioWS.buscarLibrosAsync(SoftLibBO.ServicioWeb.buscarLibrosRequest request) {
+            return base.Channel.buscarLibrosAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.buscarLibrosResponse> buscarLibrosAsync(string nombre) {
+            SoftLibBO.ServicioWeb.buscarLibrosRequest inValue = new SoftLibBO.ServicioWeb.buscarLibrosRequest();
+            inValue.nombre = nombre;
+            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).buscarLibrosAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftLibBO.ServicioWeb.recurso_insertarResponse SoftLibBO.ServicioWeb.ServicioWS.recurso_insertar(SoftLibBO.ServicioWeb.recurso_insertarRequest request) {
+            return base.Channel.recurso_insertar(request);
+        }
+        
+        public int recurso_insertar(string nombre, double peso, double alto, double ancho, double precio, bool activo, bool disponible, SoftLibBO.ServicioWeb.unidadMedida unidadMedida, System.Nullable<sbyte>[] foto) {
+            SoftLibBO.ServicioWeb.recurso_insertarRequest inValue = new SoftLibBO.ServicioWeb.recurso_insertarRequest();
+            inValue.nombre = nombre;
+            inValue.peso = peso;
+            inValue.alto = alto;
+            inValue.ancho = ancho;
+            inValue.precio = precio;
+            inValue.activo = activo;
+            inValue.disponible = disponible;
+            inValue.unidadMedida = unidadMedida;
+            inValue.foto = foto;
+            SoftLibBO.ServicioWeb.recurso_insertarResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).recurso_insertar(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.recurso_insertarResponse> SoftLibBO.ServicioWeb.ServicioWS.recurso_insertarAsync(SoftLibBO.ServicioWeb.recurso_insertarRequest request) {
+            return base.Channel.recurso_insertarAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.recurso_insertarResponse> recurso_insertarAsync(string nombre, double peso, double alto, double ancho, double precio, bool activo, bool disponible, SoftLibBO.ServicioWeb.unidadMedida unidadMedida, System.Nullable<sbyte>[] foto) {
+            SoftLibBO.ServicioWeb.recurso_insertarRequest inValue = new SoftLibBO.ServicioWeb.recurso_insertarRequest();
+            inValue.nombre = nombre;
+            inValue.peso = peso;
+            inValue.alto = alto;
+            inValue.ancho = ancho;
+            inValue.precio = precio;
+            inValue.activo = activo;
+            inValue.disponible = disponible;
+            inValue.unidadMedida = unidadMedida;
+            inValue.foto = foto;
+            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).recurso_insertarAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -3229,93 +3477,6 @@ namespace SoftLibBO.ServicioWeb {
             inValue.unidadMedida = unidadMedida;
             inValue.foto = foto;
             return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).recurso_modificarAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftLibBO.ServicioWeb.existeRecursoResponse SoftLibBO.ServicioWeb.ServicioWS.existeRecurso(SoftLibBO.ServicioWeb.existeRecursoRequest request) {
-            return base.Channel.existeRecurso(request);
-        }
-        
-        public int existeRecurso(string nombre, double precio) {
-            SoftLibBO.ServicioWeb.existeRecursoRequest inValue = new SoftLibBO.ServicioWeb.existeRecursoRequest();
-            inValue.nombre = nombre;
-            inValue.precio = precio;
-            SoftLibBO.ServicioWeb.existeRecursoResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).existeRecurso(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.existeRecursoResponse> SoftLibBO.ServicioWeb.ServicioWS.existeRecursoAsync(SoftLibBO.ServicioWeb.existeRecursoRequest request) {
-            return base.Channel.existeRecursoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.existeRecursoResponse> existeRecursoAsync(string nombre, double precio) {
-            SoftLibBO.ServicioWeb.existeRecursoRequest inValue = new SoftLibBO.ServicioWeb.existeRecursoRequest();
-            inValue.nombre = nombre;
-            inValue.precio = precio;
-            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).existeRecursoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftLibBO.ServicioWeb.existeOtroRecursoResponse SoftLibBO.ServicioWeb.ServicioWS.existeOtroRecurso(SoftLibBO.ServicioWeb.existeOtroRecursoRequest request) {
-            return base.Channel.existeOtroRecurso(request);
-        }
-        
-        public bool existeOtroRecurso(int idOtroRecurso) {
-            SoftLibBO.ServicioWeb.existeOtroRecursoRequest inValue = new SoftLibBO.ServicioWeb.existeOtroRecursoRequest();
-            inValue.idOtroRecurso = idOtroRecurso;
-            SoftLibBO.ServicioWeb.existeOtroRecursoResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).existeOtroRecurso(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.existeOtroRecursoResponse> SoftLibBO.ServicioWeb.ServicioWS.existeOtroRecursoAsync(SoftLibBO.ServicioWeb.existeOtroRecursoRequest request) {
-            return base.Channel.existeOtroRecursoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.existeOtroRecursoResponse> existeOtroRecursoAsync(int idOtroRecurso) {
-            SoftLibBO.ServicioWeb.existeOtroRecursoRequest inValue = new SoftLibBO.ServicioWeb.existeOtroRecursoRequest();
-            inValue.idOtroRecurso = idOtroRecurso;
-            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).existeOtroRecursoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftLibBO.ServicioWeb.recurso_insertarResponse SoftLibBO.ServicioWeb.ServicioWS.recurso_insertar(SoftLibBO.ServicioWeb.recurso_insertarRequest request) {
-            return base.Channel.recurso_insertar(request);
-        }
-        
-        public int recurso_insertar(string nombre, double peso, double alto, double ancho, double precio, bool activo, bool disponible, SoftLibBO.ServicioWeb.unidadMedida unidadMedida, System.Nullable<sbyte>[] foto) {
-            SoftLibBO.ServicioWeb.recurso_insertarRequest inValue = new SoftLibBO.ServicioWeb.recurso_insertarRequest();
-            inValue.nombre = nombre;
-            inValue.peso = peso;
-            inValue.alto = alto;
-            inValue.ancho = ancho;
-            inValue.precio = precio;
-            inValue.activo = activo;
-            inValue.disponible = disponible;
-            inValue.unidadMedida = unidadMedida;
-            inValue.foto = foto;
-            SoftLibBO.ServicioWeb.recurso_insertarResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).recurso_insertar(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.recurso_insertarResponse> SoftLibBO.ServicioWeb.ServicioWS.recurso_insertarAsync(SoftLibBO.ServicioWeb.recurso_insertarRequest request) {
-            return base.Channel.recurso_insertarAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.recurso_insertarResponse> recurso_insertarAsync(string nombre, double peso, double alto, double ancho, double precio, bool activo, bool disponible, SoftLibBO.ServicioWeb.unidadMedida unidadMedida, System.Nullable<sbyte>[] foto) {
-            SoftLibBO.ServicioWeb.recurso_insertarRequest inValue = new SoftLibBO.ServicioWeb.recurso_insertarRequest();
-            inValue.nombre = nombre;
-            inValue.peso = peso;
-            inValue.alto = alto;
-            inValue.ancho = ancho;
-            inValue.precio = precio;
-            inValue.activo = activo;
-            inValue.disponible = disponible;
-            inValue.unidadMedida = unidadMedida;
-            inValue.foto = foto;
-            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).recurso_insertarAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -3386,6 +3547,98 @@ namespace SoftLibBO.ServicioWeb {
             inValue.sinopsis = sinopsis;
             inValue.formato = formato;
             return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).libro_insertarAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftLibBO.ServicioWeb.libro_eliminarResponse SoftLibBO.ServicioWeb.ServicioWS.libro_eliminar(SoftLibBO.ServicioWeb.libro_eliminarRequest request) {
+            return base.Channel.libro_eliminar(request);
+        }
+        
+        public int libro_eliminar(int idLibro) {
+            SoftLibBO.ServicioWeb.libro_eliminarRequest inValue = new SoftLibBO.ServicioWeb.libro_eliminarRequest();
+            inValue.idLibro = idLibro;
+            SoftLibBO.ServicioWeb.libro_eliminarResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).libro_eliminar(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.libro_eliminarResponse> SoftLibBO.ServicioWeb.ServicioWS.libro_eliminarAsync(SoftLibBO.ServicioWeb.libro_eliminarRequest request) {
+            return base.Channel.libro_eliminarAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.libro_eliminarResponse> libro_eliminarAsync(int idLibro) {
+            SoftLibBO.ServicioWeb.libro_eliminarRequest inValue = new SoftLibBO.ServicioWeb.libro_eliminarRequest();
+            inValue.idLibro = idLibro;
+            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).libro_eliminarAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftLibBO.ServicioWeb.existeRecursoResponse SoftLibBO.ServicioWeb.ServicioWS.existeRecurso(SoftLibBO.ServicioWeb.existeRecursoRequest request) {
+            return base.Channel.existeRecurso(request);
+        }
+        
+        public int existeRecurso(string nombre, double precio) {
+            SoftLibBO.ServicioWeb.existeRecursoRequest inValue = new SoftLibBO.ServicioWeb.existeRecursoRequest();
+            inValue.nombre = nombre;
+            inValue.precio = precio;
+            SoftLibBO.ServicioWeb.existeRecursoResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).existeRecurso(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.existeRecursoResponse> SoftLibBO.ServicioWeb.ServicioWS.existeRecursoAsync(SoftLibBO.ServicioWeb.existeRecursoRequest request) {
+            return base.Channel.existeRecursoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.existeRecursoResponse> existeRecursoAsync(string nombre, double precio) {
+            SoftLibBO.ServicioWeb.existeRecursoRequest inValue = new SoftLibBO.ServicioWeb.existeRecursoRequest();
+            inValue.nombre = nombre;
+            inValue.precio = precio;
+            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).existeRecursoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftLibBO.ServicioWeb.libro_obtenerPorIdResponse SoftLibBO.ServicioWeb.ServicioWS.libro_obtenerPorId(SoftLibBO.ServicioWeb.libro_obtenerPorIdRequest request) {
+            return base.Channel.libro_obtenerPorId(request);
+        }
+        
+        public SoftLibBO.ServicioWeb.libro libro_obtenerPorId(int idLibro) {
+            SoftLibBO.ServicioWeb.libro_obtenerPorIdRequest inValue = new SoftLibBO.ServicioWeb.libro_obtenerPorIdRequest();
+            inValue.idLibro = idLibro;
+            SoftLibBO.ServicioWeb.libro_obtenerPorIdResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).libro_obtenerPorId(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.libro_obtenerPorIdResponse> SoftLibBO.ServicioWeb.ServicioWS.libro_obtenerPorIdAsync(SoftLibBO.ServicioWeb.libro_obtenerPorIdRequest request) {
+            return base.Channel.libro_obtenerPorIdAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.libro_obtenerPorIdResponse> libro_obtenerPorIdAsync(int idLibro) {
+            SoftLibBO.ServicioWeb.libro_obtenerPorIdRequest inValue = new SoftLibBO.ServicioWeb.libro_obtenerPorIdRequest();
+            inValue.idLibro = idLibro;
+            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).libro_obtenerPorIdAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftLibBO.ServicioWeb.libro_listarTodosResponse SoftLibBO.ServicioWeb.ServicioWS.libro_listarTodos(SoftLibBO.ServicioWeb.libro_listarTodosRequest request) {
+            return base.Channel.libro_listarTodos(request);
+        }
+        
+        public SoftLibBO.ServicioWeb.libro[] libro_listarTodos() {
+            SoftLibBO.ServicioWeb.libro_listarTodosRequest inValue = new SoftLibBO.ServicioWeb.libro_listarTodosRequest();
+            SoftLibBO.ServicioWeb.libro_listarTodosResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).libro_listarTodos(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.libro_listarTodosResponse> SoftLibBO.ServicioWeb.ServicioWS.libro_listarTodosAsync(SoftLibBO.ServicioWeb.libro_listarTodosRequest request) {
+            return base.Channel.libro_listarTodosAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.libro_listarTodosResponse> libro_listarTodosAsync() {
+            SoftLibBO.ServicioWeb.libro_listarTodosRequest inValue = new SoftLibBO.ServicioWeb.libro_listarTodosRequest();
+            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).libro_listarTodosAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -3474,49 +3727,161 @@ namespace SoftLibBO.ServicioWeb {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftLibBO.ServicioWeb.libro_obtenerPorIdResponse SoftLibBO.ServicioWeb.ServicioWS.libro_obtenerPorId(SoftLibBO.ServicioWeb.libro_obtenerPorIdRequest request) {
-            return base.Channel.libro_obtenerPorId(request);
+        SoftLibBO.ServicioWeb.cliente_insertarResponse SoftLibBO.ServicioWeb.ServicioWS.cliente_insertar(SoftLibBO.ServicioWeb.cliente_insertarRequest request) {
+            return base.Channel.cliente_insertar(request);
         }
         
-        public SoftLibBO.ServicioWeb.libro libro_obtenerPorId(int idLibro) {
-            SoftLibBO.ServicioWeb.libro_obtenerPorIdRequest inValue = new SoftLibBO.ServicioWeb.libro_obtenerPorIdRequest();
-            inValue.idLibro = idLibro;
-            SoftLibBO.ServicioWeb.libro_obtenerPorIdResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).libro_obtenerPorId(inValue);
+        public int cliente_insertar(string nombre, string apellidoPaterno, string apellidoMaterno, string nacionalidad, string numeroDocumento, SoftLibBO.ServicioWeb.tipoDocumento tipoDocumento, SoftLibBO.ServicioWeb.perfil[] perfiles, string direccion) {
+            SoftLibBO.ServicioWeb.cliente_insertarRequest inValue = new SoftLibBO.ServicioWeb.cliente_insertarRequest();
+            inValue.nombre = nombre;
+            inValue.apellidoPaterno = apellidoPaterno;
+            inValue.apellidoMaterno = apellidoMaterno;
+            inValue.nacionalidad = nacionalidad;
+            inValue.numeroDocumento = numeroDocumento;
+            inValue.tipoDocumento = tipoDocumento;
+            inValue.perfiles = perfiles;
+            inValue.direccion = direccion;
+            SoftLibBO.ServicioWeb.cliente_insertarResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).cliente_insertar(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.libro_obtenerPorIdResponse> SoftLibBO.ServicioWeb.ServicioWS.libro_obtenerPorIdAsync(SoftLibBO.ServicioWeb.libro_obtenerPorIdRequest request) {
-            return base.Channel.libro_obtenerPorIdAsync(request);
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.cliente_insertarResponse> SoftLibBO.ServicioWeb.ServicioWS.cliente_insertarAsync(SoftLibBO.ServicioWeb.cliente_insertarRequest request) {
+            return base.Channel.cliente_insertarAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.libro_obtenerPorIdResponse> libro_obtenerPorIdAsync(int idLibro) {
-            SoftLibBO.ServicioWeb.libro_obtenerPorIdRequest inValue = new SoftLibBO.ServicioWeb.libro_obtenerPorIdRequest();
-            inValue.idLibro = idLibro;
-            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).libro_obtenerPorIdAsync(inValue);
+        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.cliente_insertarResponse> cliente_insertarAsync(string nombre, string apellidoPaterno, string apellidoMaterno, string nacionalidad, string numeroDocumento, SoftLibBO.ServicioWeb.tipoDocumento tipoDocumento, SoftLibBO.ServicioWeb.perfil[] perfiles, string direccion) {
+            SoftLibBO.ServicioWeb.cliente_insertarRequest inValue = new SoftLibBO.ServicioWeb.cliente_insertarRequest();
+            inValue.nombre = nombre;
+            inValue.apellidoPaterno = apellidoPaterno;
+            inValue.apellidoMaterno = apellidoMaterno;
+            inValue.nacionalidad = nacionalidad;
+            inValue.numeroDocumento = numeroDocumento;
+            inValue.tipoDocumento = tipoDocumento;
+            inValue.perfiles = perfiles;
+            inValue.direccion = direccion;
+            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).cliente_insertarAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftLibBO.ServicioWeb.existeLibroResponse SoftLibBO.ServicioWeb.ServicioWS.existeLibro(SoftLibBO.ServicioWeb.existeLibroRequest request) {
-            return base.Channel.existeLibro(request);
+        SoftLibBO.ServicioWeb.otrosRecursos_mostrarDestacadoResponse SoftLibBO.ServicioWeb.ServicioWS.otrosRecursos_mostrarDestacado(SoftLibBO.ServicioWeb.otrosRecursos_mostrarDestacadoRequest request) {
+            return base.Channel.otrosRecursos_mostrarDestacado(request);
         }
         
-        public bool existeLibro(int idLibro) {
-            SoftLibBO.ServicioWeb.existeLibroRequest inValue = new SoftLibBO.ServicioWeb.existeLibroRequest();
-            inValue.idLibro = idLibro;
-            SoftLibBO.ServicioWeb.existeLibroResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).existeLibro(inValue);
+        public SoftLibBO.ServicioWeb.otroRecurso[] otrosRecursos_mostrarDestacado() {
+            SoftLibBO.ServicioWeb.otrosRecursos_mostrarDestacadoRequest inValue = new SoftLibBO.ServicioWeb.otrosRecursos_mostrarDestacadoRequest();
+            SoftLibBO.ServicioWeb.otrosRecursos_mostrarDestacadoResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).otrosRecursos_mostrarDestacado(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.existeLibroResponse> SoftLibBO.ServicioWeb.ServicioWS.existeLibroAsync(SoftLibBO.ServicioWeb.existeLibroRequest request) {
-            return base.Channel.existeLibroAsync(request);
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.otrosRecursos_mostrarDestacadoResponse> SoftLibBO.ServicioWeb.ServicioWS.otrosRecursos_mostrarDestacadoAsync(SoftLibBO.ServicioWeb.otrosRecursos_mostrarDestacadoRequest request) {
+            return base.Channel.otrosRecursos_mostrarDestacadoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.existeLibroResponse> existeLibroAsync(int idLibro) {
-            SoftLibBO.ServicioWeb.existeLibroRequest inValue = new SoftLibBO.ServicioWeb.existeLibroRequest();
-            inValue.idLibro = idLibro;
-            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).existeLibroAsync(inValue);
+        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.otrosRecursos_mostrarDestacadoResponse> otrosRecursos_mostrarDestacadoAsync() {
+            SoftLibBO.ServicioWeb.otrosRecursos_mostrarDestacadoRequest inValue = new SoftLibBO.ServicioWeb.otrosRecursos_mostrarDestacadoRequest();
+            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).otrosRecursos_mostrarDestacadoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftLibBO.ServicioWeb.autor_modificarResponse SoftLibBO.ServicioWeb.ServicioWS.autor_modificar(SoftLibBO.ServicioWeb.autor_modificarRequest request) {
+            return base.Channel.autor_modificar(request);
+        }
+        
+        public int autor_modificar(int idAutor, string nombre, string nacionalidad, bool activo) {
+            SoftLibBO.ServicioWeb.autor_modificarRequest inValue = new SoftLibBO.ServicioWeb.autor_modificarRequest();
+            inValue.idAutor = idAutor;
+            inValue.nombre = nombre;
+            inValue.nacionalidad = nacionalidad;
+            inValue.activo = activo;
+            SoftLibBO.ServicioWeb.autor_modificarResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).autor_modificar(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.autor_modificarResponse> SoftLibBO.ServicioWeb.ServicioWS.autor_modificarAsync(SoftLibBO.ServicioWeb.autor_modificarRequest request) {
+            return base.Channel.autor_modificarAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.autor_modificarResponse> autor_modificarAsync(int idAutor, string nombre, string nacionalidad, bool activo) {
+            SoftLibBO.ServicioWeb.autor_modificarRequest inValue = new SoftLibBO.ServicioWeb.autor_modificarRequest();
+            inValue.idAutor = idAutor;
+            inValue.nombre = nombre;
+            inValue.nacionalidad = nacionalidad;
+            inValue.activo = activo;
+            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).autor_modificarAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftLibBO.ServicioWeb.autor_insertarResponse SoftLibBO.ServicioWeb.ServicioWS.autor_insertar(SoftLibBO.ServicioWeb.autor_insertarRequest request) {
+            return base.Channel.autor_insertar(request);
+        }
+        
+        public int autor_insertar(string nombre, string nacionalidad) {
+            SoftLibBO.ServicioWeb.autor_insertarRequest inValue = new SoftLibBO.ServicioWeb.autor_insertarRequest();
+            inValue.nombre = nombre;
+            inValue.nacionalidad = nacionalidad;
+            SoftLibBO.ServicioWeb.autor_insertarResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).autor_insertar(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.autor_insertarResponse> SoftLibBO.ServicioWeb.ServicioWS.autor_insertarAsync(SoftLibBO.ServicioWeb.autor_insertarRequest request) {
+            return base.Channel.autor_insertarAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.autor_insertarResponse> autor_insertarAsync(string nombre, string nacionalidad) {
+            SoftLibBO.ServicioWeb.autor_insertarRequest inValue = new SoftLibBO.ServicioWeb.autor_insertarRequest();
+            inValue.nombre = nombre;
+            inValue.nacionalidad = nacionalidad;
+            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).autor_insertarAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftLibBO.ServicioWeb.autor_obtenerPorIdResponse SoftLibBO.ServicioWeb.ServicioWS.autor_obtenerPorId(SoftLibBO.ServicioWeb.autor_obtenerPorIdRequest request) {
+            return base.Channel.autor_obtenerPorId(request);
+        }
+        
+        public SoftLibBO.ServicioWeb.autor autor_obtenerPorId(int idAutor) {
+            SoftLibBO.ServicioWeb.autor_obtenerPorIdRequest inValue = new SoftLibBO.ServicioWeb.autor_obtenerPorIdRequest();
+            inValue.idAutor = idAutor;
+            SoftLibBO.ServicioWeb.autor_obtenerPorIdResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).autor_obtenerPorId(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.autor_obtenerPorIdResponse> SoftLibBO.ServicioWeb.ServicioWS.autor_obtenerPorIdAsync(SoftLibBO.ServicioWeb.autor_obtenerPorIdRequest request) {
+            return base.Channel.autor_obtenerPorIdAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.autor_obtenerPorIdResponse> autor_obtenerPorIdAsync(int idAutor) {
+            SoftLibBO.ServicioWeb.autor_obtenerPorIdRequest inValue = new SoftLibBO.ServicioWeb.autor_obtenerPorIdRequest();
+            inValue.idAutor = idAutor;
+            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).autor_obtenerPorIdAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftLibBO.ServicioWeb.autor_eliminarResponse SoftLibBO.ServicioWeb.ServicioWS.autor_eliminar(SoftLibBO.ServicioWeb.autor_eliminarRequest request) {
+            return base.Channel.autor_eliminar(request);
+        }
+        
+        public int autor_eliminar(int activo) {
+            SoftLibBO.ServicioWeb.autor_eliminarRequest inValue = new SoftLibBO.ServicioWeb.autor_eliminarRequest();
+            inValue.activo = activo;
+            SoftLibBO.ServicioWeb.autor_eliminarResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).autor_eliminar(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.autor_eliminarResponse> SoftLibBO.ServicioWeb.ServicioWS.autor_eliminarAsync(SoftLibBO.ServicioWeb.autor_eliminarRequest request) {
+            return base.Channel.autor_eliminarAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.autor_eliminarResponse> autor_eliminarAsync(int activo) {
+            SoftLibBO.ServicioWeb.autor_eliminarRequest inValue = new SoftLibBO.ServicioWeb.autor_eliminarRequest();
+            inValue.activo = activo;
+            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).autor_eliminarAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -3559,40 +3924,47 @@ namespace SoftLibBO.ServicioWeb {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftLibBO.ServicioWeb.cliente_insertarResponse SoftLibBO.ServicioWeb.ServicioWS.cliente_insertar(SoftLibBO.ServicioWeb.cliente_insertarRequest request) {
-            return base.Channel.cliente_insertar(request);
+        SoftLibBO.ServicioWeb.cliente_eliminarResponse SoftLibBO.ServicioWeb.ServicioWS.cliente_eliminar(SoftLibBO.ServicioWeb.cliente_eliminarRequest request) {
+            return base.Channel.cliente_eliminar(request);
         }
         
-        public int cliente_insertar(string nombre, string apellidoPaterno, string apellidoMaterno, string nacionalidad, string numeroDocumento, SoftLibBO.ServicioWeb.tipoDocumento tipoDocumento, SoftLibBO.ServicioWeb.perfil[] perfiles, string direccion) {
-            SoftLibBO.ServicioWeb.cliente_insertarRequest inValue = new SoftLibBO.ServicioWeb.cliente_insertarRequest();
-            inValue.nombre = nombre;
-            inValue.apellidoPaterno = apellidoPaterno;
-            inValue.apellidoMaterno = apellidoMaterno;
-            inValue.nacionalidad = nacionalidad;
-            inValue.numeroDocumento = numeroDocumento;
-            inValue.tipoDocumento = tipoDocumento;
-            inValue.perfiles = perfiles;
-            inValue.direccion = direccion;
-            SoftLibBO.ServicioWeb.cliente_insertarResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).cliente_insertar(inValue);
+        public int cliente_eliminar(int idCliente) {
+            SoftLibBO.ServicioWeb.cliente_eliminarRequest inValue = new SoftLibBO.ServicioWeb.cliente_eliminarRequest();
+            inValue.idCliente = idCliente;
+            SoftLibBO.ServicioWeb.cliente_eliminarResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).cliente_eliminar(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.cliente_insertarResponse> SoftLibBO.ServicioWeb.ServicioWS.cliente_insertarAsync(SoftLibBO.ServicioWeb.cliente_insertarRequest request) {
-            return base.Channel.cliente_insertarAsync(request);
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.cliente_eliminarResponse> SoftLibBO.ServicioWeb.ServicioWS.cliente_eliminarAsync(SoftLibBO.ServicioWeb.cliente_eliminarRequest request) {
+            return base.Channel.cliente_eliminarAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.cliente_insertarResponse> cliente_insertarAsync(string nombre, string apellidoPaterno, string apellidoMaterno, string nacionalidad, string numeroDocumento, SoftLibBO.ServicioWeb.tipoDocumento tipoDocumento, SoftLibBO.ServicioWeb.perfil[] perfiles, string direccion) {
-            SoftLibBO.ServicioWeb.cliente_insertarRequest inValue = new SoftLibBO.ServicioWeb.cliente_insertarRequest();
-            inValue.nombre = nombre;
-            inValue.apellidoPaterno = apellidoPaterno;
-            inValue.apellidoMaterno = apellidoMaterno;
-            inValue.nacionalidad = nacionalidad;
-            inValue.numeroDocumento = numeroDocumento;
-            inValue.tipoDocumento = tipoDocumento;
-            inValue.perfiles = perfiles;
-            inValue.direccion = direccion;
-            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).cliente_insertarAsync(inValue);
+        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.cliente_eliminarResponse> cliente_eliminarAsync(int idCliente) {
+            SoftLibBO.ServicioWeb.cliente_eliminarRequest inValue = new SoftLibBO.ServicioWeb.cliente_eliminarRequest();
+            inValue.idCliente = idCliente;
+            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).cliente_eliminarAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftLibBO.ServicioWeb.autor_listarTodosResponse SoftLibBO.ServicioWeb.ServicioWS.autor_listarTodos(SoftLibBO.ServicioWeb.autor_listarTodosRequest request) {
+            return base.Channel.autor_listarTodos(request);
+        }
+        
+        public SoftLibBO.ServicioWeb.autor[] autor_listarTodos() {
+            SoftLibBO.ServicioWeb.autor_listarTodosRequest inValue = new SoftLibBO.ServicioWeb.autor_listarTodosRequest();
+            SoftLibBO.ServicioWeb.autor_listarTodosResponse retVal = ((SoftLibBO.ServicioWeb.ServicioWS)(this)).autor_listarTodos(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.autor_listarTodosResponse> SoftLibBO.ServicioWeb.ServicioWS.autor_listarTodosAsync(SoftLibBO.ServicioWeb.autor_listarTodosRequest request) {
+            return base.Channel.autor_listarTodosAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftLibBO.ServicioWeb.autor_listarTodosResponse> autor_listarTodosAsync() {
+            SoftLibBO.ServicioWeb.autor_listarTodosRequest inValue = new SoftLibBO.ServicioWeb.autor_listarTodosRequest();
+            return ((SoftLibBO.ServicioWeb.ServicioWS)(this)).autor_listarTodosAsync(inValue);
         }
     }
 }

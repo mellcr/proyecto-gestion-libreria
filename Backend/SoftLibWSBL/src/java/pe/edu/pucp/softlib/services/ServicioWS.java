@@ -295,9 +295,41 @@ public class ServicioWS {
     
     //--------------------------------------------------------------------------
     //SERVICIOS AUTORES
+    
+    @WebMethod(operationName = "autor_insertar")
+    public Integer autor_insertar(@WebParam(name = "nombre") String nombre, 
+                                  @WebParam(name = "nacionalidad") String nacionalidad) {
+        return autorBO.insertar(nombre, nacionalidad);
+    }
+    
+    @WebMethod(operationName = "autor_modificar")
+    public Integer autor_modificar(@WebParam(name = "idAutor") Integer idAutor, 
+                                   @WebParam(name = "nombre") String nombre,
+                                   @WebParam(name = "nacionalidad") String nacionalidad,
+                                   @WebParam(name = "activo") Boolean activo) {
+        return autorBO.modificar(idAutor, nombre, nacionalidad, activo);                
+    }
+    
+    @WebMethod(operationName = "autor_eliminar")
+    public Integer autor_eliminar(@WebParam(name = "activo") Integer idAutor){
+        return autorBO.eliminar(idAutor);
+    }
+    
     @WebMethod(operationName = "autor_listarTodos")
     public ArrayList<Autor> autor_listarTodos(){
         return autorBO.listarTodos();
     }
+    
+    @WebMethod(operationName = "autor_obtenerPorId")
+    public Autor autor_obtenerPorId(@WebParam(name = "idAutor") Integer idAutor){
+        return autorBO.obtenerPorId(idAutor);
+    }        
+    
+    @WebMethod(operationName = "buscarAutores")
+    public ArrayList<Autor> buscarAutores(String nombre){
+        return autorBO.buscarAutores(nombre);
+    }
 
+    
+    
 }

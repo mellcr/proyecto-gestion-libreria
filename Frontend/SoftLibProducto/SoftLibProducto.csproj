@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutorBO.cs" />
     <Compile Include="LibroBO.cs" />
     <Compile Include="OtroRecursoBO.cs" />
     <Compile Include="RecursoBO.cs" />

@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://services.softlib.pucp.edu.pe/" targetNamespace="http://services.softlib.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="autor_eliminar" type="tns:autor_eliminar" />
+  <xs:element name="autor_eliminarResponse" type="tns:autor_eliminarResponse" />
+  <xs:element name="autor_insertar" type="tns:autor_insertar" />
+  <xs:element name="autor_insertarResponse" type="tns:autor_insertarResponse" />
   <xs:element name="autor_listarTodos" type="tns:autor_listarTodos" />
   <xs:element name="autor_listarTodosResponse" type="tns:autor_listarTodosResponse" />
+  <xs:element name="autor_modificar" type="tns:autor_modificar" />
+  <xs:element name="autor_modificarResponse" type="tns:autor_modificarResponse" />
+  <xs:element name="autor_obtenerPorId" type="tns:autor_obtenerPorId" />
+  <xs:element name="autor_obtenerPorIdResponse" type="tns:autor_obtenerPorIdResponse" />
+  <xs:element name="buscarAutores" type="tns:buscarAutores" />
+  <xs:element name="buscarAutoresResponse" type="tns:buscarAutoresResponse" />
   <xs:element name="buscarClientes" type="tns:buscarClientes" />
   <xs:element name="buscarClientesResponse" type="tns:buscarClientesResponse" />
   <xs:element name="buscarLibros" type="tns:buscarLibros" />
@@ -240,12 +250,14 @@
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:libro" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="autor_listarTodos">
-    <xs:sequence />
-  </xs:complexType>
-  <xs:complexType name="autor_listarTodosResponse">
+  <xs:complexType name="otrosRecursos_eliminar">
     <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:autor" />
+      <xs:element minOccurs="0" name="idOtroRecurso" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="otrosRecursos_eliminarResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="otrosRecursos_insertar">
@@ -265,14 +277,12 @@
       <xs:element minOccurs="0" name="return" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="otrosRecursos_eliminar">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="idOtroRecurso" type="xs:int" />
-    </xs:sequence>
+  <xs:complexType name="autor_listarTodos">
+    <xs:sequence />
   </xs:complexType>
-  <xs:complexType name="otrosRecursos_eliminarResponse">
+  <xs:complexType name="autor_listarTodosResponse">
     <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:autor" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="libro_mostrarDestacado">
@@ -324,16 +334,6 @@
       <xs:element minOccurs="0" name="return" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="cliente_eliminar">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="idCliente" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="cliente_eliminarResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="otrosRecursos_obtenerPorId">
     <xs:sequence>
       <xs:element minOccurs="0" name="idOtroRecurso" type="xs:int" />
@@ -352,6 +352,16 @@
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="cliente_eliminar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idCliente" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cliente_eliminarResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
   </xs:complexType>
   <xs:complexType name="libro_modificar">
     <xs:sequence>
@@ -395,6 +405,16 @@
       <xs:element minOccurs="0" name="return" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="autor_obtenerPorId">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idAutor" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="autor_obtenerPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:autor" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="libro_obtenerPorId">
     <xs:sequence>
       <xs:element minOccurs="0" name="idLibro" type="xs:int" />
@@ -433,12 +453,56 @@
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:recurso" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="buscarAutores">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarAutoresResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:autor" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="otrosRecursos_mostrarDestacado">
     <xs:sequence />
   </xs:complexType>
   <xs:complexType name="otrosRecursos_mostrarDestacadoResponse">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:otroRecurso" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="autor_insertar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="nacionalidad" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="autor_insertarResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="autor_eliminar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="activo" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="autor_eliminarResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="autor_modificar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idAutor" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="nacionalidad" type="xs:string" />
+      <xs:element minOccurs="0" name="activo" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="autor_modificarResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="otrosRecursos_listarTodos">
