@@ -87,6 +87,9 @@
     <None Include="Connected Services\ServicioWeb\SoftLibBO.ServicioWeb.existeLibroResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\ServicioWeb\SoftLibBO.ServicioWeb.existeOtroRecursoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\ServicioWeb\SoftLibBO.ServicioWeb.existeRecursoResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -112,6 +115,24 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServicioWeb\SoftLibBO.ServicioWeb.otroRecurso.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServicioWeb\SoftLibBO.ServicioWeb.otrosRecursos_eliminarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServicioWeb\SoftLibBO.ServicioWeb.otrosRecursos_insertarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServicioWeb\SoftLibBO.ServicioWeb.otrosRecursos_listarTodosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServicioWeb\SoftLibBO.ServicioWeb.otrosRecursos_modificarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServicioWeb\SoftLibBO.ServicioWeb.otrosRecursos_mostrarDestacadoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServicioWeb\SoftLibBO.ServicioWeb.otrosRecursos_obtenerPorIdResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServicioWeb\SoftLibBO.ServicioWeb.recurso.datasource">

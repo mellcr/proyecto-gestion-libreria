@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "C:\\TA_P3\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3F909D16-97CD-42C2-8240-C6B5535F9DDC}|..\\SoftLibProducto\\SoftLibProducto.csproj|c:\\ta_p3\\proyecto-gestion-libreria\\frontend\\softlibproducto\\otrorecursobo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3F909D16-97CD-42C2-8240-C6B5535F9DDC}|..\\SoftLibProducto\\SoftLibProducto.csproj|c:\\ta_p3\\proyecto-gestion-libreria\\frontend\\softlibproducto\\librobo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -106,11 +109,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "OtroRecursoBO.cs",
+              "DocumentMoniker": "C:\\TA_P3\\proyecto-gestion-libreria\\Frontend\\SoftLibProducto\\OtroRecursoBO.cs",
+              "RelativeDocumentMoniker": "..\\SoftLibProducto\\OtroRecursoBO.cs",
+              "ToolTip": "C:\\TA_P3\\proyecto-gestion-libreria\\Frontend\\SoftLibProducto\\OtroRecursoBO.cs",
+              "RelativeToolTip": "..\\SoftLibProducto\\OtroRecursoBO.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAkwDgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T19:08:36.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "RecursoBO.cs",
               "DocumentMoniker": "C:\\TA_P3\\proyecto-gestion-libreria\\Frontend\\SoftLibProducto\\RecursoBO.cs",
               "RelativeDocumentMoniker": "..\\SoftLibProducto\\RecursoBO.cs",
@@ -123,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "registro_ordenes_venta.aspx",
               "DocumentMoniker": "C:\\TA_P3\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\registro_ordenes_venta.aspx",
               "RelativeDocumentMoniker": "registro_ordenes_venta.aspx",
@@ -136,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "registro_ordenes_venta.aspx.cs",
               "DocumentMoniker": "C:\\TA_P3\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\registro_ordenes_venta.aspx.cs",
               "RelativeDocumentMoniker": "registro_ordenes_venta.aspx.cs",
@@ -149,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "registro_ordenes_abastecimiento.aspx.cs",
               "DocumentMoniker": "C:\\TA_P3\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\registro_ordenes_abastecimiento.aspx.cs",
               "RelativeDocumentMoniker": "registro_ordenes_abastecimiento.aspx.cs",
@@ -162,7 +178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "registro_ordenes_abastecimiento.aspx",
               "DocumentMoniker": "C:\\TA_P3\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\registro_ordenes_abastecimiento.aspx",
               "RelativeDocumentMoniker": "registro_ordenes_abastecimiento.aspx",
@@ -175,20 +191,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "LibroBO.cs",
               "DocumentMoniker": "C:\\TA_P3\\proyecto-gestion-libreria\\Frontend\\SoftLibProducto\\LibroBO.cs",
               "RelativeDocumentMoniker": "..\\SoftLibProducto\\LibroBO.cs",
               "ToolTip": "C:\\TA_P3\\proyecto-gestion-libreria\\Frontend\\SoftLibProducto\\LibroBO.cs",
               "RelativeToolTip": "..\\SoftLibProducto\\LibroBO.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAgwEcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T16:56:32.011Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "mantenimiento_recurso.aspx.cs",
               "DocumentMoniker": "C:\\TA_P3\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\mantenimiento_recurso.aspx.cs",
               "RelativeDocumentMoniker": "mantenimiento_recurso.aspx.cs",
@@ -201,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "gestionar_ordenes_venta.aspx.cs",
               "DocumentMoniker": "C:\\TA_P3\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\gestionar_ordenes_venta.aspx.cs",
               "RelativeDocumentMoniker": "gestionar_ordenes_venta.aspx.cs",
@@ -214,7 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "ClienteBO.cs",
               "DocumentMoniker": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibUsuarioBO\\ClienteBO.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibUsuarioBO\\ClienteBO.cs",
@@ -226,7 +242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "RecursoBO.cs",
               "DocumentMoniker": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibProducto\\RecursoBO.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibProducto\\RecursoBO.cs",
@@ -238,7 +254,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Web.config",
               "DocumentMoniker": "C:\\TA_P3\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\Web.config",
               "RelativeDocumentMoniker": "Web.config",
@@ -251,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "SoftLibEmpleado.Master",
               "DocumentMoniker": "C:\\TA_P3\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\SoftLibEmpleado.Master",
               "RelativeDocumentMoniker": "SoftLibEmpleado.Master",
@@ -264,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "OtroRecursoBO.cs",
               "DocumentMoniker": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibProducto\\OtroRecursoBO.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibProducto\\OtroRecursoBO.cs",
@@ -276,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "LibroBO.cs",
               "DocumentMoniker": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibProducto\\LibroBO.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibProducto\\LibroBO.cs",
@@ -288,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "mantenimiento_recurso.aspx",
               "DocumentMoniker": "C:\\TA_P3\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\mantenimiento_recurso.aspx",
               "RelativeDocumentMoniker": "mantenimiento_recurso.aspx",
@@ -300,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "gestionar_ordenes_venta.aspx",
               "DocumentMoniker": "C:\\TA_P3\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\gestionar_ordenes_venta.aspx",
               "RelativeDocumentMoniker": "gestionar_ordenes_venta.aspx",
@@ -312,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "OtroRecursoBO.cs",
               "DocumentMoniker": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibProducto\\OtroRecursoBO.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibProducto\\OtroRecursoBO.cs",
@@ -324,7 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Index.aspx",
               "DocumentMoniker": "C:\\TA_P3\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\Index.aspx",
               "RelativeDocumentMoniker": "Index.aspx",
@@ -336,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "BaseBO.cs",
               "DocumentMoniker": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibBO\\BaseBO.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibBO\\BaseBO.cs",
@@ -348,7 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "gestionarOrdenesVenta.js",
               "DocumentMoniker": "C:\\TA_P3\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\Scripts\\SoftLib\\gestionarOrdenesVenta.js",
               "RelativeDocumentMoniker": "Scripts\\SoftLib\\gestionarOrdenesVenta.js",
@@ -360,7 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "gestionar_ordenes_abastecimiento.aspx",
               "DocumentMoniker": "C:\\TA_P3\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\gestionar_ordenes_abastecimiento.aspx",
               "RelativeDocumentMoniker": "gestionar_ordenes_abastecimiento.aspx",
@@ -372,7 +388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "gestionar_ordenes_abastecimiento.aspx.cs",
               "DocumentMoniker": "C:\\TA_P3\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\gestionar_ordenes_abastecimiento.aspx.cs",
               "RelativeDocumentMoniker": "gestionar_ordenes_abastecimiento.aspx.cs",
@@ -384,7 +400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "gestionarOrdenesAbastecimiento.js",
               "DocumentMoniker": "C:\\TA_P3\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\Scripts\\SoftLib\\gestionarOrdenesAbastecimiento.js",
               "RelativeDocumentMoniker": "Scripts\\SoftLib\\gestionarOrdenesAbastecimiento.js",
@@ -396,7 +412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "estilo.css",
               "DocumentMoniker": "C:\\TA_P3\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\Content\\estilo.css",
               "RelativeDocumentMoniker": "Content\\estilo.css",
@@ -408,7 +424,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "registro_ordenes_venta.aspx.designer.cs",
               "DocumentMoniker": "C:\\TA_P3\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\registro_ordenes_venta.aspx.designer.cs",
               "RelativeDocumentMoniker": "registro_ordenes_venta.aspx.designer.cs",
@@ -420,7 +436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "SoftLibEmpleado.Master.cs",
               "DocumentMoniker": "C:\\TA_P3\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\SoftLibEmpleado.Master.cs",
               "RelativeDocumentMoniker": "SoftLibEmpleado.Master.cs",

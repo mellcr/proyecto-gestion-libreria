@@ -176,13 +176,66 @@ public class ServicioWS {
     
     //--------------------------------------------------------------------------
     //SERVICIOS OTROS RECURSOS
+    
+    @WebMethod(operationName = "otrosRecursos_insertar")
+    public Integer otrosRecursos_insertar(@WebParam(name = "nombre") String nombre,
+                                          @WebParam(name = "peso") Double peso, 
+                                          @WebParam(name = "alto") Double alto, 
+                                          @WebParam(name = "ancho") Double ancho, 
+                                          @WebParam(name = "precio") Double precio, 
+                                          @WebParam(name = "unidadMedida") UnidadMedida unidadMedida, 
+                                          @WebParam(name = "foto") Byte[] foto,
+                                          @WebParam(name = "caracteristica") String caracteristica) {
+        return this.otroRecursoBO.insertar(nombre, peso, alto, ancho, precio, unidadMedida, foto, caracteristica);
+    }
+    
+    @WebMethod(operationName = "otrosRecursos_modificar")
+    public Integer otrosRecursos_modificar(@WebParam(name = "idOtroRecurso") Integer idOtroRecurso,
+                                            @WebParam(name = "nombre") String nombre, 
+                                            @WebParam(name = "peso") Double peso, 
+                                            @WebParam(name = "alto") Double alto, 
+                                            @WebParam(name = "ancho") Double ancho, 
+                                            @WebParam(name = "precio") Double precio,
+                                            @WebParam(name = "activo") Boolean activo, 
+                                            @WebParam(name = "disponible") Boolean disponible,
+                                            @WebParam(name = "unidadMedida") UnidadMedida unidadMedida, 
+                                            @WebParam(name = "foto") Byte[] foto,
+                                            @WebParam(name = "caracteristica") String caracteristica) {
+        return this.otroRecursoBO.modificar(idOtroRecurso, nombre,  peso, alto,  ancho,  precio, activo, 
+             disponible, unidadMedida,  foto, caracteristica);
+    }
+    
+    @WebMethod(operationName = "otrosRecursos_eliminar")
+    public Integer otrosRecursos_eliminar(@WebParam(name = "idOtroRecurso") Integer idOtroRecurso) {
+        return this.otroRecursoBO.eliminar(idOtroRecurso);
+    }
+    
+    @WebMethod(operationName = "otrosRecursos_listarTodos")
+    public ArrayList<OtroRecurso> otrosRecursos_listarTodos(){
+        return this.otroRecursoBO.listarTodos();
+    }
+    
+    @WebMethod(operationName = "otrosRecursos_obtenerPorId")
+    public OtroRecurso otrosRecursos_obtenerPorId(@WebParam(name = "idOtroRecurso") Integer idOtroRecurso){
+        return this.otroRecursoBO.obtenerPorId(idOtroRecurso);
+    }
+    
+    @WebMethod(operationName = "existeOtroRecurso")
+    public Boolean existeOtroRecurso(@WebParam(name = "idOtroRecurso") Integer idOtroRecurso){
+        return this.otroRecursoBO.existeOtroRecurso(idOtroRecurso);
+    }    
+    
+    @WebMethod(operationName = "otrosRecursos_mostrarDestacado")
+    public ArrayList<OtroRecurso> otrosRecursos_mostrarDestacado(){
+        return this.otroRecursoBO.mostrarDestacado();
+    }
+    
     @WebMethod(operationName = "buscarOtrosRecursos")
     public ArrayList<OtroRecurso> buscarOtrosRecursos(@WebParam(name = "nombre") String nombre){
         return this.otroRecursoBO.buscarOtrosRecursos(nombre);
     }  
     
     //SERVICIOS CLIENTES 
-    
     @WebMethod(operationName = "cliente_listarTodos")
     public ArrayList<Cliente> cliente_listarTodos(){
         return this.clienteBO.listarTodos();
