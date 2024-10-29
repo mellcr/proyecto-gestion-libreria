@@ -12,3 +12,10 @@ C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibBO\obj\Debug\SoftLibBO.csproj
 C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibBO\obj\Debug\SoftLibBO.csproj.CoreCompileInputs.cache
 C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibBO\obj\Debug\SoftLibBO.dll
 C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibBO\obj\Debug\SoftLibBO.pdb
+C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibBO\bin\Debug\SoftLibBO.dll.config
+C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibBO\bin\Debug\SoftLibBO.dll
+C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibBO\bin\Debug\SoftLibBO.pdb
+C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibBO\obj\Debug\SoftLibBO.csproj.AssemblyReference.cache
+C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibBO\obj\Debug\SoftLibBO.csproj.CoreCompileInputs.cache
+C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibBO\obj\Debug\SoftLibBO.dll
+C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibBO\obj\Debug\SoftLibBO.pdb
