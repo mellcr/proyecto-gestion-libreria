@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using SoftLibBO.ServicioWeb;
 using SoftLibProducto;
 
 namespace SoftLibWA
@@ -13,8 +14,8 @@ namespace SoftLibWA
     {
         private LibroBO libroBO;
         private OtroRecursoBO otrosRecursosBO;
-        private BindingList<Object> listaDeTodosLibro;
-        private BindingList<Object> listaDeTodosOtroRecurso;
+        private BindingList<libro> listaDeTodosLibro;
+        private BindingList<otroRecurso> listaDeTodosOtroRecurso;
 
         public mantenimiento_recurso()
         {
