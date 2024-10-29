@@ -5,29 +5,35 @@
       <xsd:import schemaLocation="http://localhost:8080/SoftLibWSBL/ServicioWS?xsd=1" namespace="http://services.softlib.pucp.edu.pe/" />
     </xsd:schema>
   </types>
-  <message name="buscarLibros">
-    <part name="parameters" element="tns:buscarLibros" />
+  <message name="libro_modificar">
+    <part name="parameters" element="tns:libro_modificar" />
   </message>
-  <message name="buscarLibrosResponse">
-    <part name="parameters" element="tns:buscarLibrosResponse" />
+  <message name="libro_modificarResponse">
+    <part name="parameters" element="tns:libro_modificarResponse" />
   </message>
-  <message name="buscarClientes">
-    <part name="parameters" element="tns:buscarClientes" />
+  <message name="existeLibro">
+    <part name="parameters" element="tns:existeLibro" />
   </message>
-  <message name="buscarClientesResponse">
-    <part name="parameters" element="tns:buscarClientesResponse" />
+  <message name="existeLibroResponse">
+    <part name="parameters" element="tns:existeLibroResponse" />
   </message>
-  <message name="buscarOtrosRecursos">
-    <part name="parameters" element="tns:buscarOtrosRecursos" />
+  <message name="recurso_modificar">
+    <part name="parameters" element="tns:recurso_modificar" />
   </message>
-  <message name="buscarOtrosRecursosResponse">
-    <part name="parameters" element="tns:buscarOtrosRecursosResponse" />
+  <message name="recurso_modificarResponse">
+    <part name="parameters" element="tns:recurso_modificarResponse" />
   </message>
-  <message name="libro_listarTodos">
-    <part name="parameters" element="tns:libro_listarTodos" />
+  <message name="recurso_eliminar">
+    <part name="parameters" element="tns:recurso_eliminar" />
   </message>
-  <message name="libro_listarTodosResponse">
-    <part name="parameters" element="tns:libro_listarTodosResponse" />
+  <message name="recurso_eliminarResponse">
+    <part name="parameters" element="tns:recurso_eliminarResponse" />
+  </message>
+  <message name="libro_obtenerPorId">
+    <part name="parameters" element="tns:libro_obtenerPorId" />
+  </message>
+  <message name="libro_obtenerPorIdResponse">
+    <part name="parameters" element="tns:libro_obtenerPorIdResponse" />
   </message>
   <message name="autor_listarTodos">
     <part name="parameters" element="tns:autor_listarTodos" />
@@ -35,17 +41,77 @@
   <message name="autor_listarTodosResponse">
     <part name="parameters" element="tns:autor_listarTodosResponse" />
   </message>
+  <message name="buscarLibros">
+    <part name="parameters" element="tns:buscarLibros" />
+  </message>
+  <message name="buscarLibrosResponse">
+    <part name="parameters" element="tns:buscarLibrosResponse" />
+  </message>
+  <message name="libro_insertar">
+    <part name="parameters" element="tns:libro_insertar" />
+  </message>
+  <message name="libro_insertarResponse">
+    <part name="parameters" element="tns:libro_insertarResponse" />
+  </message>
+  <message name="existeRecurso">
+    <part name="parameters" element="tns:existeRecurso" />
+  </message>
+  <message name="existeRecursoResponse">
+    <part name="parameters" element="tns:existeRecursoResponse" />
+  </message>
+  <message name="libro_eliminar">
+    <part name="parameters" element="tns:libro_eliminar" />
+  </message>
+  <message name="libro_eliminarResponse">
+    <part name="parameters" element="tns:libro_eliminarResponse" />
+  </message>
+  <message name="libro_listarTodos">
+    <part name="parameters" element="tns:libro_listarTodos" />
+  </message>
+  <message name="libro_listarTodosResponse">
+    <part name="parameters" element="tns:libro_listarTodosResponse" />
+  </message>
+  <message name="recurso_insertar">
+    <part name="parameters" element="tns:recurso_insertar" />
+  </message>
+  <message name="recurso_insertarResponse">
+    <part name="parameters" element="tns:recurso_insertarResponse" />
+  </message>
+  <message name="buscarClientes">
+    <part name="parameters" element="tns:buscarClientes" />
+  </message>
+  <message name="buscarClientesResponse">
+    <part name="parameters" element="tns:buscarClientesResponse" />
+  </message>
+  <message name="recurso_obtenerPorId">
+    <part name="parameters" element="tns:recurso_obtenerPorId" />
+  </message>
+  <message name="recurso_obtenerPorIdResponse">
+    <part name="parameters" element="tns:recurso_obtenerPorIdResponse" />
+  </message>
   <message name="recurso_listarTodos">
     <part name="parameters" element="tns:recurso_listarTodos" />
   </message>
   <message name="recurso_listarTodosResponse">
     <part name="parameters" element="tns:recurso_listarTodosResponse" />
   </message>
+  <message name="buscarOtrosRecursos">
+    <part name="parameters" element="tns:buscarOtrosRecursos" />
+  </message>
+  <message name="buscarOtrosRecursosResponse">
+    <part name="parameters" element="tns:buscarOtrosRecursosResponse" />
+  </message>
   <message name="cliente_listarTodos">
     <part name="parameters" element="tns:cliente_listarTodos" />
   </message>
   <message name="cliente_listarTodosResponse">
     <part name="parameters" element="tns:cliente_listarTodosResponse" />
+  </message>
+  <message name="libro_mostrarDestacado">
+    <part name="parameters" element="tns:libro_mostrarDestacado" />
+  </message>
+  <message name="libro_mostrarDestacadoResponse">
+    <part name="parameters" element="tns:libro_mostrarDestacadoResponse" />
   </message>
   <message name="cliente_obtenerPorId">
     <part name="parameters" element="tns:cliente_obtenerPorId" />
@@ -54,33 +120,77 @@
     <part name="parameters" element="tns:cliente_obtenerPorIdResponse" />
   </message>
   <portType name="ServicioWS">
-    <operation name="buscarLibros">
-      <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/buscarLibrosRequest" message="tns:buscarLibros" />
-      <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/buscarLibrosResponse" message="tns:buscarLibrosResponse" />
+    <operation name="libro_modificar">
+      <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_modificarRequest" message="tns:libro_modificar" />
+      <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_modificarResponse" message="tns:libro_modificarResponse" />
     </operation>
-    <operation name="buscarClientes">
-      <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/buscarClientesRequest" message="tns:buscarClientes" />
-      <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/buscarClientesResponse" message="tns:buscarClientesResponse" />
+    <operation name="existeLibro">
+      <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/existeLibroRequest" message="tns:existeLibro" />
+      <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/existeLibroResponse" message="tns:existeLibroResponse" />
     </operation>
-    <operation name="buscarOtrosRecursos">
-      <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/buscarOtrosRecursosRequest" message="tns:buscarOtrosRecursos" />
-      <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/buscarOtrosRecursosResponse" message="tns:buscarOtrosRecursosResponse" />
+    <operation name="recurso_modificar">
+      <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_modificarRequest" message="tns:recurso_modificar" />
+      <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_modificarResponse" message="tns:recurso_modificarResponse" />
     </operation>
-    <operation name="libro_listarTodos">
-      <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_listarTodosRequest" message="tns:libro_listarTodos" />
-      <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_listarTodosResponse" message="tns:libro_listarTodosResponse" />
+    <operation name="recurso_eliminar">
+      <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_eliminarRequest" message="tns:recurso_eliminar" />
+      <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_eliminarResponse" message="tns:recurso_eliminarResponse" />
+    </operation>
+    <operation name="libro_obtenerPorId">
+      <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_obtenerPorIdRequest" message="tns:libro_obtenerPorId" />
+      <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_obtenerPorIdResponse" message="tns:libro_obtenerPorIdResponse" />
     </operation>
     <operation name="autor_listarTodos">
       <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/autor_listarTodosRequest" message="tns:autor_listarTodos" />
       <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/autor_listarTodosResponse" message="tns:autor_listarTodosResponse" />
     </operation>
+    <operation name="buscarLibros">
+      <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/buscarLibrosRequest" message="tns:buscarLibros" />
+      <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/buscarLibrosResponse" message="tns:buscarLibrosResponse" />
+    </operation>
+    <operation name="libro_insertar">
+      <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_insertarRequest" message="tns:libro_insertar" />
+      <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_insertarResponse" message="tns:libro_insertarResponse" />
+    </operation>
+    <operation name="existeRecurso">
+      <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/existeRecursoRequest" message="tns:existeRecurso" />
+      <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/existeRecursoResponse" message="tns:existeRecursoResponse" />
+    </operation>
+    <operation name="libro_eliminar">
+      <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_eliminarRequest" message="tns:libro_eliminar" />
+      <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_eliminarResponse" message="tns:libro_eliminarResponse" />
+    </operation>
+    <operation name="libro_listarTodos">
+      <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_listarTodosRequest" message="tns:libro_listarTodos" />
+      <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_listarTodosResponse" message="tns:libro_listarTodosResponse" />
+    </operation>
+    <operation name="recurso_insertar">
+      <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_insertarRequest" message="tns:recurso_insertar" />
+      <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_insertarResponse" message="tns:recurso_insertarResponse" />
+    </operation>
+    <operation name="buscarClientes">
+      <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/buscarClientesRequest" message="tns:buscarClientes" />
+      <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/buscarClientesResponse" message="tns:buscarClientesResponse" />
+    </operation>
+    <operation name="recurso_obtenerPorId">
+      <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_obtenerPorIdRequest" message="tns:recurso_obtenerPorId" />
+      <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_obtenerPorIdResponse" message="tns:recurso_obtenerPorIdResponse" />
+    </operation>
     <operation name="recurso_listarTodos">
       <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_listarTodosRequest" message="tns:recurso_listarTodos" />
       <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_listarTodosResponse" message="tns:recurso_listarTodosResponse" />
     </operation>
+    <operation name="buscarOtrosRecursos">
+      <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/buscarOtrosRecursosRequest" message="tns:buscarOtrosRecursos" />
+      <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/buscarOtrosRecursosResponse" message="tns:buscarOtrosRecursosResponse" />
+    </operation>
     <operation name="cliente_listarTodos">
       <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_listarTodosRequest" message="tns:cliente_listarTodos" />
       <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_listarTodosResponse" message="tns:cliente_listarTodosResponse" />
+    </operation>
+    <operation name="libro_mostrarDestacado">
+      <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_mostrarDestacadoRequest" message="tns:libro_mostrarDestacado" />
+      <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_mostrarDestacadoResponse" message="tns:libro_mostrarDestacadoResponse" />
     </operation>
     <operation name="cliente_obtenerPorId">
       <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_obtenerPorIdRequest" message="tns:cliente_obtenerPorId" />
@@ -89,7 +199,7 @@
   </portType>
   <binding name="ServicioWSPortBinding" type="tns:ServicioWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="buscarLibros">
+    <operation name="libro_modificar">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -98,7 +208,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="buscarClientes">
+    <operation name="existeLibro">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -107,7 +217,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="buscarOtrosRecursos">
+    <operation name="recurso_modificar">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -116,7 +226,16 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="libro_listarTodos">
+    <operation name="recurso_eliminar">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="libro_obtenerPorId">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -134,6 +253,78 @@
         <soap:body use="literal" />
       </output>
     </operation>
+    <operation name="buscarLibros">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="libro_insertar">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="existeRecurso">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="libro_eliminar">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="libro_listarTodos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="recurso_insertar">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarClientes">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="recurso_obtenerPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
     <operation name="recurso_listarTodos">
       <soap:operation soapAction="" />
       <input>
@@ -143,7 +334,25 @@
         <soap:body use="literal" />
       </output>
     </operation>
+    <operation name="buscarOtrosRecursos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
     <operation name="cliente_listarTodos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="libro_mostrarDestacado">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

@@ -12,54 +12,32 @@
   <xs:element name="cliente_listarTodosResponse" type="tns:cliente_listarTodosResponse" />
   <xs:element name="cliente_obtenerPorId" type="tns:cliente_obtenerPorId" />
   <xs:element name="cliente_obtenerPorIdResponse" type="tns:cliente_obtenerPorIdResponse" />
+  <xs:element name="existeLibro" type="tns:existeLibro" />
+  <xs:element name="existeLibroResponse" type="tns:existeLibroResponse" />
+  <xs:element name="existeRecurso" type="tns:existeRecurso" />
+  <xs:element name="existeRecursoResponse" type="tns:existeRecursoResponse" />
+  <xs:element name="libro_eliminar" type="tns:libro_eliminar" />
+  <xs:element name="libro_eliminarResponse" type="tns:libro_eliminarResponse" />
+  <xs:element name="libro_insertar" type="tns:libro_insertar" />
+  <xs:element name="libro_insertarResponse" type="tns:libro_insertarResponse" />
   <xs:element name="libro_listarTodos" type="tns:libro_listarTodos" />
   <xs:element name="libro_listarTodosResponse" type="tns:libro_listarTodosResponse" />
+  <xs:element name="libro_modificar" type="tns:libro_modificar" />
+  <xs:element name="libro_modificarResponse" type="tns:libro_modificarResponse" />
+  <xs:element name="libro_mostrarDestacado" type="tns:libro_mostrarDestacado" />
+  <xs:element name="libro_mostrarDestacadoResponse" type="tns:libro_mostrarDestacadoResponse" />
+  <xs:element name="libro_obtenerPorId" type="tns:libro_obtenerPorId" />
+  <xs:element name="libro_obtenerPorIdResponse" type="tns:libro_obtenerPorIdResponse" />
+  <xs:element name="recurso_eliminar" type="tns:recurso_eliminar" />
+  <xs:element name="recurso_eliminarResponse" type="tns:recurso_eliminarResponse" />
+  <xs:element name="recurso_insertar" type="tns:recurso_insertar" />
+  <xs:element name="recurso_insertarResponse" type="tns:recurso_insertarResponse" />
   <xs:element name="recurso_listarTodos" type="tns:recurso_listarTodos" />
   <xs:element name="recurso_listarTodosResponse" type="tns:recurso_listarTodosResponse" />
-  <xs:complexType name="cliente_obtenerPorId">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="idCliente" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="cliente_obtenerPorIdResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="tns:cliente" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="cliente">
-    <xs:complexContent mixed="false">
-      <xs:extension base="tns:persona">
-        <xs:sequence>
-          <xs:element minOccurs="0" name="direccion" type="xs:string" />
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="persona">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="apellidoMaterno" type="xs:string" />
-      <xs:element minOccurs="0" name="apellidoPaterno" type="xs:string" />
-      <xs:element minOccurs="0" name="idPersona" type="xs:int" />
-      <xs:element minOccurs="0" name="nacionalidad" type="xs:string" />
-      <xs:element minOccurs="0" name="nombre" type="xs:string" />
-      <xs:element minOccurs="0" name="numeroDocumento" type="xs:string" />
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="perfiles" nillable="true" type="tns:perfil" />
-      <xs:element minOccurs="0" name="tipoDocumento" type="tns:tipoDocumento" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="perfil">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="idPerfil" type="xs:int" />
-      <xs:element minOccurs="0" name="nombre" type="xs:string" />
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="roles" nillable="true" type="tns:rol" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="rol">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="idRol" type="xs:int" />
-      <xs:element minOccurs="0" name="nombre" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
+  <xs:element name="recurso_modificar" type="tns:recurso_modificar" />
+  <xs:element name="recurso_modificarResponse" type="tns:recurso_modificarResponse" />
+  <xs:element name="recurso_obtenerPorId" type="tns:recurso_obtenerPorId" />
+  <xs:element name="recurso_obtenerPorIdResponse" type="tns:recurso_obtenerPorIdResponse" />
   <xs:complexType name="libro_listarTodos">
     <xs:sequence />
   </xs:complexType>
@@ -111,6 +89,26 @@
       <xs:element minOccurs="0" name="nombre" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="libro_obtenerPorId">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idLibro" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="libro_obtenerPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:libro" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="recurso_obtenerPorId">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idRecurso" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="recurso_obtenerPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:recurso" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="buscarClientes">
     <xs:sequence>
       <xs:element minOccurs="0" name="nombre" type="xs:string" />
@@ -121,6 +119,69 @@
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:cliente" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="cliente">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:persona">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="direccion" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="persona">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="apellidoMaterno" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidoPaterno" type="xs:string" />
+      <xs:element minOccurs="0" name="idPersona" type="xs:int" />
+      <xs:element minOccurs="0" name="nacionalidad" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="numeroDocumento" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="perfiles" nillable="true" type="tns:perfil" />
+      <xs:element minOccurs="0" name="tipoDocumento" type="tns:tipoDocumento" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="perfil">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idPerfil" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="roles" nillable="true" type="tns:rol" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="rol">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idRol" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="existeLibro">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idLibro" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="existeLibroResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="recurso_modificar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idRecurso" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="peso" type="xs:double" />
+      <xs:element minOccurs="0" name="alto" type="xs:double" />
+      <xs:element minOccurs="0" name="ancho" type="xs:double" />
+      <xs:element minOccurs="0" name="precio" type="xs:double" />
+      <xs:element minOccurs="0" name="activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="disponible" type="xs:boolean" />
+      <xs:element minOccurs="0" name="unidadMedida" type="tns:unidadMedida" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="foto" nillable="true" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="recurso_modificarResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="recurso_listarTodos">
     <xs:sequence />
   </xs:complexType>
@@ -128,25 +189,6 @@
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:recurso" />
     </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="buscarOtrosRecursos">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="nombre" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="buscarOtrosRecursosResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:otroRecurso" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="otroRecurso">
-    <xs:complexContent mixed="false">
-      <xs:extension base="tns:recurso">
-        <xs:sequence>
-          <xs:element minOccurs="0" name="descripcion" type="xs:string" />
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
   </xs:complexType>
   <xs:complexType name="buscarLibros">
     <xs:sequence>
@@ -174,13 +216,139 @@
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:autor" />
     </xs:sequence>
   </xs:complexType>
-  <xs:simpleType name="tipoDocumento">
-    <xs:restriction base="xs:string">
-      <xs:enumeration value="DNI" />
-      <xs:enumeration value="RUC" />
-      <xs:enumeration value="CE" />
-    </xs:restriction>
-  </xs:simpleType>
+  <xs:complexType name="libro_mostrarDestacado">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="libro_mostrarDestacadoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:libro" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="recurso_eliminar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idRecurso" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="recurso_eliminarResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cliente_obtenerPorId">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idCliente" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cliente_obtenerPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:cliente" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="libro_eliminar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idLibro" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="libro_eliminarResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="existeRecurso">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="precio" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="existeRecursoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="libro_insertar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="peso" type="xs:double" />
+      <xs:element minOccurs="0" name="alto" type="xs:double" />
+      <xs:element minOccurs="0" name="ancho" type="xs:double" />
+      <xs:element minOccurs="0" name="precio" type="xs:double" />
+      <xs:element minOccurs="0" name="unidadMedida" type="tns:unidadMedida" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="foto" nillable="true" type="xs:byte" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="categorias" type="tns:categoria" />
+      <xs:element minOccurs="0" name="autor" type="tns:autor" />
+      <xs:element minOccurs="0" name="editorial" type="xs:string" />
+      <xs:element minOccurs="0" name="ISBN" type="xs:string" />
+      <xs:element minOccurs="0" name="sinopsis" type="xs:string" />
+      <xs:element minOccurs="0" name="formato" type="tns:formato" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="libro_insertarResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="libro_modificar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idLibro" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="peso" type="xs:double" />
+      <xs:element minOccurs="0" name="alto" type="xs:double" />
+      <xs:element minOccurs="0" name="ancho" type="xs:double" />
+      <xs:element minOccurs="0" name="precio" type="xs:double" />
+      <xs:element minOccurs="0" name="activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="disponible" type="xs:boolean" />
+      <xs:element minOccurs="0" name="unidadMedida" type="tns:unidadMedida" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="foto" nillable="true" type="xs:byte" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="categorias" type="tns:categoria" />
+      <xs:element minOccurs="0" name="autor" type="tns:autor" />
+      <xs:element minOccurs="0" name="editorial" type="xs:string" />
+      <xs:element minOccurs="0" name="ISBN" type="xs:string" />
+      <xs:element minOccurs="0" name="sinopsis" type="xs:string" />
+      <xs:element minOccurs="0" name="formato" type="tns:formato" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="libro_modificarResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="recurso_insertar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="peso" type="xs:double" />
+      <xs:element minOccurs="0" name="alto" type="xs:double" />
+      <xs:element minOccurs="0" name="ancho" type="xs:double" />
+      <xs:element minOccurs="0" name="precio" type="xs:double" />
+      <xs:element minOccurs="0" name="activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="disponible" type="xs:boolean" />
+      <xs:element minOccurs="0" name="unidadMedida" type="tns:unidadMedida" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="foto" nillable="true" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="recurso_insertarResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarOtrosRecursos">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarOtrosRecursosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:otroRecurso" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="otroRecurso">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:recurso">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
   <xs:simpleType name="formato">
     <xs:restriction base="xs:string">
       <xs:enumeration value="BOLSILLO" />
@@ -194,6 +362,13 @@
     <xs:restriction base="xs:string">
       <xs:enumeration value="UNIDAD" />
       <xs:enumeration value="PAQUETE" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="tipoDocumento">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="DNI" />
+      <xs:enumeration value="RUC" />
+      <xs:enumeration value="CE" />
     </xs:restriction>
   </xs:simpleType>
 </xs:schema>
