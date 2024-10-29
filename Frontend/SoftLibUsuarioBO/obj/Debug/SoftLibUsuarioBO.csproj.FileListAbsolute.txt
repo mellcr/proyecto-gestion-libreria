@@ -8,3 +8,13 @@ C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLi
 C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibUsuarioBO\obj\Debug\SoftLibU.FC53082B.Up2Date
 C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibUsuarioBO\obj\Debug\SoftLibUsuarioBO.dll
 C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibUsuarioBO\obj\Debug\SoftLibUsuarioBO.pdb
+C:\Users\Jaritza\Desktop\CICLO 24-2\Programacion 3\TrabajoAcademico\Gestion de Libreria - CleanCode\proyecto-gestion-libreria\Frontend\SoftLibUsuarioBO\bin\Debug\SoftLibUsuarioBO.dll
+C:\Users\Jaritza\Desktop\CICLO 24-2\Programacion 3\TrabajoAcademico\Gestion de Libreria - CleanCode\proyecto-gestion-libreria\Frontend\SoftLibUsuarioBO\bin\Debug\SoftLibUsuarioBO.pdb
+C:\Users\Jaritza\Desktop\CICLO 24-2\Programacion 3\TrabajoAcademico\Gestion de Libreria - CleanCode\proyecto-gestion-libreria\Frontend\SoftLibUsuarioBO\bin\Debug\SoftLibBO.dll
+C:\Users\Jaritza\Desktop\CICLO 24-2\Programacion 3\TrabajoAcademico\Gestion de Libreria - CleanCode\proyecto-gestion-libreria\Frontend\SoftLibUsuarioBO\bin\Debug\SoftLibBO.pdb
+C:\Users\Jaritza\Desktop\CICLO 24-2\Programacion 3\TrabajoAcademico\Gestion de Libreria - CleanCode\proyecto-gestion-libreria\Frontend\SoftLibUsuarioBO\bin\Debug\SoftLibBO.dll.config
+C:\Users\Jaritza\Desktop\CICLO 24-2\Programacion 3\TrabajoAcademico\Gestion de Libreria - CleanCode\proyecto-gestion-libreria\Frontend\SoftLibUsuarioBO\obj\Debug\SoftLibUsuarioBO.csproj.AssemblyReference.cache
+C:\Users\Jaritza\Desktop\CICLO 24-2\Programacion 3\TrabajoAcademico\Gestion de Libreria - CleanCode\proyecto-gestion-libreria\Frontend\SoftLibUsuarioBO\obj\Debug\SoftLibUsuarioBO.csproj.CoreCompileInputs.cache
+C:\Users\Jaritza\Desktop\CICLO 24-2\Programacion 3\TrabajoAcademico\Gestion de Libreria - CleanCode\proyecto-gestion-libreria\Frontend\SoftLibUsuarioBO\obj\Debug\SoftLibU.FC53082B.Up2Date
+C:\Users\Jaritza\Desktop\CICLO 24-2\Programacion 3\TrabajoAcademico\Gestion de Libreria - CleanCode\proyecto-gestion-libreria\Frontend\SoftLibUsuarioBO\obj\Debug\SoftLibUsuarioBO.dll
+C:\Users\Jaritza\Desktop\CICLO 24-2\Programacion 3\TrabajoAcademico\Gestion de Libreria - CleanCode\proyecto-gestion-libreria\Frontend\SoftLibUsuarioBO\obj\Debug\SoftLibUsuarioBO.pdb
