@@ -44,19 +44,56 @@ public class ServicioWS {
     //SERVICIOS RECURSOS 
     
     @WebMethod(operationName = "recurso_insertar")
-    public Integer recurso_insertar(String nombre, Double peso, Double alto, Double ancho, 
-            Double precio, Boolean activo, Boolean disponible, 
-            UnidadMedida unidadMedida, Byte[] foto){
-        return this.recursoBO.insertar(nombre, peso, alto, ancho, 
-            precio, activo, disponible, 
-            unidadMedida, foto);
+    public Integer recurso_insertar(@WebParam(name = "nombre")String nombre, 
+                                      @WebParam(name = "peso") Double peso, 
+                                      @WebParam(name = "alto") Double alto,
+                                      @WebParam(name = "ancho") Double ancho, 
+                                      @WebParam(name = "precio") Double precio, 
+                                      @WebParam(name = "activo") Boolean activo, 
+                                      @WebParam(name = "disponible") Boolean disponible, 
+                                      @WebParam(name = "unidadMedida") UnidadMedida unidadMedida, 
+                                      @WebParam(name = "foto") Byte[] foto){
+        return this.recursoBO.insertar(nombre, peso, alto, ancho, precio, activo, disponible, unidadMedida, foto);
     }
     
+    
+    @WebMethod(operationName = "recurso_modificar")
+     public Integer recurso_modificar(@WebParam(name = "idRecurso")Integer idRecurso,
+                                      @WebParam(name = "nombre")String nombre, 
+                                      @WebParam(name = "peso") Double peso, 
+                                      @WebParam(name = "alto") Double alto,
+                                      @WebParam(name = "ancho") Double ancho, 
+                                      @WebParam(name = "precio") Double precio, 
+                                      @WebParam(name = "activo") Boolean activo, 
+                                      @WebParam(name = "disponible") Boolean disponible, 
+                                      @WebParam(name = "unidadMedida") UnidadMedida unidadMedida, 
+                                      @WebParam(name = "foto") Byte[] foto){
+        return this.recursoBO.modificar(idRecurso, nombre,  peso, 
+             alto,  ancho,  precio,  activo, 
+             disponible,  unidadMedida,  foto);
+    }
+    
+    @WebMethod(operationName = "recurso_eliminar")
+    public Integer recurso_eliminar(@WebParam(name = "idRecurso") Integer idRecurso){
+        return this.recursoBO.eliminar(idRecurso);
+    }
+    
+    @WebMethod(operationName = "recurso_obtenerPorId")
+    public Recurso recurso_obtenerPorId(@WebParam(name = "idRecurso") Integer idRecurso){
+        return this.recursoBO.obtenerPorId(idRecurso);
+    }
+    
+ 
     @WebMethod(operationName = "recurso_listarTodos")
     public ArrayList<Recurso> recurso_listarTodos(){
         return recursoBO.listarTodos();
     }
     
+    @WebMethod(operationName = "existeRecurso")
+    public Integer existeRecurso(@WebParam(name = "nombre")  String nombre, 
+                                 @WebParam(name = "precio") Double precio){
+        return this.recursoBO.existeRecurso(nombre, precio);
+    }
     
     //SERVICIOS CLIENTES 
     @WebMethod(operationName = "cliente_listarTodos")

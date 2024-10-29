@@ -29,6 +29,12 @@
   <message name="libro_listarTodosResponse">
     <part name="parameters" element="tns:libro_listarTodosResponse" />
   </message>
+  <message name="existeRecurso">
+    <part name="parameters" element="tns:existeRecurso" />
+  </message>
+  <message name="existeRecursoResponse">
+    <part name="parameters" element="tns:existeRecursoResponse" />
+  </message>
   <message name="autor_listarTodos">
     <part name="parameters" element="tns:autor_listarTodos" />
   </message>
@@ -53,6 +59,30 @@
   <message name="cliente_obtenerPorIdResponse">
     <part name="parameters" element="tns:cliente_obtenerPorIdResponse" />
   </message>
+  <message name="recurso_obtenerPorId">
+    <part name="parameters" element="tns:recurso_obtenerPorId" />
+  </message>
+  <message name="recurso_obtenerPorIdResponse">
+    <part name="parameters" element="tns:recurso_obtenerPorIdResponse" />
+  </message>
+  <message name="recurso_modificar">
+    <part name="parameters" element="tns:recurso_modificar" />
+  </message>
+  <message name="recurso_modificarResponse">
+    <part name="parameters" element="tns:recurso_modificarResponse" />
+  </message>
+  <message name="recurso_eliminar">
+    <part name="parameters" element="tns:recurso_eliminar" />
+  </message>
+  <message name="recurso_eliminarResponse">
+    <part name="parameters" element="tns:recurso_eliminarResponse" />
+  </message>
+  <message name="recurso_insertar">
+    <part name="parameters" element="tns:recurso_insertar" />
+  </message>
+  <message name="recurso_insertarResponse">
+    <part name="parameters" element="tns:recurso_insertarResponse" />
+  </message>
   <portType name="ServicioWS">
     <operation name="buscarLibros">
       <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/buscarLibrosRequest" message="tns:buscarLibros" />
@@ -70,6 +100,10 @@
       <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_listarTodosRequest" message="tns:libro_listarTodos" />
       <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/libro_listarTodosResponse" message="tns:libro_listarTodosResponse" />
     </operation>
+    <operation name="existeRecurso">
+      <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/existeRecursoRequest" message="tns:existeRecurso" />
+      <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/existeRecursoResponse" message="tns:existeRecursoResponse" />
+    </operation>
     <operation name="autor_listarTodos">
       <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/autor_listarTodosRequest" message="tns:autor_listarTodos" />
       <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/autor_listarTodosResponse" message="tns:autor_listarTodosResponse" />
@@ -85,6 +119,22 @@
     <operation name="cliente_obtenerPorId">
       <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_obtenerPorIdRequest" message="tns:cliente_obtenerPorId" />
       <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/cliente_obtenerPorIdResponse" message="tns:cliente_obtenerPorIdResponse" />
+    </operation>
+    <operation name="recurso_obtenerPorId">
+      <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_obtenerPorIdRequest" message="tns:recurso_obtenerPorId" />
+      <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_obtenerPorIdResponse" message="tns:recurso_obtenerPorIdResponse" />
+    </operation>
+    <operation name="recurso_modificar">
+      <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_modificarRequest" message="tns:recurso_modificar" />
+      <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_modificarResponse" message="tns:recurso_modificarResponse" />
+    </operation>
+    <operation name="recurso_eliminar">
+      <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_eliminarRequest" message="tns:recurso_eliminar" />
+      <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_eliminarResponse" message="tns:recurso_eliminarResponse" />
+    </operation>
+    <operation name="recurso_insertar">
+      <input wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_insertarRequest" message="tns:recurso_insertar" />
+      <output wsam:Action="http://services.softlib.pucp.edu.pe/ServicioWS/recurso_insertarResponse" message="tns:recurso_insertarResponse" />
     </operation>
   </portType>
   <binding name="ServicioWSPortBinding" type="tns:ServicioWS">
@@ -125,6 +175,15 @@
         <soap:body use="literal" />
       </output>
     </operation>
+    <operation name="existeRecurso">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
     <operation name="autor_listarTodos">
       <soap:operation soapAction="" />
       <input>
@@ -153,6 +212,42 @@
       </output>
     </operation>
     <operation name="cliente_obtenerPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="recurso_obtenerPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="recurso_modificar">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="recurso_eliminar">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="recurso_insertar">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
