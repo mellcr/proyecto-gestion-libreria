@@ -15,21 +15,39 @@ namespace SoftLibWA
     {
 
         /// <summary>
-        /// Control dgvRecurso.
+        /// Control dgvRecursoLibros.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView dgvRecurso;
+        protected global::System.Web.UI.WebControls.GridView dgvRecursoLibros;
 
         /// <summary>
-        /// Control btnInsertar.
+        /// Control btnInsertarLibros.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnInsertar;
+        protected global::System.Web.UI.WebControls.Button btnInsertarLibros;
+
+        /// <summary>
+        /// Control dgvRecursoOtros.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView dgvRecursoOtros;
+
+        /// <summary>
+        /// Control btnInsertarOtrosRecursos.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnInsertarOtrosRecursos;
     }
 }

@@ -42,3 +42,19 @@ C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLi
 C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibWA\bin\SoftLibProducto.dll.config
 C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibWA\bin\SoftLibUsuarioBO.pdb
 C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibWA\obj\Debug\SoftLibWA.csproj.Up2Date
+C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibWA\bin\SoftLibWA.dll.config
+C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibWA\bin\SoftLibWA.dll
+C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibWA\bin\SoftLibWA.pdb
+C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibWA\bin\SoftLibBO.dll
+C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibWA\bin\SoftLibProducto.dll
+C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibWA\bin\SoftLibUsuarioBO.dll
+C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibWA\bin\SoftLibBO.pdb
+C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibWA\bin\SoftLibBO.dll.config
+C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibWA\bin\SoftLibProducto.pdb
+C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibWA\bin\SoftLibProducto.dll.config
+C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibWA\bin\SoftLibUsuarioBO.pdb
+C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibWA\obj\Debug\SoftLibWA.csproj.AssemblyReference.cache
+C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibWA\obj\Debug\SoftLibWA.csproj.CoreCompileInputs.cache
+C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibWA\obj\Debug\SoftLibWA.csproj.Up2Date
+C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibWA\obj\Debug\SoftLibWA.dll
+C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibWA\obj\Debug\SoftLibWA.pdb

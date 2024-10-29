@@ -16,5 +16,11 @@ namespace SoftLibProducto
             libro[] arreglo = this.WsLibro.buscarLibros(nombre);
             return new BindingList<libro>(arreglo);
         }
+
+        public BindingList<libro> listarTodos()
+        {
+            libro[] arreglo = this.WsLibro.libro_listarTodos;
+            return new BindingList<libro>(arreglo);
+        }
     }
 }

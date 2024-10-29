@@ -1,31 +1,90 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SoftLibEmpleado.Master" AutoEventWireup="true" CodeBehind="mantenimiento_recurso.aspx.cs" Inherits="SoftLibWA.mantenimiento_recurso" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="cphTitulo" runat="server">
-    Mantenimiento - Producto
+    Mantenimiento - Recurso
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphScripts" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="cphContenido" runat="server">
     <div class="container">
         <h2>Mantenimiento de Recurso</h2>
-        <div class="container row">
-            <asp:GridView ID="dgvRecurso" runat="server" AllowPaging="true" PageSize="5" OnPageIndexChanging="dgvRecurso_PageIndexChanging" AutoGenerateColumns="false" CssClass="table table-hover table-responsive table-striped">
-                <Columns>
-                    <asp:BoundField HeaderText="Id de la Sección" DataField="IdSeccion"/>
-                    <asp:BoundField HeaderText="Nombre de la Sección" DataField="Nombre_Seccion"/>
-                    <asp:BoundField HeaderText="Departamento" DataField="Departamento"/>
-                    <asp:TemplateField>
-                        <ItemTemplate>
-                            <asp:LinkButton runat="server" Text="<i class='fa-solid fa-edit ps-2'></i>"  CommandArgument='<%# Eval("IdRecurso") %>' OnClick="lbModificar_Click" />
-                            <asp:LinkButton runat="server" Text="<i class='fa-solid fa-trash ps-2'></i>" CommandArgument='<%# Eval("IdRecurso") %>' OnClick="lbEliminar_Click"/>
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                </Columns>
-            </asp:GridView>
-        </div>
-        <div class="container row">
-            <div class="text-end">
-                <asp:Button ID="btnInsertar" CssClass="float-start btn btn-primary" runat="server" Text="Insertar" OnClick="btnInsertar_Click" />
+        
+        <!-- Contenedor de pestañas -->
+        <ul class="nav nav-tabs mt-3" id="recursoTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="libros-tab" data-bs-toggle="tab" data-bs-target="#libros" type="button" role="tab" aria-controls="libros" aria-selected="true">Libros</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="otros-recursos-tab" data-bs-toggle="tab" data-bs-target="#otros-recursos" type="button" role="tab" aria-controls="otros-recursos" aria-selected="false">Otros Recursos</button>
+            </li>
+        </ul>
+        
+        <!-- Contenido de la pestaña Libros -->
+        <div class="tab-pane fade show active" id="libros" role="tabpanel" aria-labelledby="libros-tab">
+            <div class="container mt-3">
+                <asp:GridView ID="dgvRecursoLibros" runat="server" AllowPaging="true" PageSize="5" 
+                    OnPageIndexChanging="dgvRecursoLibros_PageIndexChanging" AutoGenerateColumns="false" 
+                    CssClass="table table-hover table-responsive table-striped">
+                    <Columns>
+                        <asp:BoundField HeaderText="Id del Libro" DataField="IdLibro" />
+                        <asp:BoundField HeaderText="Título" DataField="Titulo" />
+                        <asp:BoundField HeaderText="Autor" DataField="Autor" />
+                        <asp:TemplateField>
+                            <ItemTemplate>
+                                <asp:LinkButton runat="server" CssClass="btn btn-sm btn-primary me-1" 
+                                    Text="Editar" CommandArgument='<%# Eval("IdLibro") %>' OnClick="lbModificarLibro_Click" />
+                                <asp:LinkButton runat="server" CssClass="btn btn-sm btn-danger" 
+                                    Text="Eliminar" CommandArgument='<%# Eval("IdLibro") %>' OnClick="lbEliminarLibro_Click"/>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                    </Columns>
+                    <EmptyDataTemplate>
+                        <div class="alert alert-warning" role="alert">
+                            No hay registros disponibles en este momento.
+                        </div>
+                    </EmptyDataTemplate>
+                </asp:GridView>
+
+                <!-- Botón Insertar para la pestaña Libros -->
+                <div class="mt-3">
+                    <asp:Button ID="btnInsertarLibros" CssClass="btn btn-primary" runat="server" Text="Insertar" OnClick="btnInsertarLibros_Click" />
+                </div>
             </div>
         </div>
+
+
+
+        <!-- Contenido de la pestaña Otros Recursos -->
+        <div class="tab-pane fade" id="otros-recursos" role="tabpanel" aria-labelledby="otros-recursos-tab">
+            <div class="mt-1">
+                <asp:GridView ID="dgvRecursoOtros" runat="server" AllowPaging="true" PageSize="5" 
+                    OnPageIndexChanging="dgvRecurso_PageIndexChanging" AutoGenerateColumns="false" 
+                    CssClass="table table-hover table-responsive table-striped">
+                    <Columns>
+                        <asp:BoundField HeaderText="Id del Recurso" DataField="IdRecurso"/>
+                        <asp:BoundField HeaderText="Nombre" DataField="NombreRecurso"/>
+                        <asp:BoundField HeaderText="Categoría" DataField="Categoria"/>
+                        <asp:TemplateField>
+                            <ItemTemplate>
+                                <asp:LinkButton runat="server" CssClass="btn btn-sm btn-primary me-1" 
+                                    Text="Editar" CommandArgument='<%# Eval("IdRecurso") %>' OnClick="lbModificarOtroRecurso_Click" />
+                                <asp:LinkButton runat="server" CssClass="btn btn-sm btn-danger" 
+                                    Text="Eliminar" CommandArgument='<%# Eval("IdRecurso") %>' OnClick="lbEliminarOtroRecurso_Click"/>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                    </Columns>
+                    <EmptyDataTemplate>
+                        <div class="alert alert-warning text-center" role="alert">
+                            No hay registros disponibles en este momento.
+                        </div>
+                    </EmptyDataTemplate>
+                </asp:GridView>
+                <!-- Botón Insertar para la pestaña Otros Recursos -->
+                <div class="mt-3">
+                    <asp:Button ID="btnInsertarOtrosRecursos" CssClass="btn btn-primary" runat="server" Text="Insertar" OnClick="btnInsertarOtrosRecursos_Click" />
+                </div>
+            </div>
+        </div>
+
     </div>
 </asp:Content>
+

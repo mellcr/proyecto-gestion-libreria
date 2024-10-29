@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SoftLibProducto
 {
-    internal class OtroRecursoBO : BaseBO
+    public class OtroRecursoBO : BaseBO
     {
         public BindingList<otroRecurso> buscarOtrosRecursos(string nombre)
         {
