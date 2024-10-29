@@ -13,6 +13,8 @@ import pe.edu.pucp.softlib.producto.bo.LibroBO;
 import pe.edu.pucp.softlib.producto.bo.OtroRecursoBO;
 import pe.edu.pucp.softlib.producto.bo.RecursoBO;
 import pe.edu.pucp.softlib.producto.model.Autor;
+import pe.edu.pucp.softlib.producto.model.Categoria;
+import pe.edu.pucp.softlib.producto.model.Formato;
 import pe.edu.pucp.softlib.producto.model.Libro;
 import pe.edu.pucp.softlib.producto.model.OtroRecurso;
 import pe.edu.pucp.softlib.producto.model.Recurso;
@@ -95,7 +97,92 @@ public class ServicioWS {
         return this.recursoBO.existeRecurso(nombre, precio);
     }
     
+    
+    
+    //--------------------------------------------------------------------------
+    //SERVICIOS LIBROS
+    @WebMethod(operationName = "libro_insertar")
+     public Integer libro_insertar(@WebParam(name = "nombre") String nombre, 
+                                    @WebParam(name = "peso") Double peso, 
+                                    @WebParam(name = "alto") Double alto, 
+                                    @WebParam(name = "ancho") Double ancho, 
+                                    @WebParam(name = "precio") Double precio, 
+                                    @WebParam(name = "unidadMedida") UnidadMedida unidadMedida, 
+                                    @WebParam(name = "foto") Byte[] foto,
+                                    @WebParam(name = "categorias") ArrayList<Categoria> categorias,
+                                    @WebParam(name = "autor") Autor autor, 
+                                    @WebParam(name = "editorial") String editorial, 
+                                    @WebParam(name = "ISBN") String ISBN, 
+                                    @WebParam(name = "sinopsis") String sinopsis, 
+                                    @WebParam(name = "formato") Formato formato) {
+        return this.libroBO.insertar( nombre,  peso,  alto,  ancho, precio,  unidadMedida,  foto,
+                            categorias, autor,  editorial, ISBN,  sinopsis, formato);
+    }
+     
+    @WebMethod(operationName = "libro_modificar")
+    public Integer libro_modificar(@WebParam(name = "idLibro") Integer idLibro,
+                                    @WebParam(name = "nombre") String nombre, 
+                                    @WebParam(name = "peso") Double peso, 
+                                    @WebParam(name = "alto") Double alto, 
+                                    @WebParam(name = "ancho") Double ancho, 
+                                    @WebParam(name = "precio") Double precio, 
+                                    @WebParam(name = "activo") Boolean activo, 
+                                    @WebParam(name = "disponible") Boolean disponible,
+                                    @WebParam(name = "unidadMedida") UnidadMedida unidadMedida, 
+                                    @WebParam(name = "foto") Byte[] foto, 
+                                    @WebParam(name = "categorias") ArrayList<Categoria> categorias,
+                                    @WebParam(name = "autor") Autor autor, 
+                                    @WebParam(name = "editorial") String editorial, 
+                                    @WebParam(name = "ISBN") String ISBN, 
+                                    @WebParam(name = "sinopsis") String sinopsis, 
+                                    @WebParam(name = "formato") Formato formato) {
+        return this.libroBO.modificar( idLibro, nombre,  peso, 
+             alto,  ancho,  precio,  activo, 
+             disponible, unidadMedida, foto, 
+            categorias, autor,  editorial, 
+             ISBN,  sinopsis,  formato);
+    }
+    
+    @WebMethod(operationName = "libro_eliminar")
+    public Integer libro_eliminar( @WebParam(name = "idLibro") Integer idLibro) {
+        return this.libroBO.eliminar(idLibro);
+    }
+    
+    @WebMethod(operationName = "libro_obtenerPorId")
+    public Libro libro_obtenerPorId(@WebParam(name = "idLibro") Integer idLibro){
+        return this.libroBO.obtenerPorId(idLibro);
+    }
+    
+    @WebMethod(operationName = "existeLibro")
+    public Boolean existeLibro(@WebParam(name = "idLibro") Integer idLibro){
+        return this.libroBO.existeLibro(idLibro);
+    } 
+    
+    @WebMethod(operationName = "libro_mostrarDestacado")
+    public ArrayList<Libro> libro_mostrarDestacado(){
+        return this.libroBO.mostrarDestacado();
+    }
+    
+    @WebMethod(operationName = "libro_listarTodos")
+    public ArrayList<Libro> libro_listarTodos(){
+        return this.libroBO.listarTodos();
+    }
+    
+    @WebMethod(operationName = "buscarLibros")
+    public ArrayList<Libro> buscarLibros(@WebParam(name = "nombre") String nombre){
+        return this.libroBO.buscarLibros(nombre);
+    }
+    
+    
+    //--------------------------------------------------------------------------
+    //SERVICIOS OTROS RECURSOS
+    @WebMethod(operationName = "buscarOtrosRecursos")
+    public ArrayList<OtroRecurso> buscarOtrosRecursos(@WebParam(name = "nombre") String nombre){
+        return this.otroRecursoBO.buscarOtrosRecursos(nombre);
+    }  
+    
     //SERVICIOS CLIENTES 
+    
     @WebMethod(operationName = "cliente_listarTodos")
     public ArrayList<Cliente> cliente_listarTodos(){
         return this.clienteBO.listarTodos();
@@ -112,17 +199,6 @@ public class ServicioWS {
     }
     
 
-    //--------------------------------------------------------------------------
-    //SERVICIOS LIBROS
-    @WebMethod(operationName = "libro_listarTodos")
-    public ArrayList<Libro> libro_listarTodos(){
-        return this.libroBO.listarTodos();
-    }
-    
-    @WebMethod(operationName = "buscarLibros")
-    public ArrayList<Libro> buscarLibros(@WebParam(name = "nombre") String nombre){
-        return this.libroBO.buscarLibros(nombre);
-    }
     
     //--------------------------------------------------------------------------
     //SERVICIOS AUTORES
@@ -131,11 +207,4 @@ public class ServicioWS {
         return autorBO.listarTodos();
     }
 
-    
-    //--------------------------------------------------------------------------
-    //SERVICIOS OTROS RECURSOS
-    @WebMethod(operationName = "buscarOtrosRecursos")
-    public ArrayList<OtroRecurso> buscarOtrosRecursos(@WebParam(name = "nombre") String nombre){
-        return this.otroRecursoBO.buscarOtrosRecursos(nombre);
-    }  
 }
