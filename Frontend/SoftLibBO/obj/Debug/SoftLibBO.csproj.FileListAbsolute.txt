@@ -5,3 +5,10 @@ C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLi
 C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibBO\obj\Debug\SoftLibBO.csproj.CoreCompileInputs.cache
 C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibBO\obj\Debug\SoftLibBO.dll
 C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibBO\obj\Debug\SoftLibBO.pdb
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibBO\bin\Debug\SoftLibBO.dll.config
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibBO\bin\Debug\SoftLibBO.dll
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibBO\bin\Debug\SoftLibBO.pdb
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibBO\obj\Debug\SoftLibBO.csproj.AssemblyReference.cache
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibBO\obj\Debug\SoftLibBO.csproj.CoreCompileInputs.cache
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibBO\obj\Debug\SoftLibBO.dll
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibBO\obj\Debug\SoftLibBO.pdb

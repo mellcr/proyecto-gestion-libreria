@@ -14,32 +14,30 @@ namespace SoftLibWA
 {
     public partial class registro_ordenes_venta : System.Web.UI.Page
     {
-        /* private ClienteWSClient clienteBO;
-         private RecursoWSClient recursoBO;
-         private OrdenVentaWSClient OrdenVentaBO;
-         private BindingList<cliente> clientes;
-
-         private BindingList<recurso> recursos;
-         private ServicioWSClient recursoBO;
-
-         private ServicioWSClient clienteBO;
-         private BindingList<cliente> clientes;*/
 
         private ClienteBO clienteBO;
         private RecursoBO recurosBO;
+        private LibroBO libroBO;
+        private OtroRecursoBO otroRecursoBO;
 
         private BindingList<cliente> listarClientesTodos;
         private BindingList<recurso> listarRecursoTodos;
         private BindingList<cliente> listarClientesPorNombre;
+        private BindingList<libro> listaLibrosPorNombre;
+        private BindingList<otroRecurso> listaOtrosRecursosPorNombre;
 
         public registro_ordenes_venta()
         {
             clienteBO = new ClienteBO();
-            recurosBO  = new RecursoBO();
+            recurosBO = new RecursoBO();
+            libroBO = new LibroBO();
+            otroRecursoBO = new OtroRecursoBO();
 
             listarClientesTodos = new BindingList<cliente>();
             listarRecursoTodos = new BindingList<recurso>();
             listarClientesPorNombre = new BindingList<cliente>();
+            listaLibrosPorNombre = new BindingList<libro>();
+            listaOtrosRecursosPorNombre = new BindingList<otroRecurso>();
         }
 
         protected void Page_Init(object sender, EventArgs e)
@@ -57,7 +55,31 @@ namespace SoftLibWA
 
         private void CargarProductosSeleccionados()
         {
+            string tipoProductoSeleccionado = ddlTipoProducto.SelectedValue;
+            string nombreABuscar = ModalProducto_txtNombreProducto.Text;
 
+            // Filtrar productos según el tipo
+            if (tipoProductoSeleccionado == "Libros")
+            {
+                // Cargar solo los productos que son "Libros"
+                listaLibrosPorNombre = libroBO.buscarLibros(nombreABuscar);
+                ModalOrdenVenta_gvProductos.DataSource = listaLibrosPorNombre;
+                ModalOrdenVenta_gvProductos.DataBind();
+            }
+            else if (tipoProductoSeleccionado == "OtrosRecursos")
+            {
+                // Cargar solo los productos que son "Otros Recursos"
+                listaOtrosRecursosPorNombre = otroRecursoBO.buscarOtrosRecursos(nombreABuscar);
+                ModalOrdenVenta_gvProductos.DataSource = listaOtrosRecursosPorNombre;
+                ModalOrdenVenta_gvProductos.DataBind();
+            }
+            else
+            {
+                // Si no se ha seleccionado ningún tipo, puedes cargar todos o limpiar la lista
+                listarRecursoTodos = recurosBO.listarTodos();
+                ModalOrdenVenta_gvProductos.DataSource = listarRecursoTodos;
+                ModalOrdenVenta_gvProductos.DataBind();
+            }
         }
 
         protected void btnBuscarCliente_Click(object sender, EventArgs e)
@@ -127,7 +149,7 @@ namespace SoftLibWA
 
         protected void ddlTipoProducto_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            CargarProductosSeleccionados();
         }
     }
 }

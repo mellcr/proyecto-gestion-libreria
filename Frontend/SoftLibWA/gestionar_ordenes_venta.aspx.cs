@@ -40,7 +40,7 @@ namespace SoftLibWA
        
         protected void TxtBuscarCliente_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void TxtBuscarProducto_TextChanged(object sender, EventArgs e)
