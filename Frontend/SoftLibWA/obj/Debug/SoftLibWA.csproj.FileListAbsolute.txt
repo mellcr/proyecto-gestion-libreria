@@ -58,3 +58,7 @@ C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLib
 C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibWA\obj\Debug\SoftLibWA.csproj.Up2Date
 C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibWA\obj\Debug\SoftLibWA.dll
 C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibWA\obj\Debug\SoftLibWA.pdb
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibWA\obj\Debug\SoftLibWA.csproj.AssemblyReference.cache
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibWA\obj\Debug\SoftLibWA.csproj.CoreCompileInputs.cache
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibWA\obj\Debug\SoftLibWA.dll
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibWA\obj\Debug\SoftLibWA.pdb
