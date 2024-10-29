@@ -19,7 +19,7 @@ namespace SoftLibProducto
 
         public BindingList<libro> listarTodos()
         {
-            libro[] arreglo = this.WsLibro.libro_listarTodos;
+            libro[] arreglo = this.WsLibro.libro_listarTodos();
             return new BindingList<libro>(arreglo);
         }
     }
