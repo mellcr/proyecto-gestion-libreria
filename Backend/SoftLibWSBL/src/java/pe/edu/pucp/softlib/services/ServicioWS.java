@@ -21,6 +21,8 @@ import pe.edu.pucp.softlib.producto.model.Recurso;
 import pe.edu.pucp.softlib.producto.model.UnidadMedida;
 import pe.edu.pucp.softlib.usuario.bo.ClienteBO;
 import pe.edu.pucp.softlib.usuario.model.Cliente;
+import pe.edu.pucp.softlib.usuario.model.Perfil;
+import pe.edu.pucp.softlib.usuario.model.TipoDocumento;
 
 /**
  *
@@ -236,6 +238,45 @@ public class ServicioWS {
     }  
     
     //SERVICIOS CLIENTES 
+    
+    @WebMethod(operationName = "cliente_insertar")
+    public Integer cliente_insertar(@WebParam(name = "nombre") String nombre, 
+                                    @WebParam(name = "apellidoPaterno") String apellidoPaterno, 
+                                    @WebParam(name = "apellidoMaterno") String apellidoMaterno, 
+                                    @WebParam(name = "nacionalidad") String nacionalidad, 
+                                    @WebParam(name = "numeroDocumento") String numeroDocumento, 
+                                    @WebParam(name = "tipoDocumento") TipoDocumento tipoDocumento, 
+                                    @WebParam(name = "perfiles") ArrayList<Perfil> perfiles,
+                                    @WebParam(name = "direccion") String direccion) {
+        return this.clienteBO.insertar(nombre, apellidoPaterno, 
+            apellidoMaterno, nacionalidad, numeroDocumento, 
+            tipoDocumento, perfiles, direccion);
+    }
+    
+    @WebMethod(operationName = "cliente_modificar")
+    public Integer cliente_modificar(@WebParam(name = "idPersona") Integer idPersona,
+                                     @WebParam(name = "nombre") String nombre, 
+                                     @WebParam(name = "apellidoPaterno") String apellidoPaterno, 
+                                     @WebParam(name = "apellidoMaterno") String apellidoMaterno, 
+                                     @WebParam(name = "nacionalidad") String nacionalidad, 
+                                     @WebParam(name = "numeroDocumento") String numeroDocumento, 
+                                     @WebParam(name = "tipoDocumento") TipoDocumento tipoDocumento, 
+                                     @WebParam(name = "perfiles") ArrayList<Perfil> perfiles,
+                                     @WebParam(name = "direccion") String direccion) {
+        return this.clienteBO.modificar(idPersona, nombre, apellidoPaterno, apellidoMaterno, nacionalidad, numeroDocumento, 
+            tipoDocumento,perfiles, direccion);
+    }
+    
+    @WebMethod(operationName = "cliente_eliminar")
+    public Integer cliente_eliminar(@WebParam(name = "idCliente") Integer idCliente) {
+        return this.clienteBO.eliminar(idCliente);
+    }
+    
+    @WebMethod(operationName = "existeCliente")
+    public Boolean existeCliente(@WebParam(name = "idCliente") Integer idCliente){
+        return this.clienteBO.existeCliente(idCliente);
+    }
+      
     @WebMethod(operationName = "cliente_listarTodos")
     public ArrayList<Cliente> cliente_listarTodos(){
         return this.clienteBO.listarTodos();
@@ -250,8 +291,7 @@ public class ServicioWS {
     public Cliente cliente_obtenerPorId(@WebParam(name = "idCliente") Integer idCliente){
         return this.clienteBO.obtenerPorId(idCliente);
     }
-    
-
+   
     
     //--------------------------------------------------------------------------
     //SERVICIOS AUTORES

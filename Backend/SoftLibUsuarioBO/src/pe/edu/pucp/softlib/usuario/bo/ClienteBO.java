@@ -52,7 +52,7 @@ public class ClienteBO {
         return this.clienteDAO.obtenerPorId(idCliente);
     }
     
-    public Boolean existeLibro(Integer idCliente){
+    public Boolean existeCliente(Integer idCliente){
         Cliente cliente = new Cliente();
         cliente.setIdPersona(idCliente);
         return this.clienteDAO.existeCliente(cliente);

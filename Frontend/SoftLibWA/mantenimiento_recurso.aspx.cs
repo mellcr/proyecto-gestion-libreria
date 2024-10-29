@@ -20,8 +20,8 @@ namespace SoftLibWA
         {
             this.libroBO = new LibroBO();
             this.otrosRecursosBO = new OtroRecursoBO();
-            this.listaDeTodosLibro = this.libroBO.listarTodos();
-            this.listaDeTodosOtroRecurso = this.otrosRecursosBO.listarTodos();
+            //this.listaDeTodosLibro = this.libroBO.listarTodos();
+            //this.listaDeTodosOtroRecurso = this.otrosRecursosBO.listarTodos();
         }
 
         protected void Page_Load(object sender, EventArgs e)

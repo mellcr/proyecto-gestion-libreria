@@ -78,10 +78,22 @@
     <None Include="Connected Services\ServicioWeb\SoftLibBO.ServicioWeb.cliente.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\ServicioWeb\SoftLibBO.ServicioWeb.cliente_eliminarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServicioWeb\SoftLibBO.ServicioWeb.cliente_insertarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\ServicioWeb\SoftLibBO.ServicioWeb.cliente_listarTodosResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\ServicioWeb\SoftLibBO.ServicioWeb.cliente_modificarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\ServicioWeb\SoftLibBO.ServicioWeb.cliente_obtenerPorIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServicioWeb\SoftLibBO.ServicioWeb.existeClienteResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServicioWeb\SoftLibBO.ServicioWeb.existeLibroResponse.datasource">

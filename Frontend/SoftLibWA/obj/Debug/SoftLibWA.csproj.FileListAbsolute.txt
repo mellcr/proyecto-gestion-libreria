@@ -62,3 +62,15 @@ C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibWA\obj\Debug\SoftLibWA.csproj
 C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibWA\obj\Debug\SoftLibWA.csproj.CoreCompileInputs.cache
 C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibWA\obj\Debug\SoftLibWA.dll
 C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibWA\obj\Debug\SoftLibWA.pdb
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibWA\bin\SoftLibWA.dll.config
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibWA\bin\SoftLibWA.dll
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibWA\bin\SoftLibWA.pdb
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibWA\bin\SoftLibBO.dll
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibWA\bin\SoftLibProducto.dll
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibWA\bin\SoftLibUsuarioBO.dll
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibWA\bin\SoftLibBO.pdb
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibWA\bin\SoftLibBO.dll.config
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibWA\bin\SoftLibProducto.pdb
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibWA\bin\SoftLibProducto.dll.config
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibWA\bin\SoftLibUsuarioBO.pdb
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibWA\obj\Debug\SoftLibWA.csproj.Up2Date

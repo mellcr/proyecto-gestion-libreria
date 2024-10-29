@@ -8,3 +8,13 @@ C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLi
 C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibUsuarioBO\obj\Debug\SoftLibU.FC53082B.Up2Date
 C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibUsuarioBO\obj\Debug\SoftLibUsuarioBO.dll
 C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibUsuarioBO\obj\Debug\SoftLibUsuarioBO.pdb
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibUsuarioBO\bin\Debug\SoftLibUsuarioBO.dll
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibUsuarioBO\bin\Debug\SoftLibUsuarioBO.pdb
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibUsuarioBO\bin\Debug\SoftLibBO.dll
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibUsuarioBO\bin\Debug\SoftLibBO.pdb
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibUsuarioBO\bin\Debug\SoftLibBO.dll.config
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibUsuarioBO\obj\Debug\SoftLibUsuarioBO.csproj.AssemblyReference.cache
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibUsuarioBO\obj\Debug\SoftLibUsuarioBO.csproj.CoreCompileInputs.cache
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibUsuarioBO\obj\Debug\SoftLibU.FC53082B.Up2Date
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibUsuarioBO\obj\Debug\SoftLibUsuarioBO.dll
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibUsuarioBO\obj\Debug\SoftLibUsuarioBO.pdb
