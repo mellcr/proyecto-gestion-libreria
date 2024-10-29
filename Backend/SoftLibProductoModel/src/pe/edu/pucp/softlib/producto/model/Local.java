@@ -15,6 +15,15 @@ public class Local {
     protected Double area;
     protected ArrayList<StockRecurso> capacidades;
 
+    public Local(String direccion, String nombre, Boolean activo, TipoLocal tipoLocal, Integer aforo, Double area) {
+        this.direccion = direccion;
+        this.nombre = nombre;
+        this.activo = activo;
+        this.tipoLocal = tipoLocal;
+        this.aforo = aforo;
+        this.area = area;
+    }
+    
     public String getNombre() {
         return nombre;
     }

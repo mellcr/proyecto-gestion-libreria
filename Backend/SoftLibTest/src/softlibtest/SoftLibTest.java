@@ -1,6 +1,12 @@
 package softlibtest;
 
 import java.util.ArrayList;
+import pe.edu.pucp.softlib.orden.bo.OrdenVentaBO;
+import pe.edu.pucp.softlib.orden.model.EstadoDeOrden;
+import pe.edu.pucp.softlib.orden.model.MetodoPago;
+import pe.edu.pucp.softlib.orden.model.Orden;
+import pe.edu.pucp.softlib.orden.model.OrdenVenta;
+import pe.edu.pucp.softlib.orden.model.TipoDeVenta;
 import pe.edu.pucp.softlib.producto.bo.AutorBO;
 import pe.edu.pucp.softlib.producto.bo.LibroBO;
 import pe.edu.pucp.softlib.producto.bo.RecursoBO;
@@ -32,7 +38,12 @@ public class SoftLibTest {
          
         ArrayList<Libro> librosPorNombre = libroBO.buscarLibros("Cien");
         
-//        ArrayList<Cliente> clientesPorNombre = clienteBO.buscarClientes("Ma"); 
+        OrdenVenta ordenVenta = new OrdenVenta();
+        OrdenVentaBO ordenVentaBO = new OrdenVentaBO();
+        Orden orden = new Orden();
+        orden = ordenVentaBO.obtenerPorId(1);
+        
+        System.out.println(orden.getTotal());
         
     }
 }

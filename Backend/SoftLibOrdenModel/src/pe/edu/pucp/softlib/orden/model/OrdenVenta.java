@@ -12,7 +12,6 @@ public class OrdenVenta extends Orden{
     private TipoDeVenta tipoVenta; 
     private MetodoPago metodoPago; 
     private Cliente cliente;
-    private Comprobante comprobante;
 // Metodos
     // Constructor
     public OrdenVenta(){
@@ -21,14 +20,13 @@ public class OrdenVenta extends Orden{
     public OrdenVenta(Integer idOrden,ArrayList<LineaDeOrden> lineasDeOrdenes,
             EstadoDeOrden estadoDeOrden, Date fechaCreacion, Double total, 
             Empleado empleado,Boolean activo, Date fechaEntrega, TipoDeVenta tipoVenta,
-            MetodoPago metodoPago, Cliente cliente, Comprobante comprobante) {
+            MetodoPago metodoPago, Cliente cliente) {
         super(idOrden,lineasDeOrdenes, estadoDeOrden,fechaCreacion,total,empleado,
                 activo);
         this.fechaEntrega = fechaEntrega;
         this.tipoVenta = tipoVenta;
         this.metodoPago = metodoPago;
         this.cliente = cliente;
-        this.comprobante = comprobante;
     }
     // Setters & Getters
 
@@ -40,14 +38,6 @@ public class OrdenVenta extends Orden{
         this.cliente = cliente;
     }
 
-    public Comprobante getComprobante() {
-        return comprobante;
-    }
-
-    public void setComprobante(Comprobante comprobante) {
-        this.comprobante = comprobante;
-    }
-    
     
     public void setFechaEntrega(Date fechaEntrega) {
         this.fechaEntrega = fechaEntrega;

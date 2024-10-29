@@ -49,4 +49,7 @@ public class AutorBO {
     public ArrayList<Autor> buscarAutores(String nombre){
         return autorDAO.buscarAutores(nombre);
     }
+    
+    
+    
 }
