@@ -103,16 +103,6 @@
       <xs:element minOccurs="0" name="nombre" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="recurso_obtenerPorId">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="idRecurso" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="recurso_obtenerPorIdResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="tns:recurso" />
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="otrosRecursos_modificar">
     <xs:sequence>
       <xs:element minOccurs="0" name="idOtroRecurso" type="xs:int" />
@@ -131,6 +121,16 @@
   <xs:complexType name="otrosRecursos_modificarResponse">
     <xs:sequence>
       <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="recurso_obtenerPorId">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idRecurso" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="recurso_obtenerPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:recurso" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="recurso_modificar">
@@ -204,16 +204,6 @@
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:libro" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="otrosRecursos_eliminar">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="idOtroRecurso" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="otrosRecursos_eliminarResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="otrosRecursos_insertar">
     <xs:sequence>
       <xs:element minOccurs="0" name="nombre" type="xs:string" />
@@ -227,6 +217,16 @@
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="otrosRecursos_insertarResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="otrosRecursos_eliminar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idOtroRecurso" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="otrosRecursos_eliminarResponse">
     <xs:sequence>
       <xs:element minOccurs="0" name="return" type="xs:int" />
     </xs:sequence>

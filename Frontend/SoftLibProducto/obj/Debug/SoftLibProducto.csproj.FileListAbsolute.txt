@@ -35,3 +35,10 @@ C:\Users\Jaritza\Desktop\CICLO 24-2\Programacion 3\TrabajoAcademico\Gestion de L
 C:\Users\Jaritza\Desktop\CICLO 24-2\Programacion 3\TrabajoAcademico\Gestion de Libreria - CleanCode\proyecto-gestion-libreria\Frontend\SoftLibProducto\obj\Debug\SoftLibProducto.csproj.CoreCompileInputs.cache
 C:\Users\Jaritza\Desktop\CICLO 24-2\Programacion 3\TrabajoAcademico\Gestion de Libreria - CleanCode\proyecto-gestion-libreria\Frontend\SoftLibProducto\obj\Debug\SoftLibProducto.dll
 C:\Users\Jaritza\Desktop\CICLO 24-2\Programacion 3\TrabajoAcademico\Gestion de Libreria - CleanCode\proyecto-gestion-libreria\Frontend\SoftLibProducto\obj\Debug\SoftLibProducto.pdb
+C:\Users\Jaritza\Desktop\CICLO 24-2\Programacion 3\TrabajoAcademico\Gestion de Libreria - CleanCode\proyecto-gestion-libreria\Frontend\SoftLibProducto\bin\Debug\SoftLibProducto.dll.config
+C:\Users\Jaritza\Desktop\CICLO 24-2\Programacion 3\TrabajoAcademico\Gestion de Libreria - CleanCode\proyecto-gestion-libreria\Frontend\SoftLibProducto\bin\Debug\SoftLibProducto.dll
+C:\Users\Jaritza\Desktop\CICLO 24-2\Programacion 3\TrabajoAcademico\Gestion de Libreria - CleanCode\proyecto-gestion-libreria\Frontend\SoftLibProducto\bin\Debug\SoftLibProducto.pdb
+C:\Users\Jaritza\Desktop\CICLO 24-2\Programacion 3\TrabajoAcademico\Gestion de Libreria - CleanCode\proyecto-gestion-libreria\Frontend\SoftLibProducto\bin\Debug\SoftLibBO.dll
+C:\Users\Jaritza\Desktop\CICLO 24-2\Programacion 3\TrabajoAcademico\Gestion de Libreria - CleanCode\proyecto-gestion-libreria\Frontend\SoftLibProducto\bin\Debug\SoftLibBO.pdb
+C:\Users\Jaritza\Desktop\CICLO 24-2\Programacion 3\TrabajoAcademico\Gestion de Libreria - CleanCode\proyecto-gestion-libreria\Frontend\SoftLibProducto\bin\Debug\SoftLibBO.dll.config
+C:\Users\Jaritza\Desktop\CICLO 24-2\Programacion 3\TrabajoAcademico\Gestion de Libreria - CleanCode\proyecto-gestion-libreria\Frontend\SoftLibProducto\obj\Debug\SoftLibP.D9976FAE.Up2Date

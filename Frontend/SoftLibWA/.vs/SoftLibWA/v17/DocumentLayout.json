@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\Jaritza\\Desktop\\CICLO 24-2\\Programacion 3\\TrabajoAcademico\\Gestion de Libreria - CleanCode\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1AB10074-5A06-4ED9-B48B-EBDEC0679B9D}|..\\SoftLibUsuarioBO\\SoftLibUsuarioBO.csproj|c:\\users\\jaritza\\desktop\\ciclo 24-2\\programacion 3\\trabajoacademico\\gestion de libreria - cleancode\\proyecto-gestion-libreria\\frontend\\softlibusuariobo\\clientebo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\Users\\Jaritza\\Desktop\\CICLO 24-2\\Programacion 3\\TrabajoAcademico\\Gestion de Libreria - CleanCode\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\registro_ordenes_venta.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:registro_ordenes_venta.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|c:\\users\\jaritza\\desktop\\ciclo 24-2\\programacion 3\\trabajoacademico\\gestion de libreria - cleancode\\proyecto-gestion-libreria\\frontend\\softlibwa\\registro_ordenes_venta.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:registro_ordenes_venta.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AB10074-5A06-4ED9-B48B-EBDEC0679B9D}|..\\SoftLibUsuarioBO\\SoftLibUsuarioBO.csproj|c:\\users\\jaritza\\desktop\\ciclo 24-2\\programacion 3\\trabajoacademico\\gestion de libreria - cleancode\\proyecto-gestion-libreria\\frontend\\softlibusuariobo\\clientebo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\Users\\Jaritza\\Desktop\\CICLO 24-2\\Programacion 3\\TrabajoAcademico\\Gestion de Libreria - CleanCode\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\registro_ordenes_abastecimiento.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -106,24 +106,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ClienteBO.cs",
               "DocumentMoniker": "C:\\Users\\Jaritza\\Desktop\\CICLO 24-2\\Programacion 3\\TrabajoAcademico\\Gestion de Libreria - CleanCode\\proyecto-gestion-libreria\\Frontend\\SoftLibUsuarioBO\\ClienteBO.cs",
               "RelativeDocumentMoniker": "..\\SoftLibUsuarioBO\\ClienteBO.cs",
               "ToolTip": "C:\\Users\\Jaritza\\Desktop\\CICLO 24-2\\Programacion 3\\TrabajoAcademico\\Gestion de Libreria - CleanCode\\proyecto-gestion-libreria\\Frontend\\SoftLibUsuarioBO\\ClienteBO.cs",
               "RelativeToolTip": "..\\SoftLibUsuarioBO\\ClienteBO.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAUwBQAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAUwBEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T20:52:28.069Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-29T20:52:28.069Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "registro_ordenes_venta.aspx",
               "DocumentMoniker": "C:\\Users\\Jaritza\\Desktop\\CICLO 24-2\\Programacion 3\\TrabajoAcademico\\Gestion de Libreria - CleanCode\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\registro_ordenes_venta.aspx",
               "RelativeDocumentMoniker": "registro_ordenes_venta.aspx",
@@ -136,13 +135,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "registro_ordenes_venta.aspx.cs",
               "DocumentMoniker": "C:\\Users\\Jaritza\\Desktop\\CICLO 24-2\\Programacion 3\\TrabajoAcademico\\Gestion de Libreria - CleanCode\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\registro_ordenes_venta.aspx.cs",
               "RelativeDocumentMoniker": "registro_ordenes_venta.aspx.cs",
               "ToolTip": "C:\\Users\\Jaritza\\Desktop\\CICLO 24-2\\Programacion 3\\TrabajoAcademico\\Gestion de Libreria - CleanCode\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\registro_ordenes_venta.aspx.cs",
               "RelativeToolTip": "registro_ordenes_venta.aspx.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA2wBUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T15:26:17.28Z",
               "EditorCaption": ""
@@ -251,7 +250,6 @@
               "RelativeDocumentMoniker": "SoftLibEmpleado.Master",
               "ToolTip": "C:\\Users\\Jaritza\\Desktop\\CICLO 24-2\\Programacion 3\\TrabajoAcademico\\Gestion de Libreria - CleanCode\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\SoftLibEmpleado.Master",
               "RelativeToolTip": "SoftLibEmpleado.Master",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2024-10-26T05:21:22.493Z",
               "EditorCaption": ""
