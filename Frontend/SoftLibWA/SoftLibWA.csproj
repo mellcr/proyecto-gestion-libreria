@@ -104,8 +104,10 @@
     <Content Include="Content\Fonts\css\v4-shims.min.css" />
     <Content Include="Content\Fonts\css\v5-font-face.css" />
     <Content Include="Content\Fonts\css\v5-font-face.min.css" />
+    <Content Include="gestionar_libros.aspx" />
     <Content Include="gestionar_ordenes_abastecimiento.aspx" />
     <Content Include="gestionar_ordenes_venta.aspx" />
+    <Content Include="gestionar_otrosrecursos.aspx" />
     <Content Include="registro_ordenes_abastecimiento.aspx" />
     <Content Include="registro_ordenes_venta.aspx" />
     <Content Include="mantenimiento_recurso.aspx" />
@@ -147,6 +149,13 @@
     <Content Include="SoftLibEmpleado.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="gestionar_libros.aspx.cs">
+      <DependentUpon>gestionar_libros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gestionar_libros.aspx.designer.cs">
+      <DependentUpon>gestionar_libros.aspx</DependentUpon>
+    </Compile>
     <Compile Include="gestionar_ordenes_abastecimiento.aspx.cs">
       <DependentUpon>gestionar_ordenes_abastecimiento.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -160,6 +169,13 @@
     </Compile>
     <Compile Include="gestionar_ordenes_venta.aspx.designer.cs">
       <DependentUpon>gestionar_ordenes_venta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gestionar_otrosrecursos.aspx.cs">
+      <DependentUpon>gestionar_otrosrecursos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gestionar_otrosrecursos.aspx.designer.cs">
+      <DependentUpon>gestionar_otrosrecursos.aspx</DependentUpon>
     </Compile>
     <Compile Include="registro_ordenes_abastecimiento.aspx.cs">
       <DependentUpon>registro_ordenes_abastecimiento.aspx</DependentUpon>
@@ -247,6 +263,9 @@
       <Project>{1AB10074-5A06-4ED9-B48B-EBDEC0679B9D}</Project>
       <Name>SoftLibUsuarioBO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Uploads\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

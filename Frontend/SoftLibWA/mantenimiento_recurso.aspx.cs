@@ -29,51 +29,27 @@ namespace SoftLibWA
         {
             if (!IsPostBack)
             {
-                // Cargar los datos en ambos GridViews
-                CargarDatosLibros();
-                CargarDatosOtrosRecursos();
-            }
+                // Cargar los datos GridView Libro
+                dgvRecursoLibros.DataSource = listaDeTodosLibro;
+                dgvRecursoLibros.DataBind();}
+                // Cargar los datos GridView Libro
+                dgvRecursoOtros.DataSource = listaDeTodosOtroRecurso; 
+                dgvRecursoOtros.DataBind();
         }
 
-        // Cargar datos en el GridView de Libros
-        private void CargarDatosLibros()
+        /* SOPORTE PARA LA INSERCION*/
+        // Evento para el botón Insertar
+        protected void btnInsertarLibros_Click(object sender, EventArgs e)
         {
-            // Aquí deberías conectar con tu base de datos y obtener los datos de Libros
-            // Ejemplo (usa tu propia lógica y fuentes de datos):
-            dgvRecursoLibros.DataSource = ObtenerDatosLibros(); // Método que retorna una lista de libros
-            dgvRecursoLibros.DataBind();
+            Response.Redirect("gestionar_libros.aspx");
         }
-
-        // Métodos de ejemplo para obtener y eliminar datos (ajusta según tu lógica)
-        private object ObtenerDatosLibros()
+        // Evento para el botón Insertar
+        protected void btnInsertarOtrosRecursos_Click(object sender, EventArgs e)
         {
-            // Conectar con la base de datos y retornar la lista de libros
-            return null; // Reemplaza con la lógica real
+            Response.Redirect("gestionar_otrosrecursos.aspx");
         }
 
-        // Cargar datos en el GridView de Otros Recursos
-        private void CargarDatosOtrosRecursos()
-        {
-            // Aquí deberías conectar con tu base de datos y obtener los datos de Otros Recursos
-            // Ejemplo (usa tu propia lógica y fuentes de datos):
-            dgvRecursoOtros.DataSource = ObtenerDatosOtrosRecursos(); // Método que retorna una lista de otros recursos
-            dgvRecursoOtros.DataBind();
-        }
-
-        // Evento de paginación para Libros
-        protected void dgvRecursoLibros_PageIndexChanging(object sender, GridViewPageEventArgs e)
-        {
-            dgvRecursoLibros.PageIndex = e.NewPageIndex;
-            CargarDatosLibros(); // Recargar los datos en el nuevo índice de página
-        }
-
-        // Evento de paginación para Otros Recursos
-        protected void dgvRecursoOtros_PageIndexChanging(object sender, GridViewPageEventArgs e)
-        {
-            dgvRecursoOtros.PageIndex = e.NewPageIndex;
-            CargarDatosOtrosRecursos(); // Recargar los datos en el nuevo índice de página
-        }
-
+        /*SOPORTE PARA LA MODIFICACION */
         // Evento para modificar un libro
         protected void lbModificarLibro_Click(object sender, EventArgs e)
         {
@@ -86,18 +62,6 @@ namespace SoftLibWA
             Response.Redirect("gestionar_libros.aspx?accion=modificar");
         }
 
-        // Evento para eliminar un libro
-        protected void lbEliminarLibro_Click(object sender, EventArgs e)
-        {
-            LinkButton btn = (LinkButton)sender;
-            int idLibro = Convert.ToInt32(btn.CommandArgument);
-
-            // Lógica para eliminar el libro usando el idLibro
-            // Elimina de la base de datos y recarga los datos
-            EliminarLibro(idLibro);
-            CargarDatosLibros(); // Recarga los datos después de eliminar
-        }
-
         // Evento para modificar otro recurso
         protected void lbModificarOtroRecurso_Click(object sender, EventArgs e)
         {
@@ -106,6 +70,21 @@ namespace SoftLibWA
 
             // Lógica para modificar el recurso usando el idRecurso
             // Redirigir a una página de edición o abrir un modal (dependiendo de tu implementación)
+            Session["idRecurso"] = idRecurso; //puntero void que guarda cualquier tipo -> para recuperar el dato se castea 
+            Response.Redirect("gestionar_otrosrecursos.aspx?accion=modificar");
+        }
+
+        /* ELIMINACION DE DATOS*/
+        // Evento para eliminar un libro
+        protected void lbEliminarLibro_Click(object sender, EventArgs e)
+        {
+            LinkButton btn = (LinkButton)sender;
+            int idLibro = Convert.ToInt32(btn.CommandArgument);
+
+            // Lógica para eliminar el libro usando el idLibro
+            // Elimina de la base de datos y recarga los datos
+            this.libroBO.eliminar(idLibro);
+            Response.Redirect("mantenimiento_recurso.aspx"); // Recarga los datos después de eliminar
         }
 
         // Evento para eliminar otro recurso
@@ -116,41 +95,8 @@ namespace SoftLibWA
 
             // Lógica para eliminar el recurso usando el idRecurso
             // Elimina de la base de datos y recarga los datos
-            EliminarRecurso(idRecurso);
-            CargarDatosOtrosRecursos(); // Recarga los datos después de eliminar
-        }
-
-        // Evento para el botón Insertar
-        protected void btnInsertarLibros_Click(object sender, EventArgs e)
-        {
-            // Lógica para insertar un nuevo recurso
-            // Esto puede redirigir a un formulario de inserción o mostrar un modal
-            Response.Redirect("gestionar_libros.aspx");
-        }
-        // Evento para el botón Insertar
-        protected void btnInsertarOtrosRecursos_Click(object sender, EventArgs e)
-        {
-            // Lógica para insertar un nuevo recurso
-            // Esto puede redirigir a un formulario de inserción o mostrar un modal
-            Response.Redirect("gestionar_otrosrecursos.aspx");
-        }
-
-        
-
-        private object ObtenerDatosOtrosRecursos()
-        {
-            // Conectar con la base de datos y retornar la lista de otros recursos
-            return null; // Reemplaza con la lógica real
-        }
-
-        private void EliminarLibro(int idLibro)
-        {
-            // Lógica para eliminar el libro de la base de datos
-        }
-
-        private void EliminarRecurso(int idRecurso)
-        {
-            // Lógica para eliminar el recurso de la base de datos
+            this.otrosRecursosBO.eliminar(idRecurso);
+            Response.Redirect("mantenimiento_recurso.aspx");
         }
 
         /*Soporte a paginacion*/
@@ -158,6 +104,19 @@ namespace SoftLibWA
         {
             dgvRecursoLibros.PageIndex = e.NewPageIndex;
             dgvRecursoLibros.DataBind();
+        }
+        // Evento de paginación para Libros
+        protected void dgvRecursoLibros_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            dgvRecursoLibros.PageIndex = e.NewPageIndex;
+            dgvRecursoLibros.DataBind();    // Recargar los datos en el nuevo índice de página
+        }
+
+        // Evento de paginación para Otros Recursos
+        protected void dgvRecursoOtros_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            dgvRecursoOtros.PageIndex = e.NewPageIndex;
+            dgvRecursoOtros.DataBind(); // Recargar los datos en el nuevo índice de página
         }
     }
 }

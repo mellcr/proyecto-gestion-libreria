@@ -66,7 +66,7 @@ namespace SoftLibProducto
 
         public BindingList<libro> mostrarDestacado()
         {
-            libro[] arreglo = this.WsLibro.libro_mostrarDestacado(); 
+            libro[] arreglo = this.WsLibro.libro_mostrarDestacado();
             return new BindingList<libro>(arreglo);
         }
 

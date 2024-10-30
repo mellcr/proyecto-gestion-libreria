@@ -25,15 +25,19 @@
                     OnPageIndexChanging="dgvRecursoLibros_PageIndexChanging" AutoGenerateColumns="false" 
                     CssClass="table table-hover table-responsive table-striped">
                     <Columns>
-                        <asp:BoundField HeaderText="Id del Libro" DataField="IdLibro" />
-                        <asp:BoundField HeaderText="Título" DataField="Titulo" />
-                        <asp:BoundField HeaderText="Autor" DataField="Autor" />
+                        <asp:BoundField HeaderText="Id del Libro" DataField="IdRecurso" />
+                        <asp:BoundField HeaderText="Título" DataField="Nombre" />
+                        <asp:BoundField HeaderText="Precio" DataField="Precio" />
                         <asp:TemplateField>
                             <ItemTemplate>
                                 <asp:LinkButton runat="server" CssClass="btn btn-sm btn-primary me-1" 
-                                    Text="Editar" CommandArgument='<%# Eval("IdLibro") %>' OnClick="lbModificarLibro_Click" />
+                                    Text="Editar" CommandArgument='<%# Eval("IdRecurso") %>' OnClick="lbModificarLibro_Click">
+                                    <i class="fas fa-eye"></i> <!-- Ícono de ojo -->
+                                </asp:LinkButton>
                                 <asp:LinkButton runat="server" CssClass="btn btn-sm btn-danger" 
-                                    Text="Eliminar" CommandArgument='<%# Eval("IdLibro") %>' OnClick="lbEliminarLibro_Click"/>
+                                    Text="Eliminar" CommandArgument='<%# Eval("IdRecurso") %>' OnClick="lbEliminarLibro_Click">
+                                    <i class="fas fa-trash-alt"></i> <!-- Ícono de tachito -->
+                                </asp:LinkButton>
                             </ItemTemplate>
                         </asp:TemplateField>
                     </Columns>
@@ -55,20 +59,23 @@
 
         <!-- Contenido de la pestaña Otros Recursos -->
         <div class="tab-pane fade" id="otros-recursos" role="tabpanel" aria-labelledby="otros-recursos-tab">
-            <div class="mt-1">
                 <asp:GridView ID="dgvRecursoOtros" runat="server" AllowPaging="true" PageSize="5" 
                     OnPageIndexChanging="dgvRecurso_PageIndexChanging" AutoGenerateColumns="false" 
                     CssClass="table table-hover table-responsive table-striped">
                     <Columns>
                         <asp:BoundField HeaderText="Id del Recurso" DataField="IdRecurso"/>
-                        <asp:BoundField HeaderText="Nombre" DataField="NombreRecurso"/>
-                        <asp:BoundField HeaderText="Categoría" DataField="Categoria"/>
+                        <asp:BoundField HeaderText="Nombre" DataField="Nombre"/>
+                        <asp:BoundField HeaderText="Precio" DataField="Precio"/>
                         <asp:TemplateField>
                             <ItemTemplate>
                                 <asp:LinkButton runat="server" CssClass="btn btn-sm btn-primary me-1" 
-                                    Text="Editar" CommandArgument='<%# Eval("IdRecurso") %>' OnClick="lbModificarOtroRecurso_Click" />
+                                    Text="Editar" CommandArgument='<%# Eval("IdRecurso") %>' OnClick="lbModificarOtroRecurso_Click">
+                                    <i class="fas fa-eye"></i> <!-- Ícono de ojo -->
+                                </asp:LinkButton>
                                 <asp:LinkButton runat="server" CssClass="btn btn-sm btn-danger" 
-                                    Text="Eliminar" CommandArgument='<%# Eval("IdRecurso") %>' OnClick="lbEliminarOtroRecurso_Click"/>
+                                    Text="Eliminar" CommandArgument='<%# Eval("IdRecurso") %>' OnClick="lbEliminarOtroRecurso_Click">
+                                    <i class="fas fa-trash-alt"></i> <!-- Ícono de tachito -->
+                                </asp:LinkButton>
                             </ItemTemplate>
                         </asp:TemplateField>
                     </Columns>
@@ -82,7 +89,6 @@
                 <div class="mt-3">
                     <asp:Button ID="btnInsertarOtrosRecursos" CssClass="btn btn-primary" runat="server" Text="Insertar" OnClick="btnInsertarOtrosRecursos_Click" />
                 </div>
-            </div>
         </div>
 
     </div>
