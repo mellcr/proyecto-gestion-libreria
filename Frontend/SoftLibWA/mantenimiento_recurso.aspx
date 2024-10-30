@@ -30,13 +30,20 @@
                         <asp:BoundField HeaderText="Precio" DataField="Precio" />
                         <asp:TemplateField>
                             <ItemTemplate>
+                                <!-- Botón de edición -->
                                 <asp:LinkButton runat="server" CssClass="btn btn-sm btn-primary me-1" 
-                                    Text="Editar" CommandArgument='<%# Eval("IdRecurso") %>' OnClick="lbModificarLibro_Click">
+                                    CommandArgument='<%# Eval("IdRecurso") %>' OnClick="lbModificarLibro_Click">
+                                    <i class="fas fa-edit"></i> <!-- Ícono de lápiz -->
+                                </asp:LinkButton>
+                                <!-- Botón de visualización -->
+                                <asp:LinkButton runat="server" CssClass="btn btn-sm btn-primary me-1" 
+                                    CommandArgument='<%# Eval("IdRecurso") %>' OnClick="lbVerLibro_Click">
                                     <i class="fas fa-eye"></i> <!-- Ícono de ojo -->
                                 </asp:LinkButton>
+                                <!-- Botón de eliminación -->
                                 <asp:LinkButton runat="server" CssClass="btn btn-sm btn-danger" 
-                                    Text="Eliminar" CommandArgument='<%# Eval("IdRecurso") %>' OnClick="lbEliminarLibro_Click">
-                                    <i class="fas fa-trash-alt"></i> <!-- Ícono de tachito -->
+                                    CommandArgument='<%# Eval("IdRecurso") %>' OnClick="lbEliminarLibro_Click">
+                                    <i class="fas fa-trash-alt"></i> <!-- Ícono de basurero -->
                                 </asp:LinkButton>
                             </ItemTemplate>
                         </asp:TemplateField>
@@ -68,13 +75,20 @@
                         <asp:BoundField HeaderText="Precio" DataField="Precio"/>
                         <asp:TemplateField>
                             <ItemTemplate>
+                                <!-- Botón de edición -->
                                 <asp:LinkButton runat="server" CssClass="btn btn-sm btn-primary me-1" 
-                                    Text="Editar" CommandArgument='<%# Eval("IdRecurso") %>' OnClick="lbModificarOtroRecurso_Click">
-                                    <i class="fas fa-eye"></i> <!-- Ícono de ojo -->
+                                    CommandArgument='<%# Eval("IdRecurso") %>' OnClick="lbModificarOtroRecurso_Click">
+                                    <i class='fa-solid fa-edit ps-2'></i> <!-- Ícono de lápiz -->
                                 </asp:LinkButton>
+                                <!-- Botón de visualización -->
+                                <asp:LinkButton runat="server" CssClass="btn btn-sm btn-primary me-1" 
+                                    CommandArgument='<%# Eval("IdRecurso") %>' OnClick="lbVerOtroRecurso_Click">
+                                    <i class="fa-solid fa-eye ps-2"></i> <!-- Ícono de ojo -->
+                                </asp:LinkButton>
+                                <!-- Botón de eliminación -->
                                 <asp:LinkButton runat="server" CssClass="btn btn-sm btn-danger" 
-                                    Text="Eliminar" CommandArgument='<%# Eval("IdRecurso") %>' OnClick="lbEliminarOtroRecurso_Click">
-                                    <i class="fas fa-trash-alt"></i> <!-- Ícono de tachito -->
+                                    CommandArgument='<%# Eval("IdRecurso") %>' OnClick="lbEliminarOtroRecurso_Click">
+                                    <i class='fa-solid fa-trash ps-2'></i> <!-- Ícono de basurero -->
                                 </asp:LinkButton>
                             </ItemTemplate>
                         </asp:TemplateField>

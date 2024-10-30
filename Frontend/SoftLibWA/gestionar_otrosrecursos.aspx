@@ -37,7 +37,7 @@
                             <asp:TextBox ID="txtIdRecurso" CssClass="form-control" Enabled="false" runat="server"></asp:TextBox>
                         </div>
                         <div class="col-md-6">
-                            <asp:Label ID="Label1" runat="server" Text="Unidad de Medida:" CssClass="col-form-label" />
+                            <asp:Label ID="lblUnidadMedida" runat="server" Text="Unidad de Medida:" CssClass="col-form-label" />
                             <div class="form-control">
                                 <div class="form-check form-check-inline">
                                     <input id="rbUnidad" class="form-check-input" type="radio" name="unidad" runat="server" />

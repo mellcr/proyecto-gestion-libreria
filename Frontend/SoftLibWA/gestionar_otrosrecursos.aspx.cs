@@ -26,18 +26,18 @@ namespace SoftLibWA
         }
         protected void Page_Init(object sender, EventArgs e)
         {
-            this.idOtroRecurso = (int)Session["IdRecurso"];
-            string accion = Request.QueryString["accion"];
-            if (accion != null && accion == "modificar")
-                esta_modificando = true;
-            else
-                esta_modificando = false;
-            if (esta_modificando)
-                this.cargarDatosDeLaBD();
+           // this.idOtroRecurso = (int)Session["IdRecurso"];
+            //string accion = Request.QueryString["accion"];
+           // if (accion != null && accion == "modificar")
+            //    esta_modificando = true;
+            //else
+           //     esta_modificando = false;
+            //if (esta_modificando)
+           //     this.cargarDatosDeLaBD();
 
         }
 
-        private void cargarDatosDeLaBD()
+        private void cargarDatosBDOtroRecurso()
         {
             otroRecurso _otroRecurso = this.otroRecursoBo.obtenerPorId(this.idOtroRecurso);
             txtIdRecurso.Text = _otroRecurso.idRecurso.ToString();
@@ -47,6 +47,7 @@ namespace SoftLibWA
             txtAncho.Text = _otroRecurso.ancho.ToString();
             txtPrecio.Text = _otroRecurso.precio.ToString();
             txtDescripcion.InnerText = _otroRecurso.descripcion;
+            lblUnidadMedida.Text = _otroRecurso.unidadMedida.ToString();
 
             // Cargar la foto si existe
             if (_otroRecurso.foto != null && _otroRecurso.foto.Length > 0)
@@ -69,14 +70,55 @@ namespace SoftLibWA
             }
         }
 
-
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["foto"] != null)
-                foto = (byte[])Session["foto"];
-            //Cambiar el título a 'Datos del Grupo de Investigación' cuando haya ingresado via el botón 'Mostrar Datos'
-            lblTitulo.Text = "Registrar Otro Recurso";
+            if (!IsPostBack)
+            {
+                // Verificar si la variable de sesión "foto" contiene una imagen
+                if (Session["foto"] != null)
+                    foto = (byte[])Session["foto"];
+
+                // Cambiar el título en función de la acción recibida
+                string accion = Request.QueryString["accion"];
+                if (accion == "ver" && Session["IdRecurso"] != null)
+                {
+                    lblTitulo.Text = "Datos de los Otros Recursos";
+                    this.idOtroRecurso = (int)Session["IdRecurso"];
+                    cargarDatosBDOtroRecurso();
+                    mostrarDatosLectura(); // Método para configurar controles en modo solo lectura
+                }
+                else if (accion == "modificar" && Session["IdRecurso"] != null)
+                {
+                    lblTitulo.Text = "Modificar Libro";
+                    this.idOtroRecurso = (int)Session["IdRecurso"];
+                    cargarDatosBDOtroRecurso();
+                }
+                else
+                {
+                    lblTitulo.Text = "Registrar Otros Recursos";
+                }
+            }
         }
+        public void mostrarDatosLectura()
+        {
+            btnGuardar.Enabled = false;
+            btnSubirFotoGrupo.Visible = false;
+            fileUploadFotoGrupo.Visible = false;
+
+            txtIdRecurso.Enabled = false;
+            txtNombre.Enabled = false;
+            txtPeso.Enabled = false;
+            txtAlto.Enabled = false;
+            txtAncho.Enabled = false;
+            txtPrecio.Enabled = false;
+            txtDescripcion.Disabled = true; // Deshabilitar el campo Caracteristica
+            lblUnidadMedida.Enabled = false;
+
+            // Deshabilitar Unidad de Medida (RadioButtons)
+            rbUnidad.Disabled = true;
+            rbPaquete.Disabled = true;
+        }
+
         protected void btnSubirFotoGrupo_Click(object sender, EventArgs e)
         {
             //Verificar si se seleccionó un archivo
@@ -116,7 +158,6 @@ namespace SoftLibWA
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
             /*Trae las variables del TextBox*/
-            //int idRecurso = Int32.Parse(txtIdRecurso.Text);
             string nombre_recurso = txtNombre.Text;
             double peso_recurso = Double.Parse(txtPeso.Text);
             double alto_recurso = Double.Parse(txtAlto.Text);
@@ -127,8 +168,10 @@ namespace SoftLibWA
             sbyte?[] foto_recurso_sbyte = Array.ConvertAll(foto_recurso, b => (sbyte?)b);
             string caracteristica_recurso = txtDescripcion.InnerText;
 
-            if (esta_modificando)
-                this.otroRecursoBo.modificar(1, nombre_recurso, peso_recurso,alto_recurso, ancho_recurso, precio_recurso, 
+            // Verifica si hay un ID en txtIdRecurso.Text
+            bool esModificacion = int.TryParse(txtIdRecurso.Text, out idOtroRecurso);
+            if (esModificacion)
+                this.otroRecursoBo.modificar(idOtroRecurso, nombre_recurso, peso_recurso,alto_recurso, ancho_recurso, precio_recurso, 
                     true, true, unidadmedida_recurso, foto_recurso_sbyte, caracteristica_recurso);
             else
                 this.otroRecursoBo.insertar(nombre_recurso, peso_recurso, alto_recurso, ancho_recurso,precio_recurso,

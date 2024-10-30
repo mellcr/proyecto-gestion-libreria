@@ -104,13 +104,13 @@ public class SoftLibProductoTest {
         
         /*-----------------------Insertar OtroRecurso-----------------------*/
         {
-        int iD = otroRecursoBO.insertar("rompecabeszas", 54.5, 5.4, 6.4,4.5, 
-                "Rompecabezas de la Torre Eiffel");
-        if(resultado != 0 )
-            System.out.println("Otro recurso insertado correctamente");
-        else
-            System.out.println("Otro recurso no se inserto correctamente");
-//        
+//        int iD = otroRecursoBO.insertar("rompecabeszas", 54.5, 5.4, 6.4,4.5, 
+//                "Rompecabezas de la Torre Eiffel");
+//        if(resultado != 0 )
+//            System.out.println("Otro recurso insertado correctamente");
+//        else
+//            System.out.println("Otro recurso no se inserto correctamente");
+//       
         }
         
         /*-----------------------Modificar OtroRecurso-----------------------*/

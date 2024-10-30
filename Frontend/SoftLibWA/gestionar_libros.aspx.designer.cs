@@ -78,13 +78,13 @@ namespace SoftLibWA
         protected global::System.Web.UI.WebControls.TextBox txtIdRecurso;
 
         /// <summary>
-        /// Control Label1.
+        /// Control lblUnidadMedida.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label lblUnidadMedida;
 
         /// <summary>
         /// Control rbUnidad.
@@ -121,6 +121,24 @@ namespace SoftLibWA
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtNombre;
+
+        /// <summary>
+        /// Control lblEditorial.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblEditorial;
+
+        /// <summary>
+        /// Control txtEditorial.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtEditorial;
 
         /// <summary>
         /// Control lblPrecio.
@@ -195,24 +213,6 @@ namespace SoftLibWA
         protected global::System.Web.UI.WebControls.TextBox txtAncho;
 
         /// <summary>
-        /// Control lblEditorial.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblEditorial;
-
-        /// <summary>
-        /// Control txtEditorial.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEditorial;
-
-        /// <summary>
         /// Control lblISBN.
         /// </summary>
         /// <remarks>
@@ -229,6 +229,24 @@ namespace SoftLibWA
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtISBN;
+
+        /// <summary>
+        /// Control lblFormato.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblFormato;
+
+        /// <summary>
+        /// Control DropDownListFormato.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownListFormato;
 
         /// <summary>
         /// Control lblDescripcion.

@@ -37,7 +37,7 @@ namespace SoftLibWA
                 dgvRecursoOtros.DataBind();
         }
 
-        /* SOPORTE PARA LA INSERCION*/
+        /*************************** SOPORTE PARA LA INSERCION ********************************/
         // Evento para el botón Insertar
         protected void btnInsertarLibros_Click(object sender, EventArgs e)
         {
@@ -49,16 +49,16 @@ namespace SoftLibWA
             Response.Redirect("gestionar_otrosrecursos.aspx");
         }
 
-        /*SOPORTE PARA LA MODIFICACION */
+        /*************************** SOPORTE PARA LA MODIFICACION ***************************/
         // Evento para modificar un libro
         protected void lbModificarLibro_Click(object sender, EventArgs e)
         {
             LinkButton btn = (LinkButton)sender;
             int idLibro = Convert.ToInt32(btn.CommandArgument);
 
-            // Lógica para modificar el libro usando el idLibro
+            // Lógica para modificar el libro usando el idOtroRecurso
             // Redirigir a una página de edición o abrir un modal (dependiendo de tu implementación)
-            Session["idLibro"] = idLibro; //puntero void que guarda cualquier tipo -> para recuperar el dato se castea 
+            Session["IdRecurso"] = idLibro; //puntero void que guarda cualquier tipo -> para recuperar el dato se castea 
             Response.Redirect("gestionar_libros.aspx?accion=modificar");
         }
 
@@ -70,18 +70,42 @@ namespace SoftLibWA
 
             // Lógica para modificar el recurso usando el idRecurso
             // Redirigir a una página de edición o abrir un modal (dependiendo de tu implementación)
-            Session["idRecurso"] = idRecurso; //puntero void que guarda cualquier tipo -> para recuperar el dato se castea 
+            Session["IdRecurso"] = idRecurso; //puntero void que guarda cualquier tipo -> para recuperar el dato se castea 
             Response.Redirect("gestionar_otrosrecursos.aspx?accion=modificar");
         }
 
-        /* ELIMINACION DE DATOS*/
+        /*************************** SOPORTE PARA MOSTRAR ***************************/
+        protected void lbVerLibro_Click(object sender, EventArgs e)
+        {
+            LinkButton btn = (LinkButton)sender;
+            int idLibro = Convert.ToInt32(btn.CommandArgument);
+
+            // Lógica para visualizar el libro usando el idOtroRecurso
+            // Guardamos el id en la sesión o redirigimos a una página de detalles
+            Session["IdRecurso"] = idLibro; // Guardamos el idOtroRecurso en la sesión para recuperarlo en la página de visualización
+            Response.Redirect("gestionar_libros.aspx?accion=ver");
+        }
+
+        protected void lbVerOtroRecurso_Click(object sender, EventArgs e)
+        {
+            LinkButton btn = (LinkButton)sender;
+            int idOtroRecurso = Convert.ToInt32(btn.CommandArgument);
+
+            // Lógica para visualizar el libro usando el idOtroRecurso
+            // Guardamos el id en la sesión o redirigimos a una página de detalles
+            Session["IdRecurso"] = idOtroRecurso; // Guardamos el idOtroRecurso en la sesión para recuperarlo en la página de visualización
+            Response.Redirect("gestionar_otrosrecursos.aspx?accion=ver");
+        }
+
+
+        /*************************** ELIMINACION DE DATOS ***************************/
         // Evento para eliminar un libro
         protected void lbEliminarLibro_Click(object sender, EventArgs e)
         {
             LinkButton btn = (LinkButton)sender;
             int idLibro = Convert.ToInt32(btn.CommandArgument);
 
-            // Lógica para eliminar el libro usando el idLibro
+            // Lógica para eliminar el libro usando el idOtroRecurso
             // Elimina de la base de datos y recarga los datos
             this.libroBO.eliminar(idLibro);
             Response.Redirect("mantenimiento_recurso.aspx"); // Recarga los datos después de eliminar
@@ -99,7 +123,7 @@ namespace SoftLibWA
             Response.Redirect("mantenimiento_recurso.aspx");
         }
 
-        /*Soporte a paginacion*/
+        /************************* SOPORTE PARA PAGINACION *************************/
         protected void dgvRecurso_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
             dgvRecursoLibros.PageIndex = e.NewPageIndex;
