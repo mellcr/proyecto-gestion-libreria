@@ -9,6 +9,15 @@ public class Comprobante {
     private Boolean activo; //activo o cancelado 
     private String numDocumentoAsociado;
     private Double valorTotalImpuesto;
+    private OrdenVenta ordenVenta;
+
+    public OrdenVenta getOrdenVenta() {
+        return ordenVenta;
+    }
+
+    public void setOrdenVenta(OrdenVenta ordenVenta) {
+        this.ordenVenta = ordenVenta;
+    }
 
     public Boolean getActivo() {
         return activo;
@@ -40,13 +49,14 @@ public class Comprobante {
 
     public Comprobante(Integer idComprobante, TipoComprobante tipoComprobante, 
             Date fechaEmision, Boolean activo, String numDocumentoAsociado, 
-            Double valorTotalImpuesto) {
+            Double valorTotalImpuesto, OrdenVenta ordenVenta) {
         this.idComprobante = idComprobante;
         this.tipoComprobante = tipoComprobante;
         this.fechaEmision = fechaEmision;
         this.activo = activo;
         this.numDocumentoAsociado = numDocumentoAsociado;
         this.valorTotalImpuesto = valorTotalImpuesto;
+        this.ordenVenta = ordenVenta;
     }
     
 
@@ -77,7 +87,5 @@ public class Comprobante {
     public TipoComprobante getTipoComprobante() {
         return tipoComprobante;
     }
-    
-    
-    
+ 
 }

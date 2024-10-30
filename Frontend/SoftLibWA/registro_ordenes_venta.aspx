@@ -61,7 +61,7 @@
                         <asp:TextBox ID="txtCantidadUnidades" runat="server" CssClass="form-control" />
                     </div>
                     <div class="col-sm-3">
-                        <asp:LinkButton ID="lbAgregarLOV" runat="server" CssClass="btn btn-success" Text="<i class='fa-solid fa-plus pe-2'></i> Agregar" />
+                        <asp:LinkButton ID="lbAgregarLOV" runat="server" CssClass="btn btn-success" Text="<i class='fa-solid fa-plus pe-2'></i> Agregar" OnClick="lbAgregarLOV_Click"/>
                     </div>
                 </div>
                 <div class="row">
@@ -71,11 +71,17 @@
                             <asp:BoundField HeaderText="Nombre" DataField="Recurso.Nombre" />
                             <asp:TemplateField>
                                 <ItemTemplate>
-                                    <asp:LinkButton ID="lbEliminarProducto" runat="server" Text="<i class='fa-solid fa-trash ps-2'></i>" CommandArgument='<%# Eval("Recurso.IdRecurso") %>' OnClick="lbEliminarProducto_Click" />
+                                    <asp:LinkButton ID="lbEliminarProducto" runat="server" Text="<i class='fa-solid fa-trash ps-2'></i>" CommandArgument='<%# Eval("Recurso.idRecurso") %>' OnClick="lbEliminarProducto_Click" />
                                 </ItemTemplate>
                             </asp:TemplateField>
                         </Columns>
                     </asp:GridView>
+                </div>
+                <div class="row align-items-center justify-content-end">
+                    <asp:Label ID="lblTotal" runat="server" Text="TOTAL:" CssClass="col-form-label col-sm-2 text-end"></asp:Label>
+                    <div class="col-sm-2">
+                        <asp:TextBox ID="txtTotal" runat="server" Enabled="false" CssClass="form-control col-sm-2"></asp:TextBox>
+                    </div>
                 </div>
             </div>
             <div class="card-footer clearfix">
@@ -174,7 +180,7 @@
                                             <asp:BoundField HeaderText="Precio" DataField="Precio" />
                                             <asp:TemplateField>
                                                 <ItemTemplate>
-                                                    <asp:LinkButton ID="ModalOrdenVenta_lbSeleccionarProducto" class="btn btn-success" runat="server" Text="<i class='fa-solid fa-check ps-2'></i> Seleccionar" OnClick="ModalOrdenVenta_lbSeleccionarProducto_Click" CommandArgument='<%# Eval("IdRecurso") %>' />
+                                                    <asp:LinkButton ID="ModalOrdenVenta_lbSeleccionarProducto" class="btn btn-success" runat="server" Text="<i class='fa-solid fa-check ps-2'></i> Seleccionar" OnClick="ModalOrdenVenta_lbSeleccionarProducto_Click" CommandArgument='<%# Eval("idRecurso") %>' />
                                                 </ItemTemplate>
                                             </asp:TemplateField>
                                         </Columns>

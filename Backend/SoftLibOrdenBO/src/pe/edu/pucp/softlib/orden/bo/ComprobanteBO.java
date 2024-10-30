@@ -5,6 +5,7 @@ import java.util.Date;
 import pe.edu.pucp.softlib.orden.dao.ComprobanteDAO;
 import pe.edu.pucp.softlib.orden.daoImp.ComprobanteDAOImpl;
 import pe.edu.pucp.softlib.orden.model.Comprobante;
+import pe.edu.pucp.softlib.orden.model.OrdenVenta;
 import pe.edu.pucp.softlib.orden.model.TipoComprobante;
 
 /**
@@ -21,17 +22,17 @@ public class ComprobanteBO {
 
     public Integer insertar(TipoComprobante tipoComprobante, 
             Date fechaEmision, Boolean activo, String numDocumentoAsociado, 
-            Double valorTotalImpuesto) {
+            Double valorTotalImpuesto, OrdenVenta ordenVenta) {
         Comprobante comprobante = new Comprobante(null,tipoComprobante,fechaEmision,
-                            activo,numDocumentoAsociado,valorTotalImpuesto);
+                            activo,numDocumentoAsociado,valorTotalImpuesto, ordenVenta);
         return comprobanteDAO.insertar(comprobante);
     }
     
     public Integer modificar(Integer idComprobante, TipoComprobante tipoComprobante, 
             Date fechaEmision, Boolean activo, String numDocumentoAsociado, 
-            Double valorTotalImpuesto) {
+            Double valorTotalImpuesto, OrdenVenta ordenVenta) {
         Comprobante comprobante = new Comprobante(idComprobante, tipoComprobante,
-                fechaEmision,activo,numDocumentoAsociado,valorTotalImpuesto);
+                fechaEmision,activo,numDocumentoAsociado,valorTotalImpuesto, ordenVenta);
         return comprobanteDAO.modificar(comprobante);                
     }
     

@@ -1,0 +1,10 @@
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibOrdenBO\bin\Debug\SoftLibOrdenBO.dll
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibOrdenBO\bin\Debug\SoftLibOrdenBO.pdb
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibOrdenBO\bin\Debug\SoftLibBO.dll
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibOrdenBO\bin\Debug\SoftLibBO.pdb
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibOrdenBO\bin\Debug\SoftLibBO.dll.config
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibOrdenBO\obj\Debug\SoftLibOrdenBO.csproj.AssemblyReference.cache
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibOrdenBO\obj\Debug\SoftLibOrdenBO.csproj.CoreCompileInputs.cache
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibOrdenBO\obj\Debug\SoftLibO.E4CC3748.Up2Date
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibOrdenBO\obj\Debug\SoftLibOrdenBO.dll
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibOrdenBO\obj\Debug\SoftLibOrdenBO.pdb

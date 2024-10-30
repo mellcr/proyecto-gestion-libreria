@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import pe.edu.pucp.softlib.orden.dao.OrdenVentaDAO;
 import pe.edu.pucp.softlib.orden.daoImp.OrdenVentaDAOImpl;
-import pe.edu.pucp.softlib.orden.model.Comprobante;
 import pe.edu.pucp.softlib.orden.model.EstadoDeOrden;
 import pe.edu.pucp.softlib.orden.model.LineaDeOrden;
 import pe.edu.pucp.softlib.orden.model.MetodoPago;
@@ -31,16 +30,14 @@ public class OrdenVentaBO {
     public Integer insertar(ArrayList<LineaDeOrden> lineasDeOrdenes,
             EstadoDeOrden estadoDeOrden, Date fechaCreacion, Double total, 
             Integer idEmpleado, Date fechaEntrega, TipoDeVenta tipoVenta,
-            MetodoPago metodoPago, Integer fidCliente, Integer fidComprobante) {
+            MetodoPago metodoPago, Integer fidCliente) {
         Empleado empleado = new Empleado();
         empleado.setIdPersona(idEmpleado);
         Cliente cliente = new Cliente();
         cliente.setIdPersona(fidCliente);
-        Comprobante comprobante = new Comprobante();
-        comprobante.setIdComprobante(fidComprobante);
         OrdenVenta ordenVenta = new OrdenVenta(null, lineasDeOrdenes, 
                 estadoDeOrden, fechaCreacion, total, empleado,true,
-                fechaEntrega,tipoVenta,metodoPago, cliente,comprobante);
+                fechaEntrega,tipoVenta,metodoPago, cliente);
         return this.ordenVentaDAO.insertar(ordenVenta);
     }
     
@@ -48,16 +45,14 @@ public class OrdenVentaBO {
             ArrayList<LineaDeOrden> lineasDeOrdenes,EstadoDeOrden estadoDeOrden, 
             Date fechaCreacion, Double total, Integer idEmpleado,Boolean activo, 
             Date fechaEntrega, TipoDeVenta tipoVenta,MetodoPago metodoPago, 
-            Integer fidCliente, Integer fidComprobante) {
+            Integer fidCliente) {
         Empleado empleado = new Empleado();
         empleado.setIdPersona(idEmpleado);
         Cliente cliente = new Cliente();
         cliente.setIdPersona(fidCliente);
-        Comprobante comprobante = new Comprobante();
-        comprobante.setIdComprobante(fidComprobante);
         OrdenVenta ordenVenta = new OrdenVenta(idOrdenVenta, lineasDeOrdenes, 
                 estadoDeOrden, fechaCreacion, total, empleado, activo,
-                fechaEntrega,tipoVenta,metodoPago,cliente, comprobante);
+                fechaEntrega,tipoVenta,metodoPago,cliente);
         return this.ordenVentaDAO.modificar(ordenVenta);
     }
     

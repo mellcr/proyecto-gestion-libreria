@@ -1,89 +1,110 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\",
+  "WorkspaceRootPath": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|c:\\users\\mell1\\desktop\\pucp\\6tociclo\\proyecto-gestiondelibreria\\frontend\\softlibwa\\mantenimiento_recurso.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|c:\\main\\proyecto-gestion-libreria\\frontend\\softlibwa\\gestionar_ordenes_venta.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:gestionar_ordenes_venta.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|c:\\main\\proyecto-gestion-libreria\\frontend\\softlibwa\\gestionar_ordenes_venta.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:gestionar_ordenes_venta.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|c:\\main\\proyecto-gestion-libreria\\frontend\\softlibwa\\registro_ordenes_venta.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:registro_ordenes_venta.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\registro_ordenes_venta.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:registro_ordenes_venta.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16525323-5893-41B7-A874-AFD3D11435DD}|..\\SoftLibOrdenBO\\SoftLibOrdenBO.csproj|c:\\main\\proyecto-gestion-libreria\\frontend\\softlibordenbo\\ordenventabo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16525323-5893-41B7-A874-AFD3D11435DD}|..\\SoftLibOrdenBO\\SoftLibOrdenBO.csproj|c:\\main\\proyecto-gestion-libreria\\frontend\\softlibordenbo\\ordenabastecimientobo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16525323-5893-41B7-A874-AFD3D11435DD}|..\\SoftLibOrdenBO\\SoftLibOrdenBO.csproj|c:\\main\\proyecto-gestion-libreria\\frontend\\softlibordenbo\\ordenbo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE659E7-B051-41A5-889F-A64940624C02}|..\\SoftLibBO\\SoftLibBO.csproj|c:\\main\\proyecto-gestion-libreria\\frontend\\softlibbo\\basebo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\gestionar_otrosrecursos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:gestionar_otrosrecursos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\registro_ordenes_abastecimiento.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:registro_ordenes_abastecimiento.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|c:\\main\\proyecto-gestion-libreria\\frontend\\softlibwa\\mantenimiento_recurso.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:mantenimiento_recurso.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\mantenimiento_recurso.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\mantenimiento_recurso.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:mantenimiento_recurso.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\gestionar_otrosrecursos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\gestionar_otrosrecursos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:gestionar_otrosrecursos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F909D16-97CD-42C2-8240-C6B5535F9DDC}|..\\SoftLibProducto\\SoftLibProducto.csproj|c:\\users\\mell1\\desktop\\pucp\\6tociclo\\proyecto-gestiondelibreria\\frontend\\softlibproducto\\recursobo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\gestionar_libros.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\gestionar_libros.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:gestionar_libros.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\gestionar_libros.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\gestionar_libros.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:gestionar_libros.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|c:\\users\\mell1\\desktop\\pucp\\6tociclo\\proyecto-gestiondelibreria\\frontend\\softlibwa\\gestionar_otrosrecursos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:gestionar_otrosrecursos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|SoftLibWA||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\softlibempleado.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\softlibempleado.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
       "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:softlibempleado.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F909D16-97CD-42C2-8240-C6B5535F9DDC}|..\\SoftLibProducto\\SoftLibProducto.csproj|c:\\users\\mell1\\desktop\\pucp\\6tociclo\\proyecto-gestiondelibreria\\frontend\\softlibproducto\\otrorecursobo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\registro_ordenes_venta.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:registro_ordenes_venta.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\gestionar_ordenes_abastecimiento.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\gestionar_ordenes_abastecimiento.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:gestionar_ordenes_abastecimiento.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\gestionar_ordenes_abastecimiento.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\gestionar_ordenes_abastecimiento.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:gestionar_ordenes_abastecimiento.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\registro_ordenes_abastecimiento.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:registro_ordenes_abastecimiento.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\scripts\\softlib\\gestionarordenesventa.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\scripts\\softlib\\gestionarordenesventa.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:scripts\\softlib\\gestionarordenesventa.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\scripts\\softlib\\gestionarordenesabastecimiento.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\scripts\\softlib\\gestionarordenesabastecimiento.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:scripts\\softlib\\gestionarordenesabastecimiento.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\content\\estilo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\content\\estilo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:content\\estilo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\registro_ordenes_venta.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\registro_ordenes_venta.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:registro_ordenes_venta.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\softlibempleado.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\softlibempleado.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|solutionrelative:softlibempleado.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibBO\\BaseBO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9D63AFF-2340-4D7E-9BA4-B83DCFDA2A39}|SoftLibWA.csproj|c:\\users\\mell1\\desktop\\pucp\\6tociclo\\proyecto-gestiondelibreria\\frontend\\softlibwa\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|909d16b3-c8e8-43d1-a2b8-26ea0d4b6b57"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibProducto\\RecursoBO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibProducto\\OtroRecursoBO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -93,118 +114,119 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RecursoBO.cs",
-              "DocumentMoniker": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibProducto\\RecursoBO.cs",
-              "RelativeDocumentMoniker": "..\\SoftLibProducto\\RecursoBO.cs",
-              "ToolTip": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibProducto\\RecursoBO.cs",
-              "RelativeToolTip": "..\\SoftLibProducto\\RecursoBO.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T07:13:42.71Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "gestionar_otrosrecursos.aspx",
-              "DocumentMoniker": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\gestionar_otrosrecursos.aspx",
-              "RelativeDocumentMoniker": "gestionar_otrosrecursos.aspx",
-              "ToolTip": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\gestionar_otrosrecursos.aspx",
-              "RelativeToolTip": "gestionar_otrosrecursos.aspx",
+              "DocumentIndex": 0,
+              "Title": "gestionar_ordenes_venta.aspx",
+              "DocumentMoniker": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\gestionar_ordenes_venta.aspx",
+              "RelativeDocumentMoniker": "gestionar_ordenes_venta.aspx",
+              "ToolTip": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\gestionar_ordenes_venta.aspx",
+              "RelativeToolTip": "gestionar_ordenes_venta.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-10-30T05:09:49.054Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SoftLibWA",
-              "DocumentMoniker": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\SoftLibWA.csproj",
-              "RelativeDocumentMoniker": "SoftLibWA.csproj",
-              "ToolTip": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\SoftLibWA.csproj*",
-              "RelativeToolTip": "SoftLibWA.csproj*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-10-30T04:11:39.205Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "gestionar_libros.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\gestionar_libros.aspx.cs",
-              "RelativeDocumentMoniker": "gestionar_libros.aspx.cs",
-              "ToolTip": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\gestionar_libros.aspx.cs",
-              "RelativeToolTip": "gestionar_libros.aspx.cs",
-              "ViewState": "AgIAAMAAAAAAAAAAAAAYwNMAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T23:42:27.302Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "gestionar_otrosrecursos.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\gestionar_otrosrecursos.aspx.cs",
-              "RelativeDocumentMoniker": "gestionar_otrosrecursos.aspx.cs",
-              "ToolTip": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\gestionar_otrosrecursos.aspx.cs",
-              "RelativeToolTip": "gestionar_otrosrecursos.aspx.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAkwEgAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T20:38:56.895Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "gestionar_libros.aspx",
-              "DocumentMoniker": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\gestionar_libros.aspx",
-              "RelativeDocumentMoniker": "gestionar_libros.aspx",
-              "ToolTip": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\gestionar_libros.aspx",
-              "RelativeToolTip": "gestionar_libros.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-10-29T20:34:35.959Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SoftLibEmpleado.Master",
-              "DocumentMoniker": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\SoftLibEmpleado.Master",
-              "RelativeDocumentMoniker": "SoftLibEmpleado.Master",
-              "ToolTip": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\SoftLibEmpleado.Master",
-              "RelativeToolTip": "SoftLibEmpleado.Master",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-10-26T05:21:22.493Z",
+              "WhenOpened": "2024-10-30T08:51:55.749Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "mantenimiento_recurso.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\mantenimiento_recurso.aspx.cs",
-              "RelativeDocumentMoniker": "mantenimiento_recurso.aspx.cs",
-              "ToolTip": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\mantenimiento_recurso.aspx.cs",
-              "RelativeToolTip": "mantenimiento_recurso.aspx.cs",
-              "ViewState": "AgIAAHAAAAAAAAAAAAAYwFgAAAAtAAAAAAAAAA==",
+              "Title": "gestionar_ordenes_venta.aspx.cs",
+              "DocumentMoniker": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\gestionar_ordenes_venta.aspx.cs",
+              "RelativeDocumentMoniker": "gestionar_ordenes_venta.aspx.cs",
+              "ToolTip": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\gestionar_ordenes_venta.aspx.cs",
+              "RelativeToolTip": "gestionar_ordenes_venta.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T17:02:44.475Z",
+              "WhenOpened": "2024-10-30T08:51:23.755Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "OrdenVentaBO.cs",
+              "DocumentMoniker": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibOrdenBO\\OrdenVentaBO.cs",
+              "RelativeDocumentMoniker": "..\\SoftLibOrdenBO\\OrdenVentaBO.cs",
+              "ToolTip": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibOrdenBO\\OrdenVentaBO.cs",
+              "RelativeToolTip": "..\\SoftLibOrdenBO\\OrdenVentaBO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T08:47:31.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrdenAbastecimientoBO.cs",
+              "DocumentMoniker": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibOrdenBO\\OrdenAbastecimientoBO.cs",
+              "RelativeDocumentMoniker": "..\\SoftLibOrdenBO\\OrdenAbastecimientoBO.cs",
+              "ToolTip": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibOrdenBO\\OrdenAbastecimientoBO.cs",
+              "RelativeToolTip": "..\\SoftLibOrdenBO\\OrdenAbastecimientoBO.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAmwDYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T08:46:59.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "registro_ordenes_venta.aspx",
+              "DocumentMoniker": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\registro_ordenes_venta.aspx",
+              "RelativeDocumentMoniker": "registro_ordenes_venta.aspx",
+              "ToolTip": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\registro_ordenes_venta.aspx",
+              "RelativeToolTip": "registro_ordenes_venta.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-10-29T06:33:23.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "registro_ordenes_venta.aspx.cs",
+              "DocumentMoniker": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\registro_ordenes_venta.aspx.cs",
+              "RelativeDocumentMoniker": "registro_ordenes_venta.aspx.cs",
+              "ToolTip": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\registro_ordenes_venta.aspx.cs",
+              "RelativeToolTip": "registro_ordenes_venta.aspx.cs",
+              "ViewState": "AgIAAK8AAAAAAAAAAAAqwBYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T08:26:48.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrdenBO.cs",
+              "DocumentMoniker": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibOrdenBO\\OrdenBO.cs",
+              "RelativeDocumentMoniker": "..\\SoftLibOrdenBO\\OrdenBO.cs",
+              "ToolTip": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibOrdenBO\\OrdenBO.cs",
+              "RelativeToolTip": "..\\SoftLibOrdenBO\\OrdenBO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T08:29:21.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BaseBO.cs",
+              "DocumentMoniker": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibBO\\BaseBO.cs",
+              "RelativeDocumentMoniker": "..\\SoftLibBO\\BaseBO.cs",
+              "ToolTip": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibBO\\BaseBO.cs",
+              "RelativeToolTip": "..\\SoftLibBO\\BaseBO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAB9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T08:28:11.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "mantenimiento_recurso.aspx",
-              "DocumentMoniker": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\mantenimiento_recurso.aspx",
+              "DocumentMoniker": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\mantenimiento_recurso.aspx",
               "RelativeDocumentMoniker": "mantenimiento_recurso.aspx",
-              "ToolTip": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\mantenimiento_recurso.aspx",
+              "ToolTip": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\mantenimiento_recurso.aspx",
               "RelativeToolTip": "mantenimiento_recurso.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -214,22 +236,132 @@
             {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "registro_ordenes_abastecimiento.aspx",
+              "DocumentMoniker": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\registro_ordenes_abastecimiento.aspx",
+              "RelativeDocumentMoniker": "registro_ordenes_abastecimiento.aspx",
+              "ToolTip": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\registro_ordenes_abastecimiento.aspx",
+              "RelativeToolTip": "registro_ordenes_abastecimiento.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-10-28T01:51:04.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "gestionar_otrosrecursos.aspx",
+              "DocumentMoniker": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\gestionar_otrosrecursos.aspx",
+              "RelativeDocumentMoniker": "gestionar_otrosrecursos.aspx",
+              "ToolTip": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\gestionar_otrosrecursos.aspx",
+              "RelativeToolTip": "gestionar_otrosrecursos.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-10-30T05:09:49.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "gestionar_otrosrecursos.aspx.cs",
+              "DocumentMoniker": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\gestionar_otrosrecursos.aspx.cs",
+              "RelativeDocumentMoniker": "gestionar_otrosrecursos.aspx.cs",
+              "ToolTip": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\gestionar_otrosrecursos.aspx.cs",
+              "RelativeToolTip": "gestionar_otrosrecursos.aspx.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAkwEgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T20:38:56.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "gestionar_libros.aspx.cs",
+              "DocumentMoniker": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\gestionar_libros.aspx.cs",
+              "RelativeDocumentMoniker": "gestionar_libros.aspx.cs",
+              "ToolTip": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\gestionar_libros.aspx.cs",
+              "RelativeToolTip": "gestionar_libros.aspx.cs",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAYwNMAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T23:42:27.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SoftLibWA",
+              "DocumentMoniker": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\SoftLibWA.csproj",
+              "RelativeDocumentMoniker": "SoftLibWA.csproj",
+              "ToolTip": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\SoftLibWA.csproj*",
+              "RelativeToolTip": "..\\..\\..\\..\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\SoftLibWA.csproj*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-30T04:11:39.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "RecursoBO.cs",
+              "DocumentMoniker": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibProducto\\RecursoBO.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibProducto\\RecursoBO.cs",
+              "ToolTip": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibProducto\\RecursoBO.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibProducto\\RecursoBO.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T07:13:42.71Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "gestionar_libros.aspx",
+              "DocumentMoniker": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\gestionar_libros.aspx",
+              "RelativeDocumentMoniker": "gestionar_libros.aspx",
+              "ToolTip": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\gestionar_libros.aspx",
+              "RelativeToolTip": "gestionar_libros.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-10-29T20:34:35.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SoftLibEmpleado.Master",
+              "DocumentMoniker": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\SoftLibEmpleado.Master",
+              "RelativeDocumentMoniker": "SoftLibEmpleado.Master",
+              "ToolTip": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\SoftLibEmpleado.Master",
+              "RelativeToolTip": "SoftLibEmpleado.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-10-26T05:21:22.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "mantenimiento_recurso.aspx.cs",
+              "DocumentMoniker": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\mantenimiento_recurso.aspx.cs",
+              "RelativeDocumentMoniker": "mantenimiento_recurso.aspx.cs",
+              "ToolTip": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\mantenimiento_recurso.aspx.cs",
+              "RelativeToolTip": "mantenimiento_recurso.aspx.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAYwFgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T17:02:44.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
               "Title": "OtroRecursoBO.cs",
               "DocumentMoniker": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibProducto\\OtroRecursoBO.cs",
-              "RelativeDocumentMoniker": "..\\SoftLibProducto\\OtroRecursoBO.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibProducto\\OtroRecursoBO.cs",
               "ToolTip": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibProducto\\OtroRecursoBO.cs",
-              "RelativeToolTip": "..\\SoftLibProducto\\OtroRecursoBO.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibProducto\\OtroRecursoBO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T22:01:03.462Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "Index.aspx",
-              "DocumentMoniker": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\Index.aspx",
+              "DocumentMoniker": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\Index.aspx",
               "RelativeDocumentMoniker": "Index.aspx",
-              "ToolTip": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\Index.aspx",
+              "ToolTip": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\Index.aspx",
               "RelativeToolTip": "Index.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -237,47 +369,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "registro_ordenes_venta.aspx",
-              "DocumentMoniker": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\registro_ordenes_venta.aspx",
-              "RelativeDocumentMoniker": "registro_ordenes_venta.aspx",
-              "ToolTip": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\registro_ordenes_venta.aspx",
-              "RelativeToolTip": "registro_ordenes_venta.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-10-29T06:33:23.675Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 25,
               "Title": "BaseBO.cs",
               "DocumentMoniker": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibBO\\BaseBO.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibBO\\BaseBO.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibBO\\BaseBO.cs",
               "ToolTip": "C:\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibBO\\BaseBO.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibBO\\BaseBO.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\LHIA - PERSONAL\\PUCP\\OCTAVO CICLO 2024.2\\P3\\TA\\Laboratorio 10\\Frontend\\SoftLibBO\\BaseBO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-28T17:32:57.287Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "registro_ordenes_abastecimiento.aspx",
-              "DocumentMoniker": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\registro_ordenes_abastecimiento.aspx",
-              "RelativeDocumentMoniker": "registro_ordenes_abastecimiento.aspx",
-              "ToolTip": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\registro_ordenes_abastecimiento.aspx",
-              "RelativeToolTip": "registro_ordenes_abastecimiento.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-10-28T01:51:04.434Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "gestionarOrdenesVenta.js",
-              "DocumentMoniker": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\Scripts\\SoftLib\\gestionarOrdenesVenta.js",
+              "DocumentMoniker": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\Scripts\\SoftLib\\gestionarOrdenesVenta.js",
               "RelativeDocumentMoniker": "Scripts\\SoftLib\\gestionarOrdenesVenta.js",
-              "ToolTip": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\Scripts\\SoftLib\\gestionarOrdenesVenta.js",
+              "ToolTip": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\Scripts\\SoftLib\\gestionarOrdenesVenta.js",
               "RelativeToolTip": "Scripts\\SoftLib\\gestionarOrdenesVenta.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
@@ -285,11 +393,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "gestionar_ordenes_abastecimiento.aspx",
-              "DocumentMoniker": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\gestionar_ordenes_abastecimiento.aspx",
+              "DocumentMoniker": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\gestionar_ordenes_abastecimiento.aspx",
               "RelativeDocumentMoniker": "gestionar_ordenes_abastecimiento.aspx",
-              "ToolTip": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\gestionar_ordenes_abastecimiento.aspx",
+              "ToolTip": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\gestionar_ordenes_abastecimiento.aspx",
               "RelativeToolTip": "gestionar_ordenes_abastecimiento.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -297,11 +405,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "gestionar_ordenes_abastecimiento.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\gestionar_ordenes_abastecimiento.aspx.cs",
+              "DocumentMoniker": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\gestionar_ordenes_abastecimiento.aspx.cs",
               "RelativeDocumentMoniker": "gestionar_ordenes_abastecimiento.aspx.cs",
-              "ToolTip": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\gestionar_ordenes_abastecimiento.aspx.cs",
+              "ToolTip": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\gestionar_ordenes_abastecimiento.aspx.cs",
               "RelativeToolTip": "gestionar_ordenes_abastecimiento.aspx.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -309,11 +417,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "gestionarOrdenesAbastecimiento.js",
-              "DocumentMoniker": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\Scripts\\SoftLib\\gestionarOrdenesAbastecimiento.js",
+              "DocumentMoniker": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\Scripts\\SoftLib\\gestionarOrdenesAbastecimiento.js",
               "RelativeDocumentMoniker": "Scripts\\SoftLib\\gestionarOrdenesAbastecimiento.js",
-              "ToolTip": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\Scripts\\SoftLib\\gestionarOrdenesAbastecimiento.js",
+              "ToolTip": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\Scripts\\SoftLib\\gestionarOrdenesAbastecimiento.js",
               "RelativeToolTip": "Scripts\\SoftLib\\gestionarOrdenesAbastecimiento.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
@@ -321,11 +429,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "estilo.css",
-              "DocumentMoniker": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\Content\\estilo.css",
+              "DocumentMoniker": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\Content\\estilo.css",
               "RelativeDocumentMoniker": "Content\\estilo.css",
-              "ToolTip": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\Content\\estilo.css",
+              "ToolTip": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\Content\\estilo.css",
               "RelativeToolTip": "Content\\estilo.css",
               "ViewState": "AgIAAD8AAAAAAAAAAAAAAFkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
@@ -333,23 +441,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 23,
               "Title": "registro_ordenes_venta.aspx.designer.cs",
-              "DocumentMoniker": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\registro_ordenes_venta.aspx.designer.cs",
+              "DocumentMoniker": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\registro_ordenes_venta.aspx.designer.cs",
               "RelativeDocumentMoniker": "registro_ordenes_venta.aspx.designer.cs",
-              "ToolTip": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\registro_ordenes_venta.aspx.designer.cs",
+              "ToolTip": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\registro_ordenes_venta.aspx.designer.cs",
               "RelativeToolTip": "registro_ordenes_venta.aspx.designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAPIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T01:21:57.367Z"
+              "WhenOpened": "2024-10-28T01:21:57.367Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 24,
               "Title": "SoftLibEmpleado.Master.cs",
-              "DocumentMoniker": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\SoftLibEmpleado.Master.cs",
+              "DocumentMoniker": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\SoftLibEmpleado.Master.cs",
               "RelativeDocumentMoniker": "SoftLibEmpleado.Master.cs",
-              "ToolTip": "C:\\Users\\mell1\\Desktop\\PUCP\\6toCiclo\\Proyecto-GestionDeLibreria\\Frontend\\SoftLibWA\\SoftLibEmpleado.Master.cs",
+              "ToolTip": "C:\\main\\proyecto-gestion-libreria\\Frontend\\SoftLibWA\\SoftLibEmpleado.Master.cs",
               "RelativeToolTip": "SoftLibEmpleado.Master.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

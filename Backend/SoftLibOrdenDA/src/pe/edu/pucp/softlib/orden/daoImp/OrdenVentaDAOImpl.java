@@ -87,13 +87,12 @@ public class OrdenVentaDAOImpl extends DAOImpl implements OrdenVentaDAO{
 
     @Override
     protected String obtenerListaDeAtributosParaInsercion() {
-        return "idOrdenVenta,tipoVenta,fechaEntrega,metodoPago,fidCliente,"
-                + "fidComprobante";
+        return "idOrdenVenta,tipoVenta,fechaEntrega,metodoPago,fidCliente";
     }
 
     @Override
     protected String incluirListaDeParametrosParaInsercion() {
-        return "?,?,?,?,?,?";
+        return "?,?,?,?,?";
     }
 
     @Override
@@ -103,7 +102,6 @@ public class OrdenVentaDAOImpl extends DAOImpl implements OrdenVentaDAO{
         this.incluirParametroDate(3, this.ordenVenta.getFechaEntrega());
         this.incluirParametroString(4, this.ordenVenta.getMetodoPago().toString());
         this.incluirParametroInt(5, this.ordenVenta.getCliente().getIdPersona());
-        this.incluirParametroInt(6, this.ordenVenta.getComprobante().getIdComprobante());
     }
     
     @Override
@@ -140,8 +138,7 @@ public class OrdenVentaDAOImpl extends DAOImpl implements OrdenVentaDAO{
 
     @Override
     protected String obtenerListaDeValoresYAtributosParaModificacion() {
-        return "tipoVenta=?,fechaEntrega=?,metodoPago=?,fidCliente=?,"
-                + "fidComprobante=?";
+        return "tipoVenta=?,fechaEntrega=?,metodoPago=?,fidCliente=?";
     }
 
     @Override
@@ -151,7 +148,6 @@ public class OrdenVentaDAOImpl extends DAOImpl implements OrdenVentaDAO{
         this.incluirParametroDate(2,this.ordenVenta.getFechaEntrega());
         this.incluirParametroString(3,this.ordenVenta.getMetodoPago().toString());
         this.incluirParametroInt(4,this.ordenVenta.getCliente().getIdPersona());
-        this.incluirParametroInt(5,this.ordenVenta.getComprobante().getIdComprobante());
     }
     
     @Override
@@ -223,8 +219,7 @@ public class OrdenVentaDAOImpl extends DAOImpl implements OrdenVentaDAO{
     protected String obtenerProyeccionParaSelect() {
         String sql = "ord.idOrden, ord.estadoOrden, ord.fechaCreacion, "
                 + "ord.total, ord.fidEmpleado,ord.activo, ven.tipoVenta, "
-                + "ven.fechaEntrega,ven.metodoPago,ven.fidCliente,"
-                + "ven.fidComprobante";
+                + "ven.fechaEntrega,ven.metodoPago,ven.fidCliente";
         return sql;
     }
 
@@ -254,10 +249,6 @@ public class OrdenVentaDAOImpl extends DAOImpl implements OrdenVentaDAO{
         ClienteBO clienteBO = new ClienteBO();
         int idCliente = this.resultSet.getInt("fidCliente");
         this.ordenVenta.setCliente(clienteBO.obtenerPorId(idCliente));
-        int idComprobante = this.resultSet.getInt("fidComprobante");
-        ComprobanteDAO comprobanteDAO = new ComprobanteDAOImpl();
-        Comprobante comprobante = comprobanteDAO.obtenerPorId(idComprobante);
-        this.ordenVenta.setComprobante(comprobante);
     }
     
     @Override
