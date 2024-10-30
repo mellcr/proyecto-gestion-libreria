@@ -1,0 +1,44 @@
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibProducto\bin\Debug\SoftLibProducto.dll.config
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibProducto\bin\Debug\SoftLibProducto.dll
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibProducto\bin\Debug\SoftLibProducto.pdb
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibProducto\bin\Debug\SoftLibBO.dll
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibProducto\bin\Debug\SoftLibBO.pdb
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibProducto\bin\Debug\SoftLibBO.dll.config
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibProducto\obj\Debug\SoftLibProducto.csproj.AssemblyReference.cache
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibProducto\obj\Debug\SoftLibProducto.csproj.CoreCompileInputs.cache
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibProducto\obj\Debug\SoftLibP.D9976FAE.Up2Date
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibProducto\obj\Debug\SoftLibProducto.dll
+C:\LHIA - PERSONAL\PUCP\OCTAVO CICLO 2024.2\P3\TA\Laboratorio 10\Frontend\SoftLibProducto\obj\Debug\SoftLibProducto.pdb
+C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibProducto\bin\Debug\SoftLibProducto.dll.config
+C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibProducto\bin\Debug\SoftLibProducto.dll
+C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibProducto\bin\Debug\SoftLibProducto.pdb
+C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibProducto\bin\Debug\SoftLibBO.dll
+C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibProducto\bin\Debug\SoftLibBO.pdb
+C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibProducto\bin\Debug\SoftLibBO.dll.config
+C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibProducto\obj\Debug\SoftLibProducto.csproj.AssemblyReference.cache
+C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibProducto\obj\Debug\SoftLibProducto.csproj.CoreCompileInputs.cache
+C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibProducto\obj\Debug\SoftLibP.D9976FAE.Up2Date
+C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibProducto\obj\Debug\SoftLibProducto.dll
+C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibProducto\obj\Debug\SoftLibProducto.pdb
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibProducto\bin\Debug\SoftLibProducto.dll.config
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibProducto\bin\Debug\SoftLibProducto.dll
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibProducto\bin\Debug\SoftLibProducto.pdb
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibProducto\bin\Debug\SoftLibBO.dll
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibProducto\bin\Debug\SoftLibBO.pdb
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibProducto\bin\Debug\SoftLibBO.dll.config
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibProducto\obj\Debug\SoftLibProducto.csproj.AssemblyReference.cache
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibProducto\obj\Debug\SoftLibProducto.csproj.CoreCompileInputs.cache
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibProducto\obj\Debug\SoftLibP.D9976FAE.Up2Date
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibProducto\obj\Debug\SoftLibProducto.dll
+C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibProducto\obj\Debug\SoftLibProducto.pdb
+C:\TA_P3_ÚLTIMO\proyecto-gestion-libreria\Frontend\SoftLibProducto\bin\Debug\SoftLibProducto.dll.config
+C:\TA_P3_ÚLTIMO\proyecto-gestion-libreria\Frontend\SoftLibProducto\bin\Debug\SoftLibProducto.dll
+C:\TA_P3_ÚLTIMO\proyecto-gestion-libreria\Frontend\SoftLibProducto\bin\Debug\SoftLibProducto.pdb
+C:\TA_P3_ÚLTIMO\proyecto-gestion-libreria\Frontend\SoftLibProducto\bin\Debug\SoftLibBO.dll
+C:\TA_P3_ÚLTIMO\proyecto-gestion-libreria\Frontend\SoftLibProducto\bin\Debug\SoftLibBO.pdb
+C:\TA_P3_ÚLTIMO\proyecto-gestion-libreria\Frontend\SoftLibProducto\bin\Debug\SoftLibBO.dll.config
+C:\TA_P3_ÚLTIMO\proyecto-gestion-libreria\Frontend\SoftLibProducto\obj\Debug\SoftLibProducto.csproj.AssemblyReference.cache
+C:\TA_P3_ÚLTIMO\proyecto-gestion-libreria\Frontend\SoftLibProducto\obj\Debug\SoftLibProducto.csproj.CoreCompileInputs.cache
+C:\TA_P3_ÚLTIMO\proyecto-gestion-libreria\Frontend\SoftLibProducto\obj\Debug\SoftLibP.D9976FAE.Up2Date
+C:\TA_P3_ÚLTIMO\proyecto-gestion-libreria\Frontend\SoftLibProducto\obj\Debug\SoftLibProducto.dll
+C:\TA_P3_ÚLTIMO\proyecto-gestion-libreria\Frontend\SoftLibProducto\obj\Debug\SoftLibProducto.pdb

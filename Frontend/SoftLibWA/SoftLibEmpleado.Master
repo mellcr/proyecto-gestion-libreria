@@ -1,0 +1,243 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SoftLibEmpleado.master.cs" Inherits="SoftLibWA.SoftLibEmpleado" %>
+
+<!DOCTYPE html>
+<html lang="es">
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/Fonts/css/all.css" rel="stylesheet" />
+    <link href="Content/estilo.css" rel="stylesheet" />
+
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/bootstrap.bundle.js"></script>
+    <script src="Scripts/jquery-3.7.1.js"></script>
+
+
+    <title>
+        <asp:ContentPlaceHolder ID="cphTitulo" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Toggle para el submenú "Locales"
+            $("#toggleLocales").click(function () {
+                $("#submenuLocales").toggle(); // Alterna la visibilidad del submenú
+            });
+
+            // Toggle para el submenú "Recursos"
+            $("#toggleRecurso").click(function () {
+                $("#submenuProducto").toggle(); // Alterna la visibilidad del submenú
+            });
+
+            // Toggle para el submenú "Campañas"
+            $("#toggleCampanas").click(function () {
+                $("#submenuCampanas").toggle(); // Alterna la visibilidad del submenú
+            });
+
+            // Toggle para el submenú "Orden de Venta"
+            $("#toggleOrdenVenta").click(function () {
+                $("#submenuOrdenesVenta").toggle(); // Alterna la visibilidad del submenú
+            });
+
+            // Toggle para el submenú "Orden de Abastecimiento"
+            $("#toggleOrdenAbastecimiento").click(function () {
+                $("#submenuOrdenesAbastecimiento").toggle(); // Alterna la visibilidad del submenú
+            });
+
+            // Toggle para el submenú "Clientes"
+            $("#toggleClientes").click(function () {
+                $("#submenuClientes").toggle(); // Alterna la visibilidad del submenú
+            });
+
+            // Toggle para el submenú "Inventario"
+            $("#toggleInventario").click(function () {
+                $("#submenuInventario").toggle(); // Alterna la visibilidad del submenú
+            });
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="cphScripts" runat="server">
+    </asp:ContentPlaceHolder>
+    <div class="container-fluid d-flex p-0">
+        <!-- Contenedor de la barra lateral -->
+        <div class="sidebar-container offcanvas offcanvas-start bg-primary text-white" tabindex="-1" id="bdSidebar" aria-labelledby="bdSidebarLabel">
+            <!---->
+            <div class="offcanvas-header d-md-none">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-column p-3">
+                <a href="#" class="navbar-brand">
+                    <img src="Images/LOGO_LIBRICODE.png" width="150" alt="Logo" />
+                </a>
+                <hr>
+                <ul class="mynav nav nav-pills flex-column mb-auto">
+
+                    <!-- Locales -->
+                    <li class="nav-item mb-1">
+                        <span class="nav-link text-white" id="toggleLocales">
+                            <i class="fa-solid fa-store pe-2"></i>Locales
+                        </span>
+                        <ul class="collapse list-unstyled ps-3" id="submenuLocales" style="display: none;">
+                            <li><a href="#" class="nav-link text-white">Subitem 1</a></li>
+                            <li><a href="#" class="nav-link text-white">Subitem 2</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Recursos -->
+                    <li class="nav-item mb-1">
+                        <a href="#submenuProducto" class="nav-link text-white" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#submenuProducto">
+                            <i class="fa-solid fa-box pe-2"></i>Recursos
+                        </a>
+                        <!-- Submenú para Recursos -->
+                        <ul class="collapse list-unstyled ps-3" id="submenuProducto">
+                            <!-- Submenú para Listar -->
+                            <li>
+                                <a href="mantenimiento_recurso.aspx" class="nav-link text-white">
+                                    <i class="fa-solid fa-list pe-2"></i>Listar
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#submenuRegistrar" class="nav-link text-white" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#submenuRegistrar">
+                                    <i class="fa-regular fa-circle-plus pe-2"></i>Registrar
+                                </a>
+                                <!-- Submenú para Registrar -->
+                                <ul class="collapse list-unstyled ps-3" id="submenuRegistrar">
+                                    <li>
+                                        <a href="gestionar_libros.aspx" class="nav-link text-white">Libros
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="gestionar_otrosrecursos.aspx" class="nav-link text-white">Otros Recursos</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link text-white">
+                                    <i class="fa-solid fa-star pe-2"></i>Destacados
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <!-- Campañas -->
+                    <li class="nav-item mb-1">
+                        <span class="nav-link text-white" id="toggleCampanas">
+                            <i class="fa-solid fa-bullhorn pe-2"></i>Campañas
+                        </span>
+                        <ul class="collapse list-unstyled ps-3" id="submenuCampanas" style="display: none;">
+                            <li><a href="#" class="nav-link text-white">Subitem 1</a></li>
+                            <li><a href="#" class="nav-link text-white">Subitem 2</a></li>
+                        </ul>
+                    </li>
+                    <!-- Orden de Venta -->
+                    <li class="nav-item mb-1">
+                        <span class="nav-link text-white" id="toggleOrdenVenta">
+                            <i class="fa-solid fa-file-invoice pe-2"></i>Orden de Venta 
+                        </span>
+                        <ul class="collapse list-unstyled ps-3" id="submenuOrdenesVenta" style="display: none;">
+                            <li>
+                                <a href="gestionar_ordenes_venta.aspx" class="nav-link text-white">Listar</a>
+                            </li>
+                            <li>
+                                <a href="registro_ordenes_venta.aspx" class="nav-link text-white">Registrar</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Orden de Abastecimiento -->
+                    <li class="nav-item mb-1">
+                        <span class="nav-link text-white" id="toggleOrdenAbastecimiento">
+                            <i class="fa-solid fa-truck pe-2"></i>Orden de Abastecimiento 
+                        </span>
+                        <ul class="collapse list-unstyled ps-3" id="submenuOrdenesAbastecimiento" style="display: none;">
+                            <li>
+                                <a href="gestionar_ordenes_abastecimiento.aspx" class="nav-link text-white">Listar</a>
+                            </li>
+                            <li>
+                                <a href="registro_ordenes_abastecimiento.aspx" class="nav-link text-white">Registrar</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Clientes -->
+                    <li class="nav-item mb-1">
+                        <span class="nav-link text-white" id="toggleClientes">
+                            <i class="fa-solid fa-user pe-2"></i>Clientes
+                        </span>
+                        <ul class="collapse list-unstyled ps-3" id="submenuClientes" style="display: none;">
+                            <li><a href="#" class="nav-link text-white">Subitem 1</a></li>
+                            <li><a href="#" class="nav-link text-white">Subitem 2</a></li>
+                        </ul>
+                    </li>
+                    <!-- Inventario -->
+                    <li class="nav-item mb-1">
+                        <span class="nav-link text-white" id="toggleInventario">
+                            <i class="fa-solid fa-warehouse pe-2"></i>Inventario
+                        </span>
+                        <ul class="collapse list-unstyled ps-3" id="submenuInventario" style="display: none;">
+                            <li><a href="#" class="nav-link text-white">Subitem 1</a></li>
+                            <li><a href="#" class="nav-link text-white">Subitem 2</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <hr>
+                <div class="d-flex">
+                    <i class="fa-solid fa-book me-2"></i>
+                    <h6 class="mt-1 mb-0">PUCP - Programación 3</h6>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenido Principal -->
+        <div class="main-content flex-fill bg-light overflow-auto">
+            <!-- Barra superior para dispositivos pequeños -->
+            <div class="p-2 d-md-none d-flex text-white bg-primary">
+                <a data-bs-toggle="offcanvas" data-bs-target="#bdSidebar" class="text-white" href="#">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+                <img src="Images/LOGO_LIBRICODE.png" class="ms-3" width="75">
+            </div>
+            <!-- Barra de Usuario -->
+            <nav class="navbar navbar-dark bg-primary">
+                <div class="container-fluid">
+                    <a class="navbar-brand d-sm-none d-md-block d-none d-sm-block">Software del Curso de Prog. 3</a>
+                    <form class="d-flex align-items-center">
+                        <div class="me-2 text-white">
+                            <div>
+                                Hola, <strong>
+                                    <asp:Literal ID="litNombreUsuario" runat="server"></asp:Literal></strong>
+                            </div>
+                            <div class="text-muted" style="font-size: 0.8em;">
+                                <asp:Literal ID="litRolUsuario" runat="server"></asp:Literal>
+                            </div>
+                        </div>
+                        <div class="dropdown ms-3">
+                            <button class="btn btn-outline-light dropdown-toggle" id="btnUsuario" data-bs-toggle="dropdown" type="button" aria-expanded="false">
+                                <img src="Images/USER_PROFILE.png" alt="User Image" class="rounded-circle" style="width: 30px; height: 30px;">
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="btnUsuario">
+                                <li><a class="dropdown-item" href="#">Perfil</a></li>
+                                <li><a class="dropdown-item" href="#">Cambiar Contraseña</a></li>
+                                <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+
+
+            <!-- Contenido de la Página Web -->
+            <div class="p-4">
+                <form runat="server">
+                    <asp:ContentPlaceHolder ID="cphContenido" runat="server">
+                    </asp:ContentPlaceHolder>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
