@@ -41,23 +41,17 @@
                     AllowPaging="true" PageSize="5" OnPageIndexChanging="GridVentas_PageIndexChanging"
                     CssClass="table table-hover table-responsive table-striped">
                     <Columns>
-                        <asp:TemplateField HeaderText="Id">
+                        <asp:BoundField DataField="fechaCreacion" HeaderText="Fecha" DataFormatString="{0:dd/MM/yyyy}" />
+                        <asp:TemplateField HeaderText="Cliente">
                             <ItemTemplate>
-                                <asp:LinkButton ID="BtnIdOrden" runat="server" 
-                                    Text='<%# Eval("idOrdenVenta") %>' 
-                                    CssClass="btn btn-link" 
-                                    CommandArgument='<%# Eval("idOrdenVenta") %>' 
-                                    OnClick="BtnIdOrden_Click" />
+                                <%# Eval("cliente.nombre") %>
                             </ItemTemplate>
                         </asp:TemplateField>
-                        <asp:BoundField DataField="fechaCreacion" HeaderText="Fecha" DataFormatString="{0:dd/MM/yyyy}" />
-                        <asp:BoundField DataField="cliente" HeaderText="Cliente" />
-                        <asp:BoundField DataField="producto" HeaderText="Producto" />
                         <asp:BoundField DataField="total" HeaderText="Total" DataFormatString="{0:C}" HtmlEncode="false" />
                         <asp:TemplateField HeaderText="Acciones">
                             <ItemTemplate>
-                                <asp:LinkButton ID="BtnModificar" runat="server" Text="Modificar" CssClass="btn btn-warning" CommandArgument='<%# Eval("idOrdenVenta") %>' OnClick="BtnModificar_Click" />
-                                <asp:LinkButton ID="BtnEliminar" runat="server" Text="Eliminar" CssClass="btn btn-danger" CommandArgument='<%# Eval("idOrdenVenta") %>' OnClick="BtnEliminar_Click" OnClientClick="return confirm('¿Está seguro de eliminar este registro?');" />
+                                <asp:LinkButton ID="BtnModificar" runat="server" Text="Modificar" CssClass="btn btn-warning" CommandArgument='<%# Eval("idOrden") %>' OnClick="BtnModificar_Click" />
+                                <asp:LinkButton ID="BtnEliminar" runat="server" Text="Eliminar" CssClass="btn btn-danger" CommandArgument='<%# Eval("idOrden") %>' OnClick="BtnEliminar_Click" OnClientClick="return confirm('¿Está seguro de eliminar este registro?');" />
                             </ItemTemplate>
                         </asp:TemplateField>
                     </Columns>

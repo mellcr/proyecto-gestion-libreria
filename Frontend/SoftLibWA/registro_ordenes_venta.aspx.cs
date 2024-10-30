@@ -1,5 +1,6 @@
 ﻿
 using SoftLibBO.ServicioWeb;
+using SoftLibOrdenBO;
 using SoftLibProducto;
 using SoftLibUsuarioBO;
 using System;
@@ -19,12 +20,15 @@ namespace SoftLibWA
         private RecursoBO recurosBO;
         private LibroBO libroBO;
         private OtroRecursoBO otroRecursoBO;
+        private OrdenVentaBO ordenVentaBO;
+        private OrdenBO ordenBO;
 
         private BindingList<cliente> listarClientesTodos;
         private BindingList<recurso> listarRecursoTodos;
         private BindingList<cliente> listarClientesPorNombre;
         private BindingList<libro> listaLibrosPorNombre;
         private BindingList<otroRecurso> listaOtrosRecursosPorNombre;
+        private BindingList<lineaDeOrden> lineasOrdenesVenta;
 
         public registro_ordenes_venta()
         {
@@ -32,16 +36,19 @@ namespace SoftLibWA
             recurosBO = new RecursoBO();
             libroBO = new LibroBO();
             otroRecursoBO = new OtroRecursoBO();
+            ordenVentaBO = new OrdenVentaBO();
+            ordenBO = new OrdenBO();
 
             listarClientesTodos = new BindingList<cliente>();
             listarRecursoTodos = new BindingList<recurso>();
             listarClientesPorNombre = new BindingList<cliente>();
             listaLibrosPorNombre = new BindingList<libro>();
             listaOtrosRecursosPorNombre = new BindingList<otroRecurso>();
+            lineasOrdenesVenta = new BindingList<lineaDeOrden>();
         }
 
         protected void Page_Init(object sender, EventArgs e)
-        {  
+        {
             ModalOrdenVenta_gvClientes.DataSource = clienteBO.listarTodos();
             ModalOrdenVenta_gvClientes.DataBind();
 
@@ -50,7 +57,13 @@ namespace SoftLibWA
         }
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["lineasOrdenVenta"] == null)
+                lineasOrdenesVenta = new BindingList<lineaDeOrden>();
+            else
+                lineasOrdenesVenta = (BindingList<lineaDeOrden>)Session["lineasOrdenVenta"];
 
+            gvProductos.DataSource = lineasOrdenesVenta;
+            gvProductos.DataBind();
         }
 
         private void CargarProductosSeleccionados()
@@ -97,7 +110,7 @@ namespace SoftLibWA
         protected void ModalCliente_lbBuscarCliente_Click(object sender, EventArgs e)
         {
             string nombre = ModalCliente_txtNombreCliente.Text;
-            listarClientesPorNombre = clienteBO.buscarClientes(nombre);  
+            listarClientesPorNombre = clienteBO.buscarClientes(nombre);
             ModalOrdenVenta_gvClientes.DataSource = listarClientesPorNombre;
             ModalOrdenVenta_gvClientes.DataBind();
         }
@@ -118,11 +131,29 @@ namespace SoftLibWA
 
         protected void ModalOrdenVenta_lbSeleccionarProducto_Click(object sender, EventArgs e)
         {
-            
+            int idRecursoSeleccionado = Int32.Parse(((LinkButton)sender).CommandArgument);
+            Session["idRecursoSeleccionado"] = idRecursoSeleccionado;
+            string tipoProductoSeleccionado = ddlTipoProducto.SelectedValue;
+            recurso recurso_seleccionado = recurosBO.obtenerPorId(idRecursoSeleccionado);
+            txtIdRecurso.Text = recurso_seleccionado.idRecurso.ToString();
+            txtNombreRecurso.Text = recurso_seleccionado.nombre;
+            txtPrecioRecurso.Text = recurso_seleccionado.precio.ToString();
+            ScriptManager.RegisterStartupScript(this, GetType(), "", "__doPostBack('','');", true);
         }
 
         protected void lbEliminarProducto_Click(object sender, EventArgs e)
         {
+            int idProducto = Int32.Parse(((LinkButton)sender).CommandArgument);
+            foreach (lineaDeOrden lov in this.lineasOrdenesVenta)
+            {
+                if (lov.recurso.idRecurso == idProducto)
+                {
+                    this.lineasOrdenesVenta.Remove(lov);
+                    break;
+                }
+            }
+            gvProductos.DataSource = lineasOrdenesVenta;
+            gvProductos.DataBind();
         }
 
         protected void ModalOrdenVenta_gvClientes_PageIndexChanging(object sender, GridViewPageEventArgs e)
@@ -144,12 +175,50 @@ namespace SoftLibWA
 
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
-          
+            BindingList<lineaDeOrden> lineas = (BindingList<lineaDeOrden>)Session["lineasOrdenVenta"];
+            double total = (double)Session["totalOV"];
+            int idClienteSeleccionado = (int)Session["idClienteSeleccionado"];
+            ordenBO.insertar(lineas, estadoDeOrden.PENDIENTE, DateTime.Now, total, 1);
+            ordenVentaBO.insertar(lineas, estadoDeOrden.PENDIENTE, DateTime.Now, total, 1, DateTime.Now,
+               tipoDeVenta.PRESENCIAL, metodoPago.EFECTIVO, idClienteSeleccionado);
         }
 
         protected void ddlTipoProducto_SelectedIndexChanged(object sender, EventArgs e)
         {
             CargarProductosSeleccionados();
+        }
+
+        public double calcularTotal()
+        {
+            double total = 0;
+            foreach (lineaDeOrden lov in lineasOrdenesVenta)
+                total += lov.subtotalBruto;
+            return total;
+        }
+
+        protected void lbAgregarLOV_Click(object sender, EventArgs e)
+        {
+            int idRecursoSeleccionado = (int)Session["idRecursoSeleccionado"];
+            lineaDeOrden lov = new lineaDeOrden();
+            int cantidad = Int32.Parse(txtCantidadUnidades.Text);
+            lov.cantidad = cantidad;
+            lov.recurso = recurosBO.obtenerPorId(idRecursoSeleccionado);
+            lov.subtotalBruto = lov.cantidad * lov.recurso.precio;
+            lineasOrdenesVenta.Add(lov);
+            Session["lineasOrdenVenta"] = lineasOrdenesVenta;
+
+            gvProductos.DataSource = lineasOrdenesVenta;
+            gvProductos.DataBind();
+
+            double total = calcularTotal();
+            Session["totalOV"] = total;
+
+            txtTotal.Text = total.ToString();
+
+            txtIdRecurso.Text = "";
+            txtNombreRecurso.Text = "";
+            txtCantidadUnidades.Text = "";
+            txtPrecioRecurso.Text = "";
         }
     }
 }

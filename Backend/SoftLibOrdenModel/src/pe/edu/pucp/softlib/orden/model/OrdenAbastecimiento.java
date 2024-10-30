@@ -3,7 +3,6 @@ package pe.edu.pucp.softlib.orden.model;
 
 import java.util.ArrayList;
 import java.util.Date;
-import pe.edu.pucp.softlib.producto.model.Local;
 import pe.edu.pucp.softlib.usuario.model.Empleado;
 
 public class OrdenAbastecimiento extends Orden{

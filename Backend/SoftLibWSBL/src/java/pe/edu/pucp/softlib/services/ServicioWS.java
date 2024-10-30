@@ -8,6 +8,17 @@ import jakarta.jws.WebService;
 import jakarta.jws.WebMethod;
 import jakarta.jws.WebParam;
 import java.util.ArrayList;
+import java.util.Date;
+import pe.edu.pucp.softlib.orden.bo.OrdenAbastecimientoBO;
+import pe.edu.pucp.softlib.orden.bo.OrdenBO;
+import pe.edu.pucp.softlib.orden.bo.OrdenVentaBO;
+import pe.edu.pucp.softlib.orden.model.EstadoDeOrden;
+import pe.edu.pucp.softlib.orden.model.LineaDeOrden;
+import pe.edu.pucp.softlib.orden.model.MetodoPago;
+import pe.edu.pucp.softlib.orden.model.Orden;
+import pe.edu.pucp.softlib.orden.model.OrdenAbastecimiento;
+import pe.edu.pucp.softlib.orden.model.OrdenVenta;
+import pe.edu.pucp.softlib.orden.model.TipoDeVenta;
 import pe.edu.pucp.softlib.producto.bo.AutorBO;
 import pe.edu.pucp.softlib.producto.bo.LibroBO;
 import pe.edu.pucp.softlib.producto.bo.OtroRecursoBO;
@@ -34,6 +45,9 @@ public class ServicioWS {
     private LibroBO libroBO;
     private AutorBO autorBO;
     private OtroRecursoBO otroRecursoBO;
+    private OrdenBO ordenBO;
+    private OrdenVentaBO ordenVentaBO;
+    private OrdenAbastecimientoBO ordenAbastecimientoBO;
     
     public ServicioWS(){
         this.recursoBO = new RecursoBO();
@@ -41,6 +55,9 @@ public class ServicioWS {
         this.libroBO = new LibroBO();
         this.autorBO = new AutorBO();
         this.otroRecursoBO = new OtroRecursoBO();
+        this.ordenBO = new OrdenBO();
+        this.ordenVentaBO = new OrdenVentaBO();
+        this.ordenAbastecimientoBO = new OrdenAbastecimientoBO();
     }
     
     //SERVICIOS RECURSOS 
@@ -260,4 +277,149 @@ public class ServicioWS {
         return autorBO.listarTodos();
     }
 
+    
+    //--------------------------------------------------------------------------
+    //SERVICIOS ORDEN
+    @WebMethod(operationName = "orden_insertar")
+    public Integer orden_insertar(@WebParam(name = "lineasDeOrdenes") ArrayList<LineaDeOrden> lineasDeOrdenes,
+                                  @WebParam(name = "estadoDeOrden") EstadoDeOrden estadoDeOrden, 
+                                  @WebParam(name = "fechaCreacion") Date fechaCreacion, 
+                                  @WebParam(name = "total") Double total, 
+                                  @WebParam(name = "idEmpleado") Integer idEmpleado){
+        return this.ordenBO.insertar(lineasDeOrdenes, estadoDeOrden,  fechaCreacion, total, idEmpleado);
+    }
+    @WebMethod(operationName = "orden_modificar")
+    public Integer orden_modificar(@WebParam(name = "idOrden")  Integer idOrden,
+                                    @WebParam(name = "lineasDeOrdenes")  ArrayList<LineaDeOrden> lineasDeOrdenes,
+                                    @WebParam(name = "estadoDeOrden") EstadoDeOrden estadoDeOrden, 
+                                    @WebParam(name = "fechaCreacion")  Date fechaCreacion, 
+                                    @WebParam(name = "total")  Double total, 
+                                    @WebParam(name = "idEmpleado")  Integer idEmpleado, 
+                                    @WebParam(name = "activo")  Boolean activo){
+        return this.ordenBO.modificar(idOrden,lineasDeOrdenes,estadoDeOrden,  fechaCreacion,  total, 
+             idEmpleado,  activo);
+    }
+    
+    @WebMethod(operationName = "orden_eliminar")
+    public Integer orden_eliminar(@WebParam(name = "idOrden") Integer idOrden){
+        return this.ordenBO.eliminar(idOrden);
+    }
+    
+    @WebMethod(operationName = "orden_listarTodos")
+    public ArrayList<Orden> orden_listarTodos(){
+        return this.ordenBO.listarTodos();
+    }
+    
+    @WebMethod(operationName = "orden_obtenerPorId")
+    public Orden orden_obtenerPorId(@WebParam(name = "idOrden")  Integer idOrden){
+        return this.ordenBO.obtenerPorId(idOrden);
+    }
+    
+    @WebMethod(operationName = "existeOrden")
+    public Integer existeOrden(@WebParam(name = "fechaCreacion") Date fechaCreacion, 
+                                @WebParam(name = "total") Double total, 
+                                @WebParam(name = "idEmpleado") Integer idEmpleado){
+        return this.ordenBO.existeOrden( fechaCreacion,  total,  idEmpleado);
+    }  
+    
+    //--------------------------------------------------------------------------
+    //SERVICIOS ORDEN DE VENTA
+    @WebMethod(operationName = "ordenVenta_insertar")
+    public Integer ordenVenta_insertar(@WebParam(name = "lineasDeOrdenes") ArrayList<LineaDeOrden> lineasDeOrdenes,
+                                        @WebParam(name = "estadoDeOrden") EstadoDeOrden estadoDeOrden, 
+                                        @WebParam(name = "fechaCreacion") Date fechaCreacion, 
+                                        @WebParam(name = "total") Double total, 
+                                        @WebParam(name = "idEmpleado") Integer idEmpleado, 
+                                        @WebParam(name = "fechaEntrega") Date fechaEntrega, 
+                                        @WebParam(name = "tipoVenta") TipoDeVenta tipoVenta,
+                                        @WebParam(name = "metodoPago") MetodoPago metodoPago, 
+                                        @WebParam(name = "fidCliente") Integer fidCliente) {
+        return this.ordenVentaBO.insertar(lineasDeOrdenes, estadoDeOrden,  fechaCreacion,  total, 
+             idEmpleado,  fechaEntrega,  tipoVenta,  metodoPago,  fidCliente);
+    }
+    
+    @WebMethod(operationName = "ordenVenta_modificar")
+    public Integer ordenVenta_modificar(@WebParam(name = "idOrdenVenta") Integer idOrdenVenta,
+                                        @WebParam(name = "lineasDeOrdenes") ArrayList<LineaDeOrden> lineasDeOrdenes,
+                                        @WebParam(name = "estadoDeOrden") EstadoDeOrden estadoDeOrden, 
+                                        @WebParam(name = "fechaCreacion") Date fechaCreacion, 
+                                        @WebParam(name = "total") Double total, 
+                                        @WebParam(name = "idEmpleado") Integer idEmpleado,
+                                        @WebParam(name = "activo") Boolean activo, 
+                                        @WebParam(name = "fechaEntrega") Date fechaEntrega, 
+                                        @WebParam(name = "tipoVenta") TipoDeVenta tipoVenta,
+                                        @WebParam(name = "metodoPago") MetodoPago metodoPago, 
+                                        @WebParam(name = "fidCliente") Integer fidCliente) {
+        return this.ordenVentaBO.modificar(idOrdenVenta,lineasDeOrdenes, estadoDeOrden, fechaCreacion, 
+                total,  idEmpleado, activo, fechaEntrega,  tipoVenta, metodoPago, fidCliente);
+    }
+    
+    @WebMethod(operationName = "ordenVenta_eliminar")
+    public Integer ordenVenta_eliminar(@WebParam(name = "idOrdenVenta") Integer idOrdenVenta) {
+        return this.ordenVentaBO.eliminar(idOrdenVenta);
+    }
+    
+    @WebMethod(operationName = "ordenVenta_listarTodos")
+    public ArrayList<OrdenVenta> ordenVenta_listarTodos(){
+        return this.ordenVentaBO.listarTodos();
+    }
+    
+    @WebMethod(operationName = "ordenVenta_obtenerPorId")
+    public OrdenVenta ordenVenta_obtenerPorId(@WebParam(name = "idOrdenVenta") Integer idOrdenVenta){
+        return this.ordenVentaBO.obtenerPorId(idOrdenVenta);
+    }
+    
+    @WebMethod(operationName = "existeOrdenVenta")
+    public Boolean existeOrdenVenta(@WebParam(name = "idOrdenVenta") Integer idOrdenVenta){
+        return this.ordenVentaBO.existeOrdenVenta(idOrdenVenta);
+    }  
+    
+    //--------------------------------------------------------------------------
+    //SERVICIOS ORDEN DE ABASTECIMIENTO
+    @WebMethod(operationName = "ordenAbastecimiento_insertar")
+    public Integer ordenAbastecimiento_insertar(@WebParam(name = "lineasDeOrdenes") ArrayList<LineaDeOrden> lineasDeOrdenes,
+                            @WebParam(name = "estadoDeOrden") EstadoDeOrden estadoDeOrden, 
+                            @WebParam(name = "fechaCreacion") Date fechaCreacion,
+                            @WebParam(name = "total") Double total, 
+                            @WebParam(name = "idEmpleado") Integer idEmpleado,
+                            @WebParam(name = "fechaRecepcion") Date fechaRecepcion, 
+                            @WebParam(name = "descripcion") String descripcion) {
+        return this.ordenAbastecimientoBO.insertar(lineasDeOrdenes,estadoDeOrden,  fechaCreacion,  total, 
+             idEmpleado,  fechaRecepcion,  descripcion);
+    }
+    
+    @WebMethod(operationName = "ordenAbastecimiento_modificar")
+    public Integer ordenAbastecimiento_modificar(@WebParam(name = "idOrdenAbastecimiento") Integer idOrdenAbastecimiento,
+                                                 @WebParam(name = "lineasDeOrdenes") ArrayList<LineaDeOrden> lineasDeOrdenes,
+                                                 @WebParam(name = "estadoDeOrden") EstadoDeOrden estadoDeOrden, 
+                                                 @WebParam(name = "fechaCreacion") Date fechaCreacion, 
+                                                 @WebParam(name = "total") Double total, 
+                                                 @WebParam(name = "idEmpleado") Integer idEmpleado,
+                                                 @WebParam(name = "activo") Boolean activo, 
+                                                 @WebParam(name = "fechaRecepcion") Date fechaRecepcion, 
+                                                 @WebParam(name = "descripcion") String descripcion) {
+        return this.ordenAbastecimientoBO.modificar( idOrdenAbastecimiento,
+            lineasDeOrdenes,estadoDeOrden,  fechaCreacion,  total, idEmpleado, activo,  fechaRecepcion,  descripcion);
+    }
+    
+    @WebMethod(operationName = "ordenAbastecimiento_eliminar")
+    public Integer ordenAbastecimiento_eliminar(@WebParam(name = "idOrdenAbastecimiento") Integer idOrdenAbastecimiento) {
+        return this.ordenAbastecimientoBO.eliminar(idOrdenAbastecimiento);
+    }
+    
+    @WebMethod(operationName = "ordenAbastecimiento_listarTodos")
+    public ArrayList<OrdenAbastecimiento> ordenAbastecimiento_listarTodos(){
+        return this.ordenAbastecimientoBO.listarTodos();
+    }
+    
+    @WebMethod(operationName = "ordenAbastecimiento_obtenerPorId")
+    public OrdenAbastecimiento ordenAbastecimiento_obtenerPorId(@WebParam(name = "idOrdenAbastecimiento")Integer idOrdenAbastecimiento){
+        return this.ordenAbastecimientoBO.obtenerPorId(idOrdenAbastecimiento);
+    }
+    
+    @WebMethod(operationName = "existeOrdenAbastecimiento")
+    public Boolean existeOrdenAbastecimiento(@WebParam(name = "idOrdenAbastecimiento") Integer idOrdenAbastecimiento){
+        return this.ordenAbastecimientoBO.existeOrdenAbastecimiento(idOrdenAbastecimiento);
+    }    
+    
 }

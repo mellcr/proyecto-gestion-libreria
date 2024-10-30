@@ -14,7 +14,7 @@ import pe.edu.pucp.softlib.orden.model.Orden;
 import pe.edu.pucp.softlib.usuario.model.Empleado;
 
 /**
- *
+ * 
  * @author Joshua Haro
  */
 public class OrdenBO {

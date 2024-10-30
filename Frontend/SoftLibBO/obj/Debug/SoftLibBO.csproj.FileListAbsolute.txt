@@ -19,3 +19,10 @@ C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLib
 C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibBO\obj\Debug\SoftLibBO.csproj.CoreCompileInputs.cache
 C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibBO\obj\Debug\SoftLibBO.dll
 C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibBO\obj\Debug\SoftLibBO.pdb
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibBO\bin\Debug\SoftLibBO.dll.config
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibBO\bin\Debug\SoftLibBO.dll
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibBO\bin\Debug\SoftLibBO.pdb
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibBO\obj\Debug\SoftLibBO.csproj.AssemblyReference.cache
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibBO\obj\Debug\SoftLibBO.csproj.CoreCompileInputs.cache
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibBO\obj\Debug\SoftLibBO.dll
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibBO\obj\Debug\SoftLibBO.pdb

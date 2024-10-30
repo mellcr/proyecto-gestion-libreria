@@ -45,12 +45,12 @@ public class OrdenDAOImpl extends DAOImpl implements OrdenDAO{
     
     @Override
     protected String obtenerListaDeAtributosParaInsercion() {
-        return "estadoOrden,fechaCreacion,total,fidEmpleado,activo";
+        return "estadoOrden,fechaCreacion,total,fidEmpleado";
     }
     
     @Override
     protected String incluirListaDeParametrosParaInsercion() {
-        return "?,?,?,?,?";
+        return "?,?,?,?";
     }
 
     @Override
@@ -59,7 +59,6 @@ public class OrdenDAOImpl extends DAOImpl implements OrdenDAO{
         this.incluirParametroDate(2, this.orden.getFechaCreacion());
         this.incluirParametroDouble(3, this.orden.getTotal());
         this.incluirParametroInt(4, this.orden.getEmpleado().getIdPersona());
-        this.incluirParametroBoolean(5, this.orden.getActivo());
     }
 
     @Override
@@ -82,7 +81,7 @@ public class OrdenDAOImpl extends DAOImpl implements OrdenDAO{
     
     @Override
     protected String obtenerListaDeValoresYAtributosParaModificacion() {
-        return "estadoOrden=?,fechaCreacion=?,total=?,fidEmpleado=?,activo=?";
+        return "estadoOrden=?,fechaCreacion=?,total=?,fidEmpleado=?";
     }
     
     @Override
@@ -91,8 +90,7 @@ public class OrdenDAOImpl extends DAOImpl implements OrdenDAO{
         this.incluirParametroString(1, this.orden.getEstadoOrden().toString());
         this.incluirParametroDate(2, this.orden.getFechaCreacion());
         this.incluirParametroDouble(3, this.orden.getTotal());
-        this.incluirParametroInt(4, this.orden.getEmpleado().getIdPersona());    
-        this.incluirParametroBoolean(5, this.orden.getActivo());           
+        this.incluirParametroInt(4, this.orden.getEmpleado().getIdPersona());           
     }
 
     @Override
@@ -120,7 +118,7 @@ public class OrdenDAOImpl extends DAOImpl implements OrdenDAO{
     
     @Override
     protected String obtenerProyeccionParaSelect() {
-        return "idOrden,estadoOrden,fechaCreacion,total,fidEmpleado,activo";
+        return "idOrden,estadoOrden,fechaCreacion,total,fidEmpleado";
     }
     
     @Override
@@ -140,7 +138,6 @@ public class OrdenDAOImpl extends DAOImpl implements OrdenDAO{
         EmpleadoBO empleadoBO = new EmpleadoBO();
         int idEmpleado = this.resultSet.getInt("fidEmpleado");
         this.orden.setEmpleado(empleadoBO.obtenerPorId(idEmpleado));
-        this.orden.setActivo(this.resultSet.getBoolean("activo"));
     }
 
     @Override
@@ -168,7 +165,7 @@ public class OrdenDAOImpl extends DAOImpl implements OrdenDAO{
         try{
             this.abrirConexion();
             String sql = "Select idOrden from Orden where ";
-            sql = sql.concat("fechaCreacion=?");
+            sql = sql.concat("fechaCreacion=? ");
             sql = sql.concat("and total=? ");
             sql = sql.concat("and fidEmpleado=? ");
             this.incluirParametroDate(1, this.orden.getFechaCreacion());

@@ -255,6 +255,10 @@
       <Project>{fce659e7-b051-41a5-889f-a64940624c02}</Project>
       <Name>SoftLibBO</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SoftLibOrdenBO\SoftLibOrdenBO.csproj">
+      <Project>{16525323-5893-41B7-A874-AFD3D11435DD}</Project>
+      <Name>SoftLibOrdenBO</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SoftLibProducto\SoftLibProducto.csproj">
       <Project>{3F909D16-97CD-42C2-8240-C6B5535F9DDC}</Project>
       <Name>SoftLibProducto</Name>

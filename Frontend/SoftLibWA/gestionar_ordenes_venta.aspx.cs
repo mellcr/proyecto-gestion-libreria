@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SoftLibBO.ServicioWeb;
+using SoftLibOrdenBO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -11,36 +13,31 @@ namespace SoftLibWA
 {
     public partial class gestionar_ordenes_venta : System.Web.UI.Page
     {
-       /* private OrdenVentaBO ordenVentaBO;
-        private LineaOrdenVentaBO lineaOrdenVentaBO;
-        private ClienteBO clienteBO;
+        private OrdenVentaBO ordenVentaBO;
 
-        BindingList<object> listaLibros;
-        BindingList<object> listaOtrosRecursos;
-        BindingList<object> listaClientes;
-        BindingList<object> listaProductos; 
+        BindingList<ordenVenta> listaOrdenesVenta;
 
         public gestionar_ordenes_venta()
         {
             this.ordenVentaBO = new OrdenVentaBO();
-            this.lineaOrdenVentaBO = new LineaOrdenVentaBO();
-        }*/
-        
+            this.listaOrdenesVenta = new BindingList<ordenVenta>();
+            this.listaOrdenesVenta = this.ordenVentaBO.listarTodos();
+
+        }
+
 
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            /*if (Session["listaProductos"] == null)
-                this.listaProductos = new BindingList<LineaOrdenVenta>();
-            else
-                this.listaProductos = (BindingList<LineaOrdenVenta>)Session["listaProductos"];
-            */
+            GridVentas.DataSource = listaOrdenesVenta;
+            GridVentas.DataBind();
+
         }
 
-       
+
         protected void TxtBuscarCliente_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         protected void TxtBuscarProducto_TextChanged(object sender, EventArgs e)

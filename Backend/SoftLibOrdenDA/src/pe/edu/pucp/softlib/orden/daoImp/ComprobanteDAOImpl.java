@@ -10,6 +10,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.sql.ResultSet;
+import pe.edu.pucp.softlib.orden.dao.OrdenVentaDAO;
 import pe.edu.pucp.softlib.orden.model.Comprobante;
 import pe.edu.pucp.softlib.orden.model.TipoComprobante;
 /**
@@ -33,12 +34,12 @@ public class ComprobanteDAOImpl extends DAOImpl implements ComprobanteDAO{
     @Override
     protected String obtenerListaDeAtributosParaInsercion() {
         return "idComprobante,fechaEmision,tipoComprobante,activo,"
-                + "numDocumentoAsociado,valorTotalImpuesto";
+                + "numDocumentoAsociado,valorTotalImpuesto,fidOrden";
     }
 
     @Override
     protected String incluirListaDeParametrosParaInsercion() {
-        return "?, ?, ?,?, ?, ?";
+        return "?, ?, ?,?, ?, ?, ?";
     }    
     
     @Override
@@ -49,6 +50,7 @@ public class ComprobanteDAOImpl extends DAOImpl implements ComprobanteDAO{
         this.incluirParametroBoolean(4, this.comprobante.getActivo());
         this.incluirParametroString(5, this.comprobante.getNumDocumentoAsociado());
         this.incluirParametroDouble(6, this.comprobante.getValorTotalImpuesto());
+        this.incluirParametroInt(7, this.comprobante.getOrdenVenta().getIdOrden());
     }
     
     @Override
@@ -60,7 +62,7 @@ public class ComprobanteDAOImpl extends DAOImpl implements ComprobanteDAO{
     @Override
     protected String obtenerListaDeValoresYAtributosParaModificacion() {
         return "fechaEmision=?, tipoComprobante=?, activo=?, "
-                + "numDocumentoAsociado=?, valorTotalImpuesto=?";
+                + "numDocumentoAsociado=?, valorTotalImpuesto=?, fidOrden=?";
     }
 
     @Override
@@ -76,6 +78,7 @@ public class ComprobanteDAOImpl extends DAOImpl implements ComprobanteDAO{
         this.incluirParametroBoolean(3, this.comprobante.getActivo());
         this.incluirParametroString(4, this.comprobante.getNumDocumentoAsociado());
         this.incluirParametroDouble(5, this.comprobante.getValorTotalImpuesto());
+        this.incluirParametroInt(7, this.comprobante.getOrdenVenta().getIdOrden());
     }
 
     @Override
@@ -97,7 +100,7 @@ public class ComprobanteDAOImpl extends DAOImpl implements ComprobanteDAO{
     @Override
     protected String obtenerProyeccionParaSelect() {
         return "idComprobante, fechaEmision, tipoComprobante,activo,"
-                + "numDocumentoAsociado,valorTotalImpuesto";
+                + "numDocumentoAsociado,valorTotalImpuesto,fidOrden";
     }
 
     @Override
@@ -110,6 +113,9 @@ public class ComprobanteDAOImpl extends DAOImpl implements ComprobanteDAO{
         this.comprobante.setActivo(resultSet.getBoolean("activo"));
         this.comprobante.setNumDocumentoAsociado(resultSet.getString("numDocumentoAsociado"));
         this.comprobante.setValorTotalImpuesto(resultSet.getDouble("valorTotalImpuesto"));
+        int idOrdenVenta = this.resultSet.getInt("fidOrden");
+        OrdenVentaDAO ordenVentaDAO = new OrdenVentaDAOImpl();
+        this.comprobante.setOrdenVenta(ordenVentaDAO.obtenerPorId(idOrdenVenta));
     }
 
     @Override

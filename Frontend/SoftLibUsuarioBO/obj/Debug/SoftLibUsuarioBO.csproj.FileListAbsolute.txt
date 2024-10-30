@@ -18,3 +18,13 @@ C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLib
 C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibUsuarioBO\obj\Debug\SoftLibU.FC53082B.Up2Date
 C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibUsuarioBO\obj\Debug\SoftLibUsuarioBO.dll
 C:\Users\mell1\Desktop\PUCP\6toCiclo\Proyecto-GestionDeLibreria\Frontend\SoftLibUsuarioBO\obj\Debug\SoftLibUsuarioBO.pdb
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibUsuarioBO\bin\Debug\SoftLibUsuarioBO.dll
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibUsuarioBO\bin\Debug\SoftLibUsuarioBO.pdb
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibUsuarioBO\bin\Debug\SoftLibBO.dll
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibUsuarioBO\bin\Debug\SoftLibBO.pdb
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibUsuarioBO\bin\Debug\SoftLibBO.dll.config
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibUsuarioBO\obj\Debug\SoftLibUsuarioBO.csproj.AssemblyReference.cache
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibUsuarioBO\obj\Debug\SoftLibUsuarioBO.csproj.CoreCompileInputs.cache
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibUsuarioBO\obj\Debug\SoftLibU.FC53082B.Up2Date
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibUsuarioBO\obj\Debug\SoftLibUsuarioBO.dll
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibUsuarioBO\obj\Debug\SoftLibUsuarioBO.pdb

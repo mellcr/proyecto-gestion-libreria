@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftLibUsuarioBO", "..\Soft
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftLibProducto", "..\SoftLibProducto\SoftLibProducto.csproj", "{3F909D16-97CD-42C2-8240-C6B5535F9DDC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftLibOrdenBO", "..\SoftLibOrdenBO\SoftLibOrdenBO.csproj", "{16525323-5893-41B7-A874-AFD3D11435DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{3F909D16-97CD-42C2-8240-C6B5535F9DDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F909D16-97CD-42C2-8240-C6B5535F9DDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F909D16-97CD-42C2-8240-C6B5535F9DDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16525323-5893-41B7-A874-AFD3D11435DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16525323-5893-41B7-A874-AFD3D11435DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16525323-5893-41B7-A874-AFD3D11435DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16525323-5893-41B7-A874-AFD3D11435DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -31,3 +31,14 @@ C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibProducto\obj\Debug\SoftLibPro
 C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibProducto\obj\Debug\SoftLibP.D9976FAE.Up2Date
 C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibProducto\obj\Debug\SoftLibProducto.dll
 C:\TA_P3\proyecto-gestion-libreria\Frontend\SoftLibProducto\obj\Debug\SoftLibProducto.pdb
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibProducto\bin\Debug\SoftLibProducto.dll.config
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibProducto\bin\Debug\SoftLibProducto.dll
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibProducto\bin\Debug\SoftLibProducto.pdb
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibProducto\bin\Debug\SoftLibBO.dll
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibProducto\bin\Debug\SoftLibBO.pdb
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibProducto\bin\Debug\SoftLibBO.dll.config
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibProducto\obj\Debug\SoftLibProducto.csproj.AssemblyReference.cache
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibProducto\obj\Debug\SoftLibProducto.csproj.CoreCompileInputs.cache
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibProducto\obj\Debug\SoftLibP.D9976FAE.Up2Date
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibProducto\obj\Debug\SoftLibProducto.dll
+C:\main\proyecto-gestion-libreria\Frontend\SoftLibProducto\obj\Debug\SoftLibProducto.pdb
